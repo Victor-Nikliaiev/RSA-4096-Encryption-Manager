@@ -1,41 +1,43 @@
-from file_manager import FileManager
-from rsa_key_manager import RsaKeyManager
-from constants import Path
+import sys
+from PySide6 import QtCore as qtc
+from PySide6 import QtWidgets as qtw
+from PySide6 import QtGui as qtg
+from PySide6 import QtUiTools as qtu
+from PySide6.QtQuickWidgets import QQuickWidget
+
+from assets.ui import Ui_main_window
+from screens import ChooseFileEncryptWindow
+from tools.toolkit import Tools as t
 
 
+class MainWindow(qtw.QMainWindow, Ui_main_window):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+        self.setupQmlLogoAnimation()
+
+        self.actionExit.triggered.connect(qtw.QApplication.quit)
+        self.encrypt_button.clicked.connect(self.handle_encrypt)
+        self.actionEncrypt.triggered.connect(self.handle_encrypt)
+
+    def setupQmlLogoAnimation(self):
+        qml_widget = QQuickWidget(self)
+        qml_widget.setSource(qtc.QUrl.fromLocalFile("assets/ui/animation.qml"))
+        qml_widget.setResizeMode(QQuickWidget.SizeRootObjectToView)
+        layout = qtw.QVBoxLayout(self.q_logo)
+        layout.addWidget(qml_widget)
+        self.q_logo.setLayout(layout)
+
+    @qtc.Slot()
+    def handle_encrypt(self):
+        print("Encrypt button or menu clicked")
+        self.encrypt_window = t.qt.center_widget(ChooseFileEncryptWindow())
+        self.encrypt_window.show()
 
 
-def main():
-    pass
-    ### Generate keys ###
-    # key_manager = RsaKeyManager()
-    # private_key = key_manager.generate_private_key()
-    # public_key = key_manager.generate_public_key(private_key)
-
-    # key_manager.save_private_key_to_file(private_key, Path.PRIVATE_KEY_FILE)
-    # key_manager.save_public_key_to_file(public_key, Path.PUBLIC_KEY_FILE)
-
-    # file_manager = FileManager()
-
-    ### Picture ###
-    # file_manager.encrypt_file('picture.png', 'encrypted_picture.bin')    
-    # file_manager.decrypt_file('encrypted_picture.bin', 'decrypted_picture.png')
-
-    ### Text ###
-    # file_manager.encrypt_file('message.txt', 'encrypted_message.bin')
-    # file_manager.decrypt_file('encrypted_message.bin', 'decrypted_message.txt')
-
-    ### Zip Archive ###
-    # file_manager.encrypt_file('saved_keys.zip', 'encrypted_saved_keys.bin')
-    # file_manager.decrypt_file('encrypted_saved_keys.bin', 'decrypted_saved_keys.zip')
-
-    ### Video ###
-    # file_manager.encrypt_file('video.mp4', 'encrypted_video.bin')
-    # file_manager.decrypt_file('encrypted_video.bin', 'decrypted_video.mp4')
- 
 if __name__ == "__main__":
-    main()
+    app = qtw.QApplication(sys.argv)
 
-
-
-
+    window = t.qt.center_widget(MainWindow())
+    window.show()
+    sys.exit(app.exec())

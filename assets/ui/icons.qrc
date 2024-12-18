@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="menu_icons">
+    <file>icons/decryption.png</file>
+    <file>icons/encryption.png</file>
+    <file>icons/question.png</file>
+    <file>icons/switch.png</file>
+  </qresource>
+  <qresource prefix="misc">
+    <file>icons/binary-code.png</file>
+  </qresource>
+  <qresource prefix="favicon">
+    <file>icons/maze.png</file>
+  </qresource>
+  <qresource prefix="windows_icons">
+    <file>icons/encrypt.png</file>
+  </qresource>
+</RCC>
