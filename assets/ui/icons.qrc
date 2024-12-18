@@ -6,12 +6,15 @@
     <file>icons/switch.png</file>
   </qresource>
   <qresource prefix="misc">
+    <file>icons/cyber_key.png</file>
     <file>icons/binary-code.png</file>
   </qresource>
   <qresource prefix="favicon">
     <file>icons/maze.png</file>
   </qresource>
   <qresource prefix="windows_icons">
+    <file>icons/next.png</file>
+    <file>icons/search.png</file>
     <file>icons/encrypt.png</file>
   </qresource>
 </RCC>

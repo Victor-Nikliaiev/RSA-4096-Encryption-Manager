@@ -103,6 +103,15 @@ class Ui_choose_file_window_ui(object):
             "	background-color: #00a3c8;\n"
             "}"
         )
+        icon1 = QIcon()
+        icon1.addFile(
+            ":/windows_icons/icons/next.png",
+            QSize(),
+            QIcon.Mode.Normal,
+            QIcon.State.Off,
+        )
+        self.next_button.setIcon(icon1)
+        self.next_button.setIconSize(QSize(28, 28))
 
         self.verticalLayout.addWidget(self.next_button)
 

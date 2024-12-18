@@ -135,6 +135,12 @@ QPushButton {
              <iconset resource="icons.qrc">
               <normaloff>:/menu_icons/icons/encryption.png</normaloff>:/menu_icons/icons/encryption.png</iconset>
             </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
            </widget>
           </item>
           <item>
@@ -159,6 +165,12 @@ QPushButton {
             <property name="icon">
              <iconset resource="icons.qrc">
               <normaloff>:/menu_icons/icons/decryption.png</normaloff>:/menu_icons/icons/decryption.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -187,6 +199,12 @@ QPushButton {
             <property name="icon">
              <iconset resource="icons.qrc">
               <normaloff>:/windows_icons/icons/encrypt.png</normaloff>:/windows_icons/icons/encrypt.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
             </property>
            </widget>
           </item>

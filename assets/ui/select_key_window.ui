@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KeyInputForm</class>
+ <widget class="QWidget" name="KeyInputForm">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>719</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>[PLACEHOLDER] | Select Key</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/favicon/icons/maze.png</normaloff>:/favicon/icons/maze.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: #263238;
+	color: rgb(172, 215, 245);
+}
+
+QLineEdit, QTextEdit {
+	background-color: rgb(50, 66, 74);
+	font-size: 18px;
+}
+
+QAbstractButton {
+	font-size: 19px
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QRadioButton" name="file_radio">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(172, 215, 245);</string>
+     </property>
+     <property name="text">
+      <string>Load Your Key from File [PLACEHOLDER]</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/windows_icons/icons/encrypt.png</normaloff>:/windows_icons/icons/encrypt.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="file_layout">
+     <item>
+      <widget class="QLineEdit" name="file_path_input">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 3px;</string>
+       </property>
+       <property name="placeholderText">
+        <string>Path to your key file...[PLACEHOLDER]</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="browse_button">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#browse_button {
+	background-color: #007d9c;
+	color: #005568;
+	font-size: 18px
+}
+
+#next_button:hover {
+	background-color: #00a3c8;
+}</string>
+       </property>
+       <property name="text">
+        <string>Browse...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/windows_icons/icons/search.png</normaloff>:/windows_icons/icons/search.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QRadioButton" name="text_radio">
+     <property name="text">
+      <string>Enter Your Key Manually [PLACEHOLDER]</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/windows_icons/icons/encrypt.png</normaloff>:/windows_icons/icons/encrypt.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="key_text_area">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 10px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter your key here...[PLACEHOLDER]</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="next_button">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#next_button {
+	background-color: #007d9c;
+	color: #005568;
+	font-size: 32px;
+}
+
+#next_button:hover {
+	background-color: #00a3c8;
+}</string>
+     </property>
+     <property name="text">
+      <string>Next</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/windows_icons/icons/next.png</normaloff>:/windows_icons/icons/next.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>toggle_input_mode()</slot>
+  <slot>browse_file()</slot>
+  <slot>handle_next()</slot>
+ </slots>
+</ui>

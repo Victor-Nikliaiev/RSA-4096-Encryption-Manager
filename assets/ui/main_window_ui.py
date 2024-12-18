@@ -177,6 +177,7 @@ class Ui_main_window(object):
         self.encrypt_button.setFont(font1)
         self.encrypt_button.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.encrypt_button.setIcon(icon1)
+        self.encrypt_button.setIconSize(QSize(30, 30))
 
         self.verticalLayout_2.addWidget(self.encrypt_button)
 
@@ -186,6 +187,7 @@ class Ui_main_window(object):
         self.decrypt_button.setFont(font1)
         self.decrypt_button.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.decrypt_button.setIcon(icon2)
+        self.decrypt_button.setIconSize(QSize(30, 30))
 
         self.verticalLayout_2.addWidget(self.decrypt_button)
 
@@ -196,6 +198,7 @@ class Ui_main_window(object):
         self.generate_keys_button.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.generate_keys_button.setStyleSheet("")
         self.generate_keys_button.setIcon(icon4)
+        self.generate_keys_button.setIconSize(QSize(30, 30))
 
         self.verticalLayout_2.addWidget(self.generate_keys_button)
 
