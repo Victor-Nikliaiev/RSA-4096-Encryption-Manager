@@ -19,6 +19,8 @@ class ProgressWindowScreen(qtw.QWidget, Ui_operation_progress_window):
 
         self.update_ui()
 
+        self.exit_without_dialog = False
+
         signal_manager.update_processed_bytes.connect(
             self.update_processed_bytes_handler
         )
@@ -79,7 +81,9 @@ class ProgressWindowScreen(qtw.QWidget, Ui_operation_progress_window):
         self.close()
 
     def closeEvent(self, event):
+
         if self.exit_without_dialog:
+            print("--Exit without dialog--")
             signal_manager.saved_data["save_main_window"].show()
             signal_manager.saved_data = {}
             event.accept()
