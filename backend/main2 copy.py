@@ -1,5 +1,5 @@
 from file_manager import FileManager
-from backend.key_manager.rsa_key_manager import RsaKeyManager
+from backend.rsa_key_manager import RsaKeyManager
 from backend.constants.constants import Path
 
 

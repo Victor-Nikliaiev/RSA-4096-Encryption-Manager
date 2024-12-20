@@ -27,6 +27,18 @@ class Tools:
             with open(file_path, "r") as f:
                 return f.read()
 
+        @staticmethod
+        def format_input_path(path):
+            file_path, file_name = os.path.split(path)
+
+            if len(file_path) > 30:
+                file_path = f"{file_path[:28]}..."
+
+            if len(file_name) > 30:
+                file_name = f"{file_name[:14]}...{file_name[-14:]}"
+
+            return os.path.join(file_path, file_name)
+
     class qt:
         @staticmethod
         def run_qt_widget(WidgetClass: qtc.QObject, centered=False):

@@ -1,6 +1,6 @@
 from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.hazmat.primitives import hashes
-from backend.key_manager.rsa_key_manager import RsaKeyManager
+from backend.rsa_key_manager import RsaKeyManager
 from cryptography.hazmat.primitives.asymmetric.rsa import RSAPublicKey, RSAPrivateKey
 from backend.constants.constants import Path
 import logging
@@ -13,15 +13,20 @@ class ChunkEncrypter:
     Class responsible for encrypting and decrypting chunks of data using RSA
     """
 
-    def __init__(self, key_manager: RsaKeyManager):
+    def __init__(
+        self,
+        key_manager=RsaKeyManager(),
+        public_key: RSAPublicKey = None,
+        private_key: RSAPrivateKey = None,
+    ):
         """
         Initializes a ChunkEncrypter instance with a specified key manager.
 
         :param key_manager: An instance of RsaKeyManager used for key management operations.
         """
         self.key_manager = key_manager
-        self._public_key = None
-        self._private_key = None
+        self._public_key = public_key
+        self._private_key = private_key
 
     @property
     def public_key(self) -> RSAPublicKey:

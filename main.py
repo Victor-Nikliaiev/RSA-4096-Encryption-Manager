@@ -6,8 +6,10 @@ from PySide6 import QtUiTools as qtu
 from PySide6.QtQuickWidgets import QQuickWidget
 
 from assets.ui import Ui_main_window
-from screens import ChooseFileEncryptWindow
+from assets.ui import GlowingLogo
+from screens import ChooseFileEncryptScreen
 from tools.toolkit import Tools as t
+from backend import signal_manager
 
 
 class MainWindow(qtw.QMainWindow, Ui_main_window):
@@ -21,17 +23,22 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
         self.actionEncrypt.triggered.connect(self.handle_encrypt)
 
     def setupQmlLogoAnimation(self):
-        qml_widget = QQuickWidget(self)
-        qml_widget.setSource(qtc.QUrl.fromLocalFile("assets/ui/animation.qml"))
-        qml_widget.setResizeMode(QQuickWidget.SizeRootObjectToView)
+        # qml_widget = QQuickWidget(self)
+        # qml_widget.setSource(qtc.QUrl.fromLocalFile("assets/ui/animation.qml"))
+        # qml_widget.setResizeMode(QQuickWidget.SizeRootObjectToView)
+
+        glowing_log = GlowingLogo()
+
         layout = qtw.QVBoxLayout(self.q_logo)
-        layout.addWidget(qml_widget)
+        layout.addWidget(glowing_log)
         self.q_logo.setLayout(layout)
 
     @qtc.Slot()
     def handle_encrypt(self):
         print("Encrypt button or menu clicked")
-        self.encrypt_window = t.qt.center_widget(ChooseFileEncryptWindow())
+        self.encrypt_window = t.qt.center_widget(ChooseFileEncryptScreen())
+        signal_manager.save_main_window.emit(self)
+        self.close()
         self.encrypt_window.show()
 
 

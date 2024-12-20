@@ -10,7 +10,7 @@ from PySide6.QtCore import Qt, QFileInfo, Signal
 
 import sys
 import os
-from backend import signal
+from backend import signal_manager
 
 
 class DragDropWidget(QFrame):
@@ -91,13 +91,13 @@ class DragDropWidget(QFrame):
         for file in files:
             if os.path.isdir(file):
                 self.file_name_label.setText(f"Only files are allowed!")
-                signal.update_next_button_status.emit(False)
+                signal_manager.update_next_button_status.emit(False)
                 self.file_ico_label.clear()
                 return
         self.file_path = files[0]
         if not self.file_path:
             self.file_name_label.setText("Dropped data isn't a file")
-            signal.update_next_button_status.emit(False)
+            signal_manager.update_next_button_status.emit(False)
             self.file_ico_label.clear()
             return
         file_name = os.path.basename(self.file_path)
@@ -118,8 +118,8 @@ class DragDropWidget(QFrame):
         self.file_name_label.setAlignment(Qt.AlignVCenter)
 
         if self.file_path:
-            signal.update_next_button_status.emit(True)
-            signal.file_dropped.emit(self.file_path)
+            signal_manager.update_next_button_status.emit(True)
+            signal_manager.file_dropped.emit(self.file_path)
 
 
 if __name__ == "__main__":

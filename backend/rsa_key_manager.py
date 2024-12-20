@@ -13,8 +13,7 @@ logging.basicConfig(level=logging.INFO)
 
 class RsaKeyManager:
 
-    @staticmethod
-    def generate_private_key():
+    def generate_private_key(self):
         """
         Generates a private RSA key for use with this key manager.
 
@@ -27,8 +26,7 @@ class RsaKeyManager:
             backend=default_backend(),
         )
 
-    @staticmethod
-    def generate_public_key(private_key):
+    def generate_public_key(self, private_key):
         """
         Generates a public RSA key from the given private key.
 
@@ -38,8 +36,9 @@ class RsaKeyManager:
 
         return private_key.public_key()
 
-    @staticmethod
-    def save_private_key_to_file(private_key, pem_file_path, password: str = None):
+    def save_private_key_to_file(
+        self, private_key, pem_file_path, password: str = None
+    ):
         """
         Saves the given private RSA key to a specified PEM file path, optionally encrypting it with a password.
 
@@ -62,8 +61,7 @@ class RsaKeyManager:
             private_file.write(private_pem)
         logging.info(f"Private key saved to {pem_file_path}")
 
-    @staticmethod
-    def save_public_key_to_file(public_key, pem_file_path):
+    def save_public_key_to_file(self, public_key, pem_file_path):
         """
         Saves the given public RSA key to a specified PEM file path.
 
@@ -79,8 +77,7 @@ class RsaKeyManager:
             public_file.write(public_pem)
         logging.info(f"Public key saved to {pem_file_path}")
 
-    @staticmethod
-    def load_private_key_from_file(pem_file_path, password: str = None):
+    def load_private_key_from_file(self, pem_file_path, password: str = None):
         """
         Loads a private RSA key from a specified PEM file path, optionally decrypting it with a password.
 
@@ -104,8 +101,7 @@ class RsaKeyManager:
         except Exception as e:
             logging.error(f"Failed to load private key: {e}")
 
-    @staticmethod
-    def load_public_key_from_file(pem_file_path):
+    def load_public_key_from_file(self, pem_file_path):
         """
         Loads a public RSA key from a specified PEM file path.
 
@@ -127,8 +123,7 @@ class RsaKeyManager:
                 f"Failed to process public key. Please check file format and try again.\n\nAdditional Info:\n {e}"
             )
 
-    @staticmethod
-    def serialize_public_key(public_key: str):
+    def serialize_public_key(self, public_key: str):
         try:
             serialized_public_key = serialization.load_pem_public_key(
                 public_key.encode("utf-8"), backend=default_backend()

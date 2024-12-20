@@ -1,11 +1,15 @@
 from PySide6.QtWidgets import QWidget
+from PySide6 import QtCore as qtc
 from assets.ui import Ui_choose_file_window_ui
 from components import DragDropWidget
-from backend import signal
-from PySide6 import QtCore as qtc
+from backend import signal_manager
+from tools.toolkit import Tools as t
+
+# from screens import ChoosePublicKeyScreen
+from screens.choose_public_key_screen import ChoosePublicKeyScreen
 
 
-class ChooseFileEncryptWindow(QWidget, Ui_choose_file_window_ui):
+class ChooseFileEncryptScreen(QWidget, Ui_choose_file_window_ui):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
@@ -20,19 +24,18 @@ class ChooseFileEncryptWindow(QWidget, Ui_choose_file_window_ui):
 
         self.setWindowTitle("Encryption | Choose a file")
 
-        signal.file_dropped.connect(self.get_file_path)
-        signal.update_next_button_status.connect(self.update_next_button_status)
+        signal_manager.update_next_button_status.connect(self.update_next_button_status)
         self.next_button.clicked.connect(self.handle_click_next)
 
     @qtc.Slot()
     def handle_click_next(self):
-        print("Next was clicked...")
-        print(f"dropped one: {self.file_path}")
-
-    @qtc.Slot(str)
-    def get_file_path(self, file_path):
-        self.file_path = file_path
+        self.encrypt_window = t.qt.center_widget(ChoosePublicKeyScreen())
+        self.encrypt_window.show()
+        self.destroy()
 
     @qtc.Slot(bool)
     def update_next_button_status(self, status):
         self.next_button.setEnabled(status)
+
+    def closeEvent(self, event):
+        signal_manager.saved_data.get("save_main_window").show()

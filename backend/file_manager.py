@@ -1,28 +1,40 @@
 from typing import Callable
-from chunk_encrypter import ChunkEncrypter
-from backend.key_manager.rsa_key_manager import RsaKeyManager
-from backend.constants.constants import Size
+from backend import signal_manager
+from backend.chunk_encrypter import ChunkEncrypter
+from backend.constants import Size
+from cryptography.hazmat.primitives.asymmetric.rsa import RSAPublicKey
 import logging
+
+
+from PySide6 import QtCore as qtc
+from tools.toolkit import Tools as t
+
 
 logging.basicConfig(level=logging.INFO)
 
 
-class FileManager:
+class FileManager(qtc.QObject):
     def __init__(self):
         """
         Initializes FileManager with a ChunkEncrypter instance for encryption and decryption operations.
 
         :return: FileManager instance
         """
-        self.chunk_encrypter = ChunkEncrypter(RsaKeyManager())
+        super().__init__()
 
-    def encrypt_file(self, input_file_path: str, output_file_path: str):
+        self.chunk_encrypter: ChunkEncrypter
+
+    @qtc.Slot(str, str, RSAPublicKey)
+    def encrypt_file(self, input_file_path: str, output_file_path: str, public_key):
         """
         Encrypts a given file using the ChunkEncrypter instance, writing the encrypted bytes to another file.
 
         :param input_file_path: The path to the file to be encrypted
         :param output_file_path: The path to the file where the encrypted bytes will be written
         """
+
+        self.chunk_encrypter = ChunkEncrypter(public_key=public_key)
+
         self._process_file(
             input_file_path,
             output_file_path,
@@ -30,13 +42,15 @@ class FileManager:
             Size.ENCRYPTION_CHUNK,
         )
 
-    def decrypt_file(self, input_file_path: str, output_file_path: str):
+    def decrypt_file(self, input_file_path: str, output_file_path: str, private_key):
         """
         Decrypts a given file using the ChunkEncrypter instance, writing the decrypted bytes to another file.
 
         :param input_file_path: The path to the file to be decrypted
         :param output_file_path: The path to the file where the decrypted bytes will be written
         """
+
+        self.chunk_encrypter = ChunkEncrypter(private_key=private_key)
 
         self._process_file(
             input_file_path,
@@ -66,10 +80,15 @@ class FileManager:
             ) as outfile:
                 while True:
                     chunk = infile.read(chunk_size)
+
                     if not chunk:  # If end of file
                         break
 
                     processed_chunk = chunk_handler(chunk)
                     outfile.write(processed_chunk)
+                    signal_manager.update_processed_bytes.emit(len(chunk))
+
+                signal_manager.operation_completed.emit()
+
         except Exception as e:
             logging.error(f"Error processing file {input_file_path}: {e}")

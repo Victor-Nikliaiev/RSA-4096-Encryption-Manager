@@ -13,6 +13,9 @@
     <file>icons/maze.png</file>
   </qresource>
   <qresource prefix="windows_icons">
+    <file>icons/encrypt_file.png</file>
+    <file>icons/ssd-card.png</file>
+    <file>icons/file.png</file>
     <file>icons/next.png</file>
     <file>icons/search.png</file>
     <file>icons/encrypt.png</file>
