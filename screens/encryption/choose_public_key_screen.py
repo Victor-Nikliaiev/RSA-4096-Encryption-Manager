@@ -9,7 +9,7 @@ from assets.ui import Ui_KeyInputForm
 
 # from backend.key_manager import load_public_key_from_file, serialize_public_key
 from backend import signal_manager
-from screens.save_file_encrypt_screen import SaveFileEncryptScreen
+from screens.encryption.save_file_encrypt_screen import SaveFileEncryptScreen
 from tools.toolkit import Tools as t
 from backend import RsaKeyManager
 
@@ -40,6 +40,49 @@ class ChoosePublicKeyScreen(qtw.QWidget, Ui_KeyInputForm):
             "Browse for a public key file (the path will be generated automatically)..."
         )
         self.key_text_area.setPlaceholderText("Enter your public key here...")
+        self.disable_password_protection()
+
+    def disable_password_protection(self):
+        # Public keys are not password protected
+
+        group_box = self.password_group_layout
+
+        # Get the main layout of the group box
+        main_layout = group_box.layout()
+
+        if main_layout:
+            # Iterate through all items in the layout (removes nested layouts as well)
+            while main_layout.count():
+                item = main_layout.takeAt(0)
+                widget = item.widget()
+
+                # If it's a widget, delete it
+                if widget is not None:
+                    widget.deleteLater()
+
+                # If it's a layout, recursively remove its widgets
+                elif item.layout() is not None:
+                    self.delete_layout(
+                        item.layout()
+                    )  # Recursively delete nested layouts
+                del item  # Delete the layout item
+
+        # After all layouts and widgets are removed, delete the group box itself
+        group_box.setParent(None)
+        group_box.deleteLater()
+
+    def delete_layout(self, layout):
+        """Helper function to delete a layout and its contents."""
+        while layout.count():
+            item = layout.takeAt(0)
+            widget = item.widget()
+
+            if widget is not None:
+                widget.deleteLater()
+            elif item.layout() is not None:
+                self.delete_layout(item.layout())  # Recursively delete nested layouts
+
+            del item  # Delete the layout item
 
     def toggle_input_mode(self):
         if self.file_radio.isChecked():
@@ -98,7 +141,6 @@ class ChoosePublicKeyScreen(qtw.QWidget, Ui_KeyInputForm):
         self.process_public_key()
 
     def validate_public_key(self, key: str) -> bool:
-        # Replace this placeholder logic with actual key validation
         return "BEGIN PUBLIC KEY" in key and "END PUBLIC KEY" in key
 
     def process_public_key(self):

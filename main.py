@@ -7,7 +7,8 @@ from PySide6.QtQuickWidgets import QQuickWidget
 
 from assets.ui import Ui_main_window
 from assets.ui import GlowingLogo
-from screens import ChooseFileEncryptScreen
+from screens.encryption import ChooseFileEncryptScreen
+from screens.decryption import ChooseFileDecryptScreen
 from tools.toolkit import Tools as t
 from backend import signal_manager
 
@@ -16,13 +17,15 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.setupQmlLogoAnimation()
+        self.setupWebLogoAnimation()
 
         self.actionExit.triggered.connect(qtw.QApplication.quit)
         self.encrypt_button.clicked.connect(self.handle_encrypt)
         self.actionEncrypt.triggered.connect(self.handle_encrypt)
+        self.decrypt_button.clicked.connect(self.handle_decrypt)
+        self.actionDecrypt.triggered.connect(self.handle_decrypt)
 
-    def setupQmlLogoAnimation(self):
+    def setupWebLogoAnimation(self):
         # qml_widget = QQuickWidget(self)
         # qml_widget.setSource(qtc.QUrl.fromLocalFile("assets/ui/animation.qml"))
         # qml_widget.setResizeMode(QQuickWidget.SizeRootObjectToView)
@@ -40,6 +43,14 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
         signal_manager.save_main_window.emit(self)
         self.close()
         self.encrypt_window.show()
+
+    @qtc.Slot()
+    def handle_decrypt(self):
+        print("Decrypt button or menu clicked")
+        self.decrypt_window = t.qt.center_widget(ChooseFileDecryptScreen())
+        signal_manager.save_main_window.emit(self)
+        self.close()
+        self.decrypt_window.show()
 
 
 if __name__ == "__main__":

@@ -2,11 +2,15 @@ from typing import Callable
 from backend import signal_manager
 from backend.chunk_encrypter import ChunkEncrypter
 from backend.constants import Size
-from cryptography.hazmat.primitives.asymmetric.rsa import RSAPublicKey
+from cryptography.hazmat.primitives.asymmetric.rsa import RSAPublicKey, RSAPrivateKey
 import logging
 
 
 from PySide6 import QtCore as qtc
+
+from PySide6 import QtWidgets as qtw
+
+
 from tools.toolkit import Tools as t
 
 
@@ -14,6 +18,7 @@ logging.basicConfig(level=logging.INFO)
 
 
 class FileManager(qtc.QObject):
+
     def __init__(self):
         """
         Initializes FileManager with a ChunkEncrypter instance for encryption and decryption operations.
@@ -23,6 +28,15 @@ class FileManager(qtc.QObject):
         super().__init__()
 
         self.chunk_encrypter: ChunkEncrypter
+        self._stop_flag = False
+
+        signal_manager.stop_process.connect(
+            self.stop_process_request, qtc.Qt.DirectConnection
+        )
+
+    @qtc.Slot()
+    def stop_process_request(self):
+        self._stop_flag = True
 
     @qtc.Slot(str, str, RSAPublicKey)
     def encrypt_file(self, input_file_path: str, output_file_path: str, public_key):
@@ -42,6 +56,7 @@ class FileManager(qtc.QObject):
             Size.ENCRYPTION_CHUNK,
         )
 
+    @qtc.Slot(str, str, RSAPrivateKey)
     def decrypt_file(self, input_file_path: str, output_file_path: str, private_key):
         """
         Decrypts a given file using the ChunkEncrypter instance, writing the decrypted bytes to another file.
@@ -79,6 +94,9 @@ class FileManager(qtc.QObject):
                 output_file_path, "wb"
             ) as outfile:
                 while True:
+                    if self._stop_flag:
+                        print("Process stopped by user.")
+                        return
                     chunk = infile.read(chunk_size)
 
                     if not chunk:  # If end of file
@@ -92,3 +110,7 @@ class FileManager(qtc.QObject):
 
         except Exception as e:
             logging.error(f"Error processing file {input_file_path}: {e}")
+            # qtw.QMessageBox.critical(
+            #     None, "Error", f"Error processing file: {input_file_path}, {e}"
+            # )
+            signal_manager.critical_error.emit(input_file_path, str(e))

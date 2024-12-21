@@ -5,11 +5,10 @@ from components import DragDropWidget
 from backend import signal_manager
 from tools.toolkit import Tools as t
 
-# from screens import ChoosePublicKeyScreen
-from screens.choose_public_key_screen import ChoosePublicKeyScreen
+from screens.decryption.choose_private_key_screen import ChoosePrivateKeyScreen
 
 
-class ChooseFileEncryptScreen(QWidget, Ui_choose_file_window_ui):
+class ChooseFileDecryptScreen(QWidget, Ui_choose_file_window_ui):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
@@ -22,15 +21,15 @@ class ChooseFileEncryptScreen(QWidget, Ui_choose_file_window_ui):
         parent_layout.insertWidget(index, self.drop_and_drag_widget)
         placeholder_widget.hide()
 
-        self.setWindowTitle("Encryption | Choose a file")
+        self.setWindowTitle("Decryption | Choose a file")
 
         signal_manager.update_next_button_status.connect(self.update_next_button_status)
         self.next_button.clicked.connect(self.handle_click_next)
 
     @qtc.Slot()
     def handle_click_next(self):
-        self.encrypt_window = t.qt.center_widget(ChoosePublicKeyScreen())
-        self.encrypt_window.show()
+        self.decrypt_window = t.qt.center_widget(ChoosePrivateKeyScreen())
+        self.decrypt_window.show()
         self.destroy()
 
     @qtc.Slot(bool)

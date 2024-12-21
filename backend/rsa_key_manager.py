@@ -97,9 +97,11 @@ class RsaKeyManager:
                 logging.info(f"Private key loaded from {pem_file_path}")
                 return private_key
         except FileNotFoundError:
-            logging.error(f"Private key file not found: {pem_file_path}")
+            raise FileNotFoundError(f"Private key file not found: {pem_file_path}")
         except Exception as e:
-            logging.error(f"Failed to load private key: {e}")
+            raise Exception(
+                f"Failed to process private key. Please check file format and try again.\n\nAdditional Info:\n {e}"
+            )
 
     def load_public_key_from_file(self, pem_file_path):
         """
@@ -133,3 +135,12 @@ class RsaKeyManager:
             raise Exception(
                 f"Failed to serialize public key, most likely key was corrupted, or you made a mistake, when provided the key.\nPlease check your input, and try again.\n\nAdditional Info:\n {e}"
             )
+
+    def serialize_private_key(self, private_key: str, password: str):
+        if password is not None:
+            password = password.encode("utf-8")
+
+        serialized_private_key = serialization.load_pem_private_key(
+            private_key.encode("utf-8"), password=password, backend=default_backend()
+        )
+        return serialized_private_key

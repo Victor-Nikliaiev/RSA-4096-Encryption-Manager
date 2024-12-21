@@ -54,7 +54,16 @@ class Ui_operation_progress_window(object):
     def setupUi(self, operation_progress_window):
         if not operation_progress_window.objectName():
             operation_progress_window.setObjectName("operation_progress_window")
-        operation_progress_window.resize(501, 200)
+        operation_progress_window.resize(510, 209)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(
+            operation_progress_window.sizePolicy().hasHeightForWidth()
+        )
+        operation_progress_window.setSizePolicy(sizePolicy)
+        operation_progress_window.setMinimumSize(QSize(510, 209))
+        operation_progress_window.setMaximumSize(QSize(510, 209))
         operation_progress_window.setCursor(QCursor(Qt.CursorShape.BusyCursor))
         icon = QIcon()
         icon.addFile(

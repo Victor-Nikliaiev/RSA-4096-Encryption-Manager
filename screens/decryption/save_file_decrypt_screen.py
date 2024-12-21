@@ -6,12 +6,12 @@ from PySide6 import QtGui as qtg
 from PySide6 import QtUiTools as qtu
 from assets.ui import Ui_SaveFileForm
 from backend import signal_manager
-from screens.progress_window_screen import ProgressWindowScreen
+from screens.decryption.decryption_progress_window_screen import ProgressWindowScreen
 from tools.toolkit import Tools as t
 import os
 
 
-class SaveFileEncryptScreen(qtw.QWidget, Ui_SaveFileForm):
+class SaveFileDecryptScreen(qtw.QWidget, Ui_SaveFileForm):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
@@ -21,7 +21,7 @@ class SaveFileEncryptScreen(qtw.QWidget, Ui_SaveFileForm):
         self.start_button.clicked.connect(self.start_button_handler)
 
     def update_ui(self):
-        self.setWindowTitle("Encryption | Save a file")
+        self.setWindowTitle("Decryption | Save a file")
 
         if signal_manager.saved_data.get("file_dropped"):
             self.dropped_file_path = signal_manager.saved_data["file_dropped"]
@@ -31,8 +31,12 @@ class SaveFileEncryptScreen(qtw.QWidget, Ui_SaveFileForm):
 
     def save_file_dialog(self):
         specified_file_name = os.path.split(self.dropped_file_path)[1]
+        if "_encrypted.bin" in specified_file_name:
+            specified_file_name = specified_file_name.replace("_encrypted.bin", "")
+
         base_name = os.path.splitext(specified_file_name)[0]
-        default_filename = f"{base_name}_encrypted.bin"
+        extension = os.path.splitext(specified_file_name)[1]
+        default_filename = f"{base_name}_decrypted{extension}"
 
         file_path, _ = qtw.QFileDialog.getSaveFileName(
             self, "Save File", default_filename, "Binary Files (*.bin);;All Files (*)"

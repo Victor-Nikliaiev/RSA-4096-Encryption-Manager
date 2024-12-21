@@ -36,9 +36,56 @@ QLineEdit, QTextEdit {
 
 QAbstractButton {
 	font-size: 19px
+}
+
+QLabel, QGroupBox {
+	font-size: 18px;
 }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="password_group_layout">
+     <property name="title">
+      <string>Key Access Control</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QCheckBox" name="is_password_protected_cb">
+        <property name="text">
+         <string>Private key is password protected</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="password_form_layout">
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="password_lineEdit">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::EchoMode::Password</enum>
+          </property>
+          <property name="placeholderText">
+           <string>Enter key password here...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="text">
+           <string>Enter your password:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
    <item>
     <widget class="QRadioButton" name="file_radio">
      <property name="styleSheet">

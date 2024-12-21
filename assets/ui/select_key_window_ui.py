@@ -42,7 +42,11 @@ from PySide6.QtGui import (
 )
 from PySide6.QtWidgets import (
     QApplication,
+    QCheckBox,
+    QFormLayout,
+    QGroupBox,
     QHBoxLayout,
+    QLabel,
     QLineEdit,
     QPushButton,
     QRadioButton,
@@ -79,10 +83,44 @@ class Ui_KeyInputForm(object):
             "\n"
             "QAbstractButton {\n"
             "	font-size: 19px\n"
+            "}\n"
+            "\n"
+            "QLabel, QGroupBox {\n"
+            "	font-size: 18px;\n"
             "}"
         )
         self.verticalLayout = QVBoxLayout(KeyInputForm)
         self.verticalLayout.setObjectName("verticalLayout")
+        self.password_group_layout = QGroupBox(KeyInputForm)
+        self.password_group_layout.setObjectName("password_group_layout")
+        self.verticalLayout_2 = QVBoxLayout(self.password_group_layout)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.is_password_protected_cb = QCheckBox(self.password_group_layout)
+        self.is_password_protected_cb.setObjectName("is_password_protected_cb")
+
+        self.verticalLayout_2.addWidget(self.is_password_protected_cb)
+
+        self.password_form_layout = QFormLayout()
+        self.password_form_layout.setObjectName("password_form_layout")
+        self.password_lineEdit = QLineEdit(self.password_group_layout)
+        self.password_lineEdit.setObjectName("password_lineEdit")
+        self.password_lineEdit.setEnabled(False)
+        self.password_lineEdit.setEchoMode(QLineEdit.EchoMode.Password)
+
+        self.password_form_layout.setWidget(
+            0, QFormLayout.FieldRole, self.password_lineEdit
+        )
+
+        self.label = QLabel(self.password_group_layout)
+        self.label.setObjectName("label")
+        self.label.setEnabled(True)
+
+        self.password_form_layout.setWidget(0, QFormLayout.LabelRole, self.label)
+
+        self.verticalLayout_2.addLayout(self.password_form_layout)
+
+        self.verticalLayout.addWidget(self.password_group_layout)
+
         self.file_radio = QRadioButton(KeyInputForm)
         self.file_radio.setObjectName("file_radio")
         self.file_radio.setStyleSheet("color: rgb(172, 215, 245);")
@@ -191,6 +229,22 @@ class Ui_KeyInputForm(object):
             QCoreApplication.translate(
                 "KeyInputForm", "[PLACEHOLDER] | Select Key", None
             )
+        )
+        self.password_group_layout.setTitle(
+            QCoreApplication.translate("KeyInputForm", "Key Access Control", None)
+        )
+        self.is_password_protected_cb.setText(
+            QCoreApplication.translate(
+                "KeyInputForm", "Private key is password protected", None
+            )
+        )
+        self.password_lineEdit.setPlaceholderText(
+            QCoreApplication.translate(
+                "KeyInputForm", "Enter key password here...", None
+            )
+        )
+        self.label.setText(
+            QCoreApplication.translate("KeyInputForm", "Enter your password:", None)
         )
         self.file_radio.setText(
             QCoreApplication.translate(
