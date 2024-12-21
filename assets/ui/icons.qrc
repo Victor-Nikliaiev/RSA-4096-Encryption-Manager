@@ -13,6 +13,7 @@
     <file>icons/maze.png</file>
   </qresource>
   <qresource prefix="windows_icons">
+    <file>icons/magic-wand.png</file>
     <file>icons/encrypt_file.png</file>
     <file>icons/ssd-card.png</file>
     <file>icons/file.png</file>

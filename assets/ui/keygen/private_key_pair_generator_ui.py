@@ -1,0 +1,350 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'private_key_pair_generator.ui'
+##
+## Created by: Qt User Interface Compiler version 6.8.1
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (
+    QCoreApplication,
+    QDate,
+    QDateTime,
+    QLocale,
+    QMetaObject,
+    QObject,
+    QPoint,
+    QRect,
+    QSize,
+    QTime,
+    QUrl,
+    Qt,
+)
+from PySide6.QtGui import (
+    QBrush,
+    QColor,
+    QConicalGradient,
+    QCursor,
+    QFont,
+    QFontDatabase,
+    QGradient,
+    QIcon,
+    QImage,
+    QKeySequence,
+    QLinearGradient,
+    QPainter,
+    QPalette,
+    QPixmap,
+    QRadialGradient,
+    QTransform,
+)
+from PySide6.QtWidgets import (
+    QApplication,
+    QCheckBox,
+    QFrame,
+    QGroupBox,
+    QHBoxLayout,
+    QLabel,
+    QLineEdit,
+    QPushButton,
+    QSizePolicy,
+    QSpacerItem,
+    QVBoxLayout,
+    QWidget,
+)
+import assets.ui.icons_rc
+
+
+class Ui_PrivateKeyPairGenerator(object):
+    def setupUi(self, PrivateKeyPairGenerator):
+        if not PrivateKeyPairGenerator.objectName():
+            PrivateKeyPairGenerator.setObjectName("PrivateKeyPairGenerator")
+        PrivateKeyPairGenerator.setEnabled(True)
+        PrivateKeyPairGenerator.resize(719, 577)
+        icon = QIcon()
+        icon.addFile(
+            ":/favicon/icons/maze.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off
+        )
+        PrivateKeyPairGenerator.setWindowIcon(icon)
+        PrivateKeyPairGenerator.setWindowOpacity(1.000000000000000)
+        PrivateKeyPairGenerator.setStyleSheet(
+            "QWidget {\n"
+            "	background-color: #263238;\n"
+            "	color: rgb(172, 215, 245);\n"
+            "}\n"
+            "\n"
+            "QLineEdit {\n"
+            "	background-color: rgb(50, 66, 74);\n"
+            "	font-size: 18px;\n"
+            "	padding: 10px;\n"
+            "}\n"
+            "\n"
+            "QAbstractButton {\n"
+            "	font-size: 19px\n"
+            "}"
+        )
+        self.verticalLayout_4 = QVBoxLayout(PrivateKeyPairGenerator)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.verticalSpacer_3 = QSpacerItem(
+            20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding
+        )
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_3)
+
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.label = QLabel(PrivateKeyPairGenerator)
+        self.label.setObjectName("label")
+        self.label.setStyleSheet(
+            "background-color: rgb(38, 50, 56);\n"
+            "color: rgb(49, 169, 196);\n"
+            "font-size: 25px;\n"
+            "font-weight: bold;"
+        )
+        self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.horizontalLayout_3.addWidget(self.label)
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_3)
+
+        self.verticalSpacer = QSpacerItem(
+            20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding
+        )
+
+        self.verticalLayout_4.addItem(self.verticalSpacer)
+
+        self.groupBox_2 = QGroupBox(PrivateKeyPairGenerator)
+        self.groupBox_2.setObjectName("groupBox_2")
+        self.verticalLayout = QVBoxLayout(self.groupBox_2)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.verticalSpacer_5 = QSpacerItem(
+            20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding
+        )
+
+        self.verticalLayout.addItem(self.verticalSpacer_5)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.pushButton_2 = QPushButton(self.groupBox_2)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_2.setEnabled(False)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_2.sizePolicy().hasHeightForWidth())
+        self.pushButton_2.setSizePolicy(sizePolicy)
+        self.pushButton_2.setMinimumSize(QSize(0, 60))
+        self.pushButton_2.setStyleSheet(
+            "background-color: rgb(38, 50, 56);\n"
+            "color: rgb(83, 106, 117);\n"
+            "font-size: 25px;"
+        )
+        icon1 = QIcon()
+        icon1.addFile(
+            ":/windows_icons/icons/encrypt.png",
+            QSize(),
+            QIcon.Mode.Normal,
+            QIcon.State.Off,
+        )
+        self.pushButton_2.setIcon(icon1)
+        self.pushButton_2.setIconSize(QSize(40, 40))
+        self.pushButton_2.setFlat(True)
+
+        self.horizontalLayout_2.addWidget(self.pushButton_2)
+
+        self.verticalLayout.addLayout(self.horizontalLayout_2)
+
+        self.verticalSpacer_6 = QSpacerItem(
+            20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding
+        )
+
+        self.verticalLayout.addItem(self.verticalSpacer_6)
+
+        self.file_layout_2 = QHBoxLayout()
+        self.file_layout_2.setObjectName("file_layout_2")
+        self.priv_key_path_le = QLineEdit(self.groupBox_2)
+        self.priv_key_path_le.setObjectName("priv_key_path_le")
+        self.priv_key_path_le.setEnabled(False)
+        self.priv_key_path_le.setMinimumSize(QSize(0, 50))
+        self.priv_key_path_le.setStyleSheet("border-radius: 3px;")
+
+        self.file_layout_2.addWidget(self.priv_key_path_le)
+
+        self.priv_key_select_btn = QPushButton(self.groupBox_2)
+        self.priv_key_select_btn.setObjectName("priv_key_select_btn")
+        self.priv_key_select_btn.setMinimumSize(QSize(120, 50))
+        self.priv_key_select_btn.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.priv_key_select_btn.setStyleSheet(
+            "QPushButton {\n"
+            "	background-color: #007d9c;\n"
+            "	color: #005568;\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "	background-color: #00a3c8;\n"
+            "}"
+        )
+        icon2 = QIcon()
+        icon2.addFile(
+            ":/windows_icons/icons/next.png",
+            QSize(),
+            QIcon.Mode.Normal,
+            QIcon.State.Off,
+        )
+        self.priv_key_select_btn.setIcon(icon2)
+        self.priv_key_select_btn.setIconSize(QSize(30, 30))
+
+        self.file_layout_2.addWidget(self.priv_key_select_btn)
+
+        self.verticalLayout.addLayout(self.file_layout_2)
+
+        self.verticalSpacer_4 = QSpacerItem(
+            20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding
+        )
+
+        self.verticalLayout.addItem(self.verticalSpacer_4)
+
+        self.line = QFrame(self.groupBox_2)
+        self.line.setObjectName("line")
+        self.line.setEnabled(False)
+        self.line.setFrameShape(QFrame.Shape.HLine)
+        self.line.setFrameShadow(QFrame.Shadow.Sunken)
+
+        self.verticalLayout.addWidget(self.line)
+
+        self.password_cb = QCheckBox(self.groupBox_2)
+        self.password_cb.setObjectName("password_cb")
+
+        self.verticalLayout.addWidget(self.password_cb)
+
+        self.password_le = QLineEdit(self.groupBox_2)
+        self.password_le.setObjectName("password_le")
+        self.password_le.setEnabled(False)
+        self.password_le.setMinimumSize(QSize(0, 50))
+        self.password_le.setStyleSheet("border-radius: 3px;")
+        self.password_le.setEchoMode(QLineEdit.EchoMode.Password)
+
+        self.verticalLayout.addWidget(self.password_le)
+
+        self.key_match_lb = QLabel(self.groupBox_2)
+        self.key_match_lb.setObjectName("key_match_lb")
+        self.key_match_lb.setStyleSheet("color: rgb(182, 186, 233)")
+
+        self.verticalLayout.addWidget(self.key_match_lb)
+
+        self.password_repeat_le = QLineEdit(self.groupBox_2)
+        self.password_repeat_le.setObjectName("password_repeat_le")
+        self.password_repeat_le.setEnabled(False)
+        self.password_repeat_le.setMinimumSize(QSize(0, 50))
+        self.password_repeat_le.setStyleSheet("border-radius: 3px;")
+        self.password_repeat_le.setEchoMode(QLineEdit.EchoMode.Password)
+
+        self.verticalLayout.addWidget(self.password_repeat_le)
+
+        self.verticalLayout_4.addWidget(self.groupBox_2)
+
+        self.verticalSpacer_2 = QSpacerItem(
+            20, 60, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding
+        )
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+
+        self.generate_btn = QPushButton(PrivateKeyPairGenerator)
+        self.generate_btn.setObjectName("generate_btn")
+        self.generate_btn.setEnabled(False)
+        self.generate_btn.setMinimumSize(QSize(0, 100))
+        self.generate_btn.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.generate_btn.setStyleSheet(
+            "QPushButton {\n"
+            "	background-color: #007d9c;\n"
+            "	color: #005568;\n"
+            "	font-size: 32px;\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "	background-color: #00a3c8;\n"
+            "}"
+        )
+        icon3 = QIcon()
+        icon3.addFile(
+            ":/windows_icons/icons/magic-wand.png",
+            QSize(),
+            QIcon.Mode.Normal,
+            QIcon.State.Off,
+        )
+        self.generate_btn.setIcon(icon3)
+        self.generate_btn.setIconSize(QSize(35, 35))
+
+        self.verticalLayout_4.addWidget(self.generate_btn)
+
+        QWidget.setTabOrder(self.priv_key_path_le, self.priv_key_select_btn)
+        QWidget.setTabOrder(self.priv_key_select_btn, self.password_cb)
+        QWidget.setTabOrder(self.password_cb, self.password_le)
+        QWidget.setTabOrder(self.password_le, self.password_repeat_le)
+        QWidget.setTabOrder(self.password_repeat_le, self.generate_btn)
+        QWidget.setTabOrder(self.generate_btn, self.pushButton_2)
+
+        self.retranslateUi(PrivateKeyPairGenerator)
+
+        QMetaObject.connectSlotsByName(PrivateKeyPairGenerator)
+
+    # setupUi
+
+    def retranslateUi(self, PrivateKeyPairGenerator):
+        PrivateKeyPairGenerator.setWindowTitle(
+            QCoreApplication.translate(
+                "PrivateKeyPairGenerator",
+                "Key Generation | Select location to generate your private key",
+                None,
+            )
+        )
+        self.label.setText(
+            QCoreApplication.translate(
+                "PrivateKeyPairGenerator",
+                "Select location to generate your private key:",
+                None,
+            )
+        )
+        self.groupBox_2.setTitle("")
+        self.pushButton_2.setText(
+            QCoreApplication.translate(
+                "PrivateKeyPairGenerator",
+                "  Select location to save your private key:",
+                None,
+            )
+        )
+        self.priv_key_path_le.setPlaceholderText(
+            QCoreApplication.translate(
+                "PrivateKeyPairGenerator",
+                'Click "Select" to choose location to save your private key',
+                None,
+            )
+        )
+        self.priv_key_select_btn.setText(
+            QCoreApplication.translate("PrivateKeyPairGenerator", " Select", None)
+        )
+        self.password_cb.setText(
+            QCoreApplication.translate(
+                "PrivateKeyPairGenerator", "Encrypt by password?", None
+            )
+        )
+        self.password_le.setPlaceholderText(
+            QCoreApplication.translate(
+                "PrivateKeyPairGenerator",
+                "\u2191 Checkbox and enter your password for private key here...",
+                None,
+            )
+        )
+        self.key_match_lb.setText("")
+        self.password_repeat_le.setPlaceholderText(
+            QCoreApplication.translate(
+                "PrivateKeyPairGenerator", "Repeat your password here...", None
+            )
+        )
+        self.generate_btn.setText(
+            QCoreApplication.translate("PrivateKeyPairGenerator", "Generate", None)
+        )
+
+    # retranslateUi

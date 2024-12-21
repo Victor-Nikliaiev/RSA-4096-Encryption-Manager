@@ -20,6 +20,8 @@ class _SignalManager(qtc.QObject):
     current_window = qtc.Signal(qtc.QObject)
     critical_error = qtc.Signal(str, str)
 
+    selected_option = qtc.Signal(object)
+
     saved_data = {}
 
     @qtc.Slot(qtw.QMainWindow)
@@ -53,7 +55,7 @@ class _SignalManager(qtc.QObject):
         self.saved_data["current_window"] = window
 
     @qtc.Slot(str, str)
-    def critical_error_handler(self, input_file_path: str, error_message: str):
+    def _critical_error_handler(self, input_file_path: str, error_message: str):
         qtw.QMessageBox.critical(
             None, "Error", f"Error processing file: {input_file_path}, {error_message}"
         )
@@ -62,6 +64,11 @@ class _SignalManager(qtc.QObject):
         # print("window:", window)
         window.exit_without_dialog = True
         window.close()
+
+    @qtc.Slot(object)
+    def _selected_option_handler(self, option):
+        self.saved_data["selected_option"] = option
+        print(option)
 
 
 signal_manager = _SignalManager()
@@ -78,4 +85,6 @@ signal_manager.update_processed_bytes.connect(
 )
 
 signal_manager.current_window.connect(signal_manager._current_window_handler)
-signal_manager.critical_error.connect(signal_manager.critical_error_handler)
+signal_manager.critical_error.connect(signal_manager._critical_error_handler)
+
+signal_manager.selected_option.connect(signal_manager._selected_option_handler)
