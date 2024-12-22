@@ -1,13 +1,5 @@
-import os
-import sys
-from PySide6 import QtCore as qtc
 from PySide6 import QtWidgets as qtw
-from PySide6 import QtGui as qtg
-from PySide6 import QtUiTools as qtu
 from assets.ui import Ui_KeyInputForm
-
-
-# from backend.key_manager import load_public_key_from_file, serialize_public_key
 from backend import signal_manager
 from screens.decryption.save_file_decrypt_screen import SaveFileDecryptScreen
 from tools.toolkit import Tools as t
@@ -18,7 +10,6 @@ class ChoosePrivateKeyScreen(qtw.QWidget, Ui_KeyInputForm):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.setWindowTitle("Decryption | Choose a private key")
         self.update_ui()
 
         self.key_manager = RsaKeyManager()
@@ -30,12 +21,17 @@ class ChoosePrivateKeyScreen(qtw.QWidget, Ui_KeyInputForm):
 
         self.key_text_area.textChanged.connect(self.update_next_button_status)
         self.file_path_input.textChanged.connect(self.update_next_button_status)
+        self.is_password_protected_cb.stateChanged.connect(
+            self.update_next_button_status
+        )
+        self.password_lineEdit.textChanged.connect(self.update_next_button_status)
 
         self.is_password_protected_cb.stateChanged.connect(
             self.handle_password_input_accessability
         )
 
     def update_ui(self):
+        self.setWindowTitle("Decryption | Choose a private key")
         self.browse_button.setEnabled(True)
         self.key_text_area.setEnabled(False)
         self.file_radio.setText("Load private key from file")
@@ -65,10 +61,15 @@ class ChoosePrivateKeyScreen(qtw.QWidget, Ui_KeyInputForm):
             self.file_path_input.setText(t.all.format_input_path(full_file_path))
 
     def update_next_button_status(self):
-        if self.file_path_input.text() or self.key_text_area.toPlainText():
-            self.next_button.setEnabled(True)
-        else:
-            self.next_button.setEnabled(False)
+        self.next_button.setEnabled(
+            all(
+                [
+                    self.file_path_input.text() or self.key_text_area.toPlainText(),
+                    not self.is_password_protected_cb.isChecked()
+                    or self.password_lineEdit.text(),
+                ]
+            )
+        )
 
     def handle_click_next(self):
         password = None
@@ -100,8 +101,8 @@ class ChoosePrivateKeyScreen(qtw.QWidget, Ui_KeyInputForm):
             else:
                 qtw.QMessageBox.warning(
                     self,
-                    "Key Format Error",
-                    "Please enter a valid public key to proceed",
+                    "Private Key Format Error",
+                    "Please enter a valid private key to proceed",
                 )
                 return
 
@@ -119,12 +120,9 @@ class ChoosePrivateKeyScreen(qtw.QWidget, Ui_KeyInputForm):
         self.destroy()
 
     def handle_password_input_accessability(self):
-        if self.is_password_protected_cb.isChecked():
-            self.password_lineEdit.setEnabled(True)
-            return
-
-        self.password_lineEdit.clear()
-        self.password_lineEdit.setEnabled(False)
+        self.password_lineEdit.setEnabled(self.is_password_protected_cb.isChecked())
+        if not self.is_password_protected_cb.isChecked():
+            self.password_lineEdit.clear()
 
     def closeEvent(self, event):
         signal_manager.saved_data.get("save_main_window").show()

@@ -214,7 +214,7 @@ class Ui_KeyInputForm(object):
             QIcon.State.Off,
         )
         self.next_button.setIcon(icon3)
-        self.next_button.setIconSize(QSize(30, 30))
+        self.next_button.setIconSize(QSize(35, 35))
 
         self.verticalLayout.addWidget(self.next_button)
 
@@ -270,7 +270,7 @@ class Ui_KeyInputForm(object):
             )
         )
         self.next_button.setText(
-            QCoreApplication.translate("KeyInputForm", "Next", None)
+            QCoreApplication.translate("KeyInputForm", " Next", None)
         )
 
     # retranslateUi

@@ -60,20 +60,30 @@ class PublicKeygenScreen(qtw.QWidget, Ui_PublicKeygen):
 
         self.public_key_save_path = public_key_save_path
         self.pub_key_path_le.setText(t.all.format_input_path(self.public_key_save_path))
-        print(_)
 
     @qtc.Slot()
     def generate_button_status_checker(self):
-        if self.private_key_path_le.text() and self.pub_key_path_le.text():
-            if self.password_cb.isChecked():
-                if len(self.password_le.text()) > 0:
-                    self.generate_btn.setEnabled(True)
-                    return
-                self.generate_btn.setEnabled(False)
-                return
-            self.generate_btn.setEnabled(True)
-            return
-        self.generate_btn.setEnabled(False)
+        self.generate_btn.setEnabled(
+            all(
+                [
+                    self.private_key_path_le.text(),
+                    self.pub_key_path_le.text(),
+                    not self.password_cb.isChecked() or self.password_le.text(),
+                ]
+            )
+        )
+
+    # def generate_button_status_checker(self):
+    #     if self.private_key_path_le.text() and self.pub_key_path_le.text():
+    #         if self.password_cb.isChecked():
+    #             if len(self.password_le.text()) > 0:
+    #                 self.generate_btn.setEnabled(True)
+    #                 return
+    #             self.generate_btn.setEnabled(False)
+    #             return
+    #         self.generate_btn.setEnabled(True)
+    #         return
+    #     self.generate_btn.setEnabled(False)
 
     @qtc.Slot()
     def process_keygen(self):

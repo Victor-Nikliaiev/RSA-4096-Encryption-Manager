@@ -7,6 +7,7 @@ from PySide6.QtQuickWidgets import QQuickWidget
 
 from assets.ui import Ui_main_window
 from assets.ui import GlowingLogo
+from screens.about import AboutScreen
 from screens.encryption import ChooseFileEncryptScreen
 from screens.decryption import ChooseFileDecryptScreen
 from screens.keygen.select_keygen_screen import SelectKeygenScreen
@@ -27,6 +28,7 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
         self.actionDecrypt.triggered.connect(self.handle_decrypt)
         self.generate_keys_button.clicked.connect(self.handle_generate_keys)
         self.actionGenerateKeys.triggered.connect(self.handle_generate_keys)
+        self.actionAbout.triggered.connect(self.handle_about)
 
     def setupWebLogoAnimation(self):
         # qml_widget = QQuickWidget(self)
@@ -62,6 +64,13 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
         signal_manager.save_main_window.emit(self)
         self.close()
         self.gen_keys_window.show()
+
+    @qtc.Slot()
+    def handle_about(self):
+        signal_manager.save_main_window.emit(self)
+        self.window = t.qt.center_widget(AboutScreen())
+        self.window.show()
+        self.close()
 
 
 if __name__ == "__main__":
