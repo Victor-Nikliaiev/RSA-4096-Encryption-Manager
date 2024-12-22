@@ -95,17 +95,17 @@ class Ui_PrivateKeyPairGenerator(object):
 
         self.horizontalLayout_3 = QHBoxLayout()
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.label = QLabel(PrivateKeyPairGenerator)
-        self.label.setObjectName("label")
-        self.label.setStyleSheet(
+        self.top_lb = QLabel(PrivateKeyPairGenerator)
+        self.top_lb.setObjectName("top_lb")
+        self.top_lb.setStyleSheet(
             "background-color: rgb(38, 50, 56);\n"
             "color: rgb(49, 169, 196);\n"
             "font-size: 25px;\n"
             "font-weight: bold;"
         )
-        self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.top_lb.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        self.horizontalLayout_3.addWidget(self.label)
+        self.horizontalLayout_3.addWidget(self.top_lb)
 
         self.verticalLayout_4.addLayout(self.horizontalLayout_3)
 
@@ -127,16 +127,18 @@ class Ui_PrivateKeyPairGenerator(object):
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.pushButton_2 = QPushButton(self.groupBox_2)
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.pushButton_2.setEnabled(False)
+        self.location_info_btn = QPushButton(self.groupBox_2)
+        self.location_info_btn.setObjectName("location_info_btn")
+        self.location_info_btn.setEnabled(False)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_2.sizePolicy().hasHeightForWidth())
-        self.pushButton_2.setSizePolicy(sizePolicy)
-        self.pushButton_2.setMinimumSize(QSize(0, 60))
-        self.pushButton_2.setStyleSheet(
+        sizePolicy.setHeightForWidth(
+            self.location_info_btn.sizePolicy().hasHeightForWidth()
+        )
+        self.location_info_btn.setSizePolicy(sizePolicy)
+        self.location_info_btn.setMinimumSize(QSize(0, 60))
+        self.location_info_btn.setStyleSheet(
             "background-color: rgb(38, 50, 56);\n"
             "color: rgb(83, 106, 117);\n"
             "font-size: 25px;"
@@ -148,11 +150,11 @@ class Ui_PrivateKeyPairGenerator(object):
             QIcon.Mode.Normal,
             QIcon.State.Off,
         )
-        self.pushButton_2.setIcon(icon1)
-        self.pushButton_2.setIconSize(QSize(40, 40))
-        self.pushButton_2.setFlat(True)
+        self.location_info_btn.setIcon(icon1)
+        self.location_info_btn.setIconSize(QSize(40, 40))
+        self.location_info_btn.setFlat(True)
 
-        self.horizontalLayout_2.addWidget(self.pushButton_2)
+        self.horizontalLayout_2.addWidget(self.location_info_btn)
 
         self.verticalLayout.addLayout(self.horizontalLayout_2)
 
@@ -164,19 +166,19 @@ class Ui_PrivateKeyPairGenerator(object):
 
         self.file_layout_2 = QHBoxLayout()
         self.file_layout_2.setObjectName("file_layout_2")
-        self.priv_key_path_le = QLineEdit(self.groupBox_2)
-        self.priv_key_path_le.setObjectName("priv_key_path_le")
-        self.priv_key_path_le.setEnabled(False)
-        self.priv_key_path_le.setMinimumSize(QSize(0, 50))
-        self.priv_key_path_le.setStyleSheet("border-radius: 3px;")
+        self.key_path_le = QLineEdit(self.groupBox_2)
+        self.key_path_le.setObjectName("key_path_le")
+        self.key_path_le.setEnabled(False)
+        self.key_path_le.setMinimumSize(QSize(0, 50))
+        self.key_path_le.setStyleSheet("border-radius: 3px;")
 
-        self.file_layout_2.addWidget(self.priv_key_path_le)
+        self.file_layout_2.addWidget(self.key_path_le)
 
-        self.priv_key_select_btn = QPushButton(self.groupBox_2)
-        self.priv_key_select_btn.setObjectName("priv_key_select_btn")
-        self.priv_key_select_btn.setMinimumSize(QSize(120, 50))
-        self.priv_key_select_btn.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.priv_key_select_btn.setStyleSheet(
+        self.key_browse_btn = QPushButton(self.groupBox_2)
+        self.key_browse_btn.setObjectName("key_browse_btn")
+        self.key_browse_btn.setMinimumSize(QSize(120, 50))
+        self.key_browse_btn.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.key_browse_btn.setStyleSheet(
             "QPushButton {\n"
             "	background-color: #007d9c;\n"
             "	color: #005568;\n"
@@ -193,10 +195,10 @@ class Ui_PrivateKeyPairGenerator(object):
             QIcon.Mode.Normal,
             QIcon.State.Off,
         )
-        self.priv_key_select_btn.setIcon(icon2)
-        self.priv_key_select_btn.setIconSize(QSize(30, 30))
+        self.key_browse_btn.setIcon(icon2)
+        self.key_browse_btn.setIconSize(QSize(30, 30))
 
-        self.file_layout_2.addWidget(self.priv_key_select_btn)
+        self.file_layout_2.addWidget(self.key_browse_btn)
 
         self.verticalLayout.addLayout(self.file_layout_2)
 
@@ -279,12 +281,12 @@ class Ui_PrivateKeyPairGenerator(object):
 
         self.verticalLayout_4.addWidget(self.generate_btn)
 
-        QWidget.setTabOrder(self.priv_key_path_le, self.priv_key_select_btn)
-        QWidget.setTabOrder(self.priv_key_select_btn, self.password_cb)
+        QWidget.setTabOrder(self.key_path_le, self.key_browse_btn)
+        QWidget.setTabOrder(self.key_browse_btn, self.password_cb)
         QWidget.setTabOrder(self.password_cb, self.password_le)
         QWidget.setTabOrder(self.password_le, self.password_repeat_le)
         QWidget.setTabOrder(self.password_repeat_le, self.generate_btn)
-        QWidget.setTabOrder(self.generate_btn, self.pushButton_2)
+        QWidget.setTabOrder(self.generate_btn, self.location_info_btn)
 
         self.retranslateUi(PrivateKeyPairGenerator)
 
@@ -300,7 +302,7 @@ class Ui_PrivateKeyPairGenerator(object):
                 None,
             )
         )
-        self.label.setText(
+        self.top_lb.setText(
             QCoreApplication.translate(
                 "PrivateKeyPairGenerator",
                 "Select location to generate your private key:",
@@ -308,21 +310,21 @@ class Ui_PrivateKeyPairGenerator(object):
             )
         )
         self.groupBox_2.setTitle("")
-        self.pushButton_2.setText(
+        self.location_info_btn.setText(
             QCoreApplication.translate(
                 "PrivateKeyPairGenerator",
                 "  Select location to save your private key:",
                 None,
             )
         )
-        self.priv_key_path_le.setPlaceholderText(
+        self.key_path_le.setPlaceholderText(
             QCoreApplication.translate(
                 "PrivateKeyPairGenerator",
                 'Click "Select" to choose location to save your private key',
                 None,
             )
         )
-        self.priv_key_select_btn.setText(
+        self.key_browse_btn.setText(
             QCoreApplication.translate("PrivateKeyPairGenerator", " Select", None)
         )
         self.password_cb.setText(

@@ -29,6 +29,10 @@ class SaveFileDecryptScreen(qtw.QWidget, Ui_SaveFileForm):
                 t.all.format_input_path(self.dropped_file_path)
             )
 
+        self.input_file_info_btn.setText("File to be decrypted:")
+        self.output_file_info_btn.setText("Choose file name for decrypted file:")
+        self.start_button.setText("Start Decryption")
+
     def save_file_dialog(self):
         specified_file_name = os.path.split(self.dropped_file_path)[1]
         if "_encrypted.bin" in specified_file_name:
@@ -39,7 +43,7 @@ class SaveFileDecryptScreen(qtw.QWidget, Ui_SaveFileForm):
         default_filename = f"{base_name}_decrypted{extension}"
 
         file_path, _ = qtw.QFileDialog.getSaveFileName(
-            self, "Save File", default_filename, "Binary Files (*.bin);;All Files (*)"
+            self, "Save File", default_filename, "All Files (*)"
         )
 
         if file_path:

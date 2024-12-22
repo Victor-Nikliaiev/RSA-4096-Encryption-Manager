@@ -56,7 +56,7 @@ QAbstractButton {
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="top_lb">
        <property name="styleSheet">
         <string notr="true">background-color: rgb(38, 50, 56);
 color: rgb(49, 169, 196);
@@ -108,7 +108,7 @@ font-weight: bold;</string>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <widget class="QPushButton" name="pushButton_2">
+         <widget class="QPushButton" name="location_info_btn">
           <property name="enabled">
            <bool>false</bool>
           </property>
@@ -165,7 +165,7 @@ font-size: 25px;</string>
       <item>
        <layout class="QHBoxLayout" name="file_layout_2">
         <item>
-         <widget class="QLineEdit" name="priv_key_path_le">
+         <widget class="QLineEdit" name="key_path_le">
           <property name="enabled">
            <bool>false</bool>
           </property>
@@ -184,7 +184,7 @@ font-size: 25px;</string>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="priv_key_select_btn">
+         <widget class="QPushButton" name="key_browse_btn">
           <property name="minimumSize">
            <size>
             <width>120</width>
@@ -364,13 +364,13 @@ QPushButton:hover {
   </layout>
  </widget>
  <tabstops>
-  <tabstop>priv_key_path_le</tabstop>
-  <tabstop>priv_key_select_btn</tabstop>
+  <tabstop>key_path_le</tabstop>
+  <tabstop>key_browse_btn</tabstop>
   <tabstop>password_cb</tabstop>
   <tabstop>password_le</tabstop>
   <tabstop>password_repeat_le</tabstop>
   <tabstop>generate_btn</tabstop>
-  <tabstop>pushButton_2</tabstop>
+  <tabstop>location_info_btn</tabstop>
  </tabstops>
  <resources>
   <include location="../icons.qrc"/>

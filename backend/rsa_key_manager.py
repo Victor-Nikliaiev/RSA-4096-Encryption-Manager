@@ -6,9 +6,14 @@ from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import serialization
 from backend.constants import Rsa
-import logging
+from tools.toolkit import Tools as t
+import zipfile
+import io
+import os
 
-logging.basicConfig(level=logging.INFO)
+
+logging = t.all.configure_logging()
+logging = logging.getLogger(__name__)
 
 
 class RsaKeyManager:
@@ -41,6 +46,30 @@ class RsaKeyManager:
             raise TypeError("Private_key must be an instance of RSAPrivateKey")
 
         return private_key.public_key()
+
+    def encrypt_private_key(self, private_key, password=None):
+
+        encryption = (
+            serialization.BestAvailableEncryption(password.encode("utf-8"))
+            if password
+            else serialization.NoEncryption()
+        )
+
+        private_pem = private_key.private_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PrivateFormat.PKCS8,
+            encryption_algorithm=encryption,
+        )
+
+        return private_pem
+
+    def encrypt_public_key(self, public_key):
+        public_pem = public_key.public_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PublicFormat.SubjectPublicKeyInfo,
+        )
+
+        return public_pem
 
     def save_private_key_to_file(
         self, output_pem_file_path, password: str = None, private_key=None
@@ -156,3 +185,28 @@ class RsaKeyManager:
             private_key.encode("utf-8"), password=password, backend=default_backend()
         )
         return serialized_private_key
+
+    def export_keys_to_zip(self, private_key_data, public_key_data, zip_filename):
+
+        # Ensure the directory exists where the ZIP file will be saved
+        zip_dir = os.path.dirname(zip_filename)
+        if zip_dir and not os.path.exists(zip_dir):
+            os.makedirs(zip_dir)
+
+        # Create a BytesIO buffer to hold both key data in memory
+        private_key_buffer = io.BytesIO(
+            private_key_data
+        )  # assuming private_key_data is a string
+        public_key_buffer = io.BytesIO(
+            public_key_data
+        )  # assuming public_key_data is a string
+
+        # Create a ZIP file in write mode
+        with zipfile.ZipFile(zip_filename, "w", zipfile.ZIP_DEFLATED) as archive:
+            # Write the private key to the ZIP file
+            archive.writestr("private_key.pem", private_key_buffer.getvalue())
+            logging.info(f"Private key added to {zip_filename}")
+
+            # Write the public key to the ZIP file
+            archive.writestr("public_key.pem", public_key_buffer.getvalue())
+            logging.info(f"Public key added to {zip_filename}")

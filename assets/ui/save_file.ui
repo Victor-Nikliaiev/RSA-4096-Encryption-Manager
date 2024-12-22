@@ -73,7 +73,7 @@ QAbstractButton {
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="input_file_info_btn">
         <property name="enabled">
          <bool>false</bool>
         </property>
@@ -145,7 +145,7 @@ font-size: 25px;</string>
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="output_file_info_btn">
         <property name="enabled">
          <bool>false</bool>
         </property>

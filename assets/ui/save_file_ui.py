@@ -100,16 +100,18 @@ class Ui_SaveFileForm(object):
 
         self.verticalLayout_2.addItem(self.verticalSpacer_4)
 
-        self.pushButton = QPushButton(self.groupBox)
-        self.pushButton.setObjectName("pushButton")
-        self.pushButton.setEnabled(False)
+        self.input_file_info_btn = QPushButton(self.groupBox)
+        self.input_file_info_btn.setObjectName("input_file_info_btn")
+        self.input_file_info_btn.setEnabled(False)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
-        self.pushButton.setSizePolicy(sizePolicy)
-        self.pushButton.setMinimumSize(QSize(0, 60))
-        self.pushButton.setStyleSheet(
+        sizePolicy.setHeightForWidth(
+            self.input_file_info_btn.sizePolicy().hasHeightForWidth()
+        )
+        self.input_file_info_btn.setSizePolicy(sizePolicy)
+        self.input_file_info_btn.setMinimumSize(QSize(0, 60))
+        self.input_file_info_btn.setStyleSheet(
             "background-color: rgb(38, 50, 56);\n"
             "color: rgb(83, 106, 117);\n"
             "font-size: 25px;"
@@ -121,11 +123,11 @@ class Ui_SaveFileForm(object):
             QIcon.Mode.Normal,
             QIcon.State.Off,
         )
-        self.pushButton.setIcon(icon1)
-        self.pushButton.setIconSize(QSize(40, 40))
-        self.pushButton.setFlat(True)
+        self.input_file_info_btn.setIcon(icon1)
+        self.input_file_info_btn.setIconSize(QSize(40, 40))
+        self.input_file_info_btn.setFlat(True)
 
-        self.verticalLayout_2.addWidget(self.pushButton)
+        self.verticalLayout_2.addWidget(self.input_file_info_btn)
 
         self.file_chooser_input = QLineEdit(self.groupBox)
         self.file_chooser_input.setObjectName("file_chooser_input")
@@ -141,13 +143,15 @@ class Ui_SaveFileForm(object):
 
         self.verticalLayout_2.addItem(self.verticalSpacer_2)
 
-        self.pushButton_2 = QPushButton(self.groupBox)
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.pushButton_2.setEnabled(False)
-        sizePolicy.setHeightForWidth(self.pushButton_2.sizePolicy().hasHeightForWidth())
-        self.pushButton_2.setSizePolicy(sizePolicy)
-        self.pushButton_2.setMinimumSize(QSize(0, 60))
-        self.pushButton_2.setStyleSheet(
+        self.output_file_info_btn = QPushButton(self.groupBox)
+        self.output_file_info_btn.setObjectName("output_file_info_btn")
+        self.output_file_info_btn.setEnabled(False)
+        sizePolicy.setHeightForWidth(
+            self.output_file_info_btn.sizePolicy().hasHeightForWidth()
+        )
+        self.output_file_info_btn.setSizePolicy(sizePolicy)
+        self.output_file_info_btn.setMinimumSize(QSize(0, 60))
+        self.output_file_info_btn.setStyleSheet(
             "background-color: rgb(38, 50, 56);\n"
             "color: rgb(83, 106, 117);\n"
             "font-size: 25px;"
@@ -159,11 +163,11 @@ class Ui_SaveFileForm(object):
             QIcon.Mode.Normal,
             QIcon.State.Off,
         )
-        self.pushButton_2.setIcon(icon2)
-        self.pushButton_2.setIconSize(QSize(40, 40))
-        self.pushButton_2.setFlat(True)
+        self.output_file_info_btn.setIcon(icon2)
+        self.output_file_info_btn.setIconSize(QSize(40, 40))
+        self.output_file_info_btn.setFlat(True)
 
-        self.verticalLayout_2.addWidget(self.pushButton_2)
+        self.verticalLayout_2.addWidget(self.output_file_info_btn)
 
         self.file_layout = QHBoxLayout()
         self.file_layout.setObjectName("file_layout")
@@ -252,7 +256,7 @@ class Ui_SaveFileForm(object):
             )
         )
         self.groupBox.setTitle("")
-        self.pushButton.setText(
+        self.input_file_info_btn.setText(
             QCoreApplication.translate("SaveFileForm", "File to be encrypted:", None)
         )
         self.file_chooser_input.setPlaceholderText(
@@ -260,7 +264,7 @@ class Ui_SaveFileForm(object):
                 "SaveFileForm", "Path to selected file...[PLACEHOLDER]", None
             )
         )
-        self.pushButton_2.setText(
+        self.output_file_info_btn.setText(
             QCoreApplication.translate(
                 "SaveFileForm", "Choose file name for encrypted file:", None
             )
