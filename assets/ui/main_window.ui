@@ -30,6 +30,9 @@ QPushButton {
 	color: #024e55;
 }
 
+
+
+
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -241,7 +244,21 @@ QPushButton {
      <height>25</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #212d31;
+color: rgb(119, 186, 198)</string>
+   </property>
    <widget class="QMenu" name="menuFile">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #212d31;
+color: rgb(119, 186, 198)</string>
+    </property>
     <property name="title">
      <string>File</string>
     </property>
@@ -251,12 +268,22 @@ QPushButton {
     <addaction name="actionExit"/>
    </widget>
    <widget class="QMenu" name="menuKeys">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="title">
      <string>RSA Keys</string>
     </property>
     <addaction name="actionGenerateKeys"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #212d31;
+color: rgb(119, 186, 198)</string>
+    </property>
     <property name="title">
      <string>Help</string>
     </property>

@@ -11,9 +11,9 @@ import zipfile
 import io
 import os
 
+import logging
 
-logging = t.all.configure_logging()
-logging = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO)
 
 
 class RsaKeyManager:
@@ -140,6 +140,7 @@ class RsaKeyManager:
         except FileNotFoundError:
             raise FileNotFoundError(f"Private key file not found: {pem_file_path}")
         except Exception as e:
+            print(e)
             raise Exception(
                 f"Failed to process private key. Please check file format and try again.\n\nAdditional Info:\n {e}"
             )

@@ -28,7 +28,7 @@ class PublicKeygenScreen(qtw.QWidget, Ui_PublicKeygen):
 
         self.public_key_save_path: str
         self.private_key_full_path: str
-        self.password: str
+        self.password = None
         self.operation_completed = False
 
     def private_key_sel_btn_handler(self):

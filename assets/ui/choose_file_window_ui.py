@@ -63,7 +63,7 @@ class Ui_choose_file_window_ui(object):
         )
         choose_file_window_ui.setWindowIcon(icon)
         choose_file_window_ui.setStyleSheet(
-            "#encrypt_main_window_ui {\n" "	background-color: #212c31;\n" "}"
+            "color: rgb(119, 186, 198);\n" "background-color: #263238;"
         )
         self.verticalLayout = QVBoxLayout(choose_file_window_ui)
         self.verticalLayout.setObjectName("verticalLayout")

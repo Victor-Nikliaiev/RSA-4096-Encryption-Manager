@@ -35,6 +35,10 @@
    <iconset resource="../icons.qrc">
     <normaloff>:/favicon/icons/maze.png</normaloff>:/favicon/icons/maze.png</iconset>
   </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(119, 186, 198);
+background-color: #263238;</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">

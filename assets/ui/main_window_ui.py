@@ -80,6 +80,9 @@ class Ui_main_window(object):
             "	color: #024e55;\n"
             "}\n"
             "\n"
+            "\n"
+            "\n"
+            "\n"
             ""
         )
         self.actionEncrypt = QAction(main_window)
@@ -218,12 +221,25 @@ class Ui_main_window(object):
         self.menubar = QMenuBar(main_window)
         self.menubar.setObjectName("menubar")
         self.menubar.setGeometry(QRect(0, 0, 719, 25))
+        self.menubar.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.menubar.setStyleSheet(
+            "background-color: #212d31;\n" "color: rgb(119, 186, 198)"
+        )
         self.menuFile = QMenu(self.menubar)
         self.menuFile.setObjectName("menuFile")
+        self.menuFile.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.menuFile.setStyleSheet(
+            "background-color: #212d31;\n" "color: rgb(119, 186, 198)"
+        )
         self.menuKeys = QMenu(self.menubar)
         self.menuKeys.setObjectName("menuKeys")
+        self.menuKeys.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.menuHelp = QMenu(self.menubar)
         self.menuHelp.setObjectName("menuHelp")
+        self.menuHelp.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.menuHelp.setStyleSheet(
+            "background-color: #212d31;\n" "color: rgb(119, 186, 198)"
+        )
         main_window.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(main_window)
         self.statusbar.setObjectName("statusbar")

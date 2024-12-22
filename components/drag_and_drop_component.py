@@ -21,6 +21,9 @@ class DragDropWidget(QFrame):
         self.setCursor(Qt.PointingHandCursor)
         self.setStyleSheet(
             """
+            QLabel {
+                background-color: transparent;
+            }
             #dragDropWidget {
                 border: 2px dashed #749bab;
                 border-radius: 10px;
@@ -34,6 +37,7 @@ class DragDropWidget(QFrame):
             #fileNameLabel {
                 font-size: 16px;
                 color: #5c7988;
+                background-color: transparent;
             }
 
             """

@@ -4,7 +4,7 @@ from .select_key_window_ui import Ui_KeyInputForm
 from .glowing_logo import GlowingLogo
 from .save_file_ui import Ui_SaveFileForm
 from .progress_window_ui import Ui_operation_progress_window
-
+from .global_stylesheet import global_stylesheet
 
 __all__ = [
     "Ui_choose_file_window_ui",
@@ -13,4 +13,5 @@ __all__ = [
     "GlowingLogo",
     "Ui_SaveFileForm",
     "Ui_operation_progress_window",
+    "global_stylesheet",
 ]

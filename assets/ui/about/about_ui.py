@@ -70,6 +70,7 @@ class Ui_About(object):
             ":/favicon/icons/maze.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off
         )
         About.setWindowIcon(icon)
+        About.setStyleSheet("color: rgb(119, 186, 198);\n" "background-color: #263238;")
         self.verticalLayout_2 = QVBoxLayout(About)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.horizontalLayout = QHBoxLayout()

@@ -70,6 +70,7 @@ class Ui_operation_progress_window(object):
             ":/favicon/icons/maze.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off
         )
         operation_progress_window.setWindowIcon(icon)
+        operation_progress_window.setStyleSheet("background-color: rgb(38, 50, 56)")
         self.verticalLayout = QVBoxLayout(operation_progress_window)
         self.verticalLayout.setObjectName("verticalLayout")
         self.operation_progress = QProgressBar(operation_progress_window)

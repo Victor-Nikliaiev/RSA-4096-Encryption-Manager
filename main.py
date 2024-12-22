@@ -5,7 +5,7 @@ from PySide6 import QtGui as qtg
 from PySide6 import QtUiTools as qtu
 from PySide6.QtQuickWidgets import QQuickWidget
 
-from assets.ui import Ui_main_window
+from assets.ui import Ui_main_window, global_stylesheet
 from assets.ui import GlowingLogo
 from screens.about import AboutScreen
 from screens.encryption import ChooseFileEncryptScreen
@@ -75,6 +75,7 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
 
 if __name__ == "__main__":
     app = qtw.QApplication(sys.argv)
+    app.setStyleSheet(global_stylesheet)
 
     window = t.qt.center_widget(MainWindow())
     window.show()
