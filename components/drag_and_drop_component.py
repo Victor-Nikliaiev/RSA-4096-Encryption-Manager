@@ -54,7 +54,7 @@ class DragDropWidget(QFrame):
         self.file_ico_label.setObjectName("fileIcoLabel")
         self.file_ico_label.setAlignment(Qt.AlignCenter)
 
-        self.file_name_label = QLabel("Click Or Drag & Drop A File Here", self)
+        self.file_name_label = QLabel(self.tr("Click Or Drag & Drop A File Here"), self)
         self.file_name_label.setObjectName("fileNameLabel")
         self.file_name_label.setAlignment(Qt.AlignCenter)
 
@@ -71,7 +71,7 @@ class DragDropWidget(QFrame):
 
     def mousePressEvent(self, event):
         if event.button() == Qt.LeftButton:
-            file_path, _ = QFileDialog.getOpenFileName(self, "Select a File")
+            file_path, _ = QFileDialog.getOpenFileName(self, self.tr("Select a File"))
             if file_path:
                 self.handleFiles([file_path])
 
@@ -94,13 +94,13 @@ class DragDropWidget(QFrame):
 
         for file in files:
             if os.path.isdir(file):
-                self.file_name_label.setText(f"Only files are allowed!")
+                self.file_name_label.setText(self.tr("Only files are allowed!"))
                 signal_manager.update_next_button_status.emit(False)
                 self.file_ico_label.clear()
                 return
         self.file_path = files[0]
         if not self.file_path:
-            self.file_name_label.setText("Dropped data isn't a file")
+            self.file_name_label.setText(self.tr("Dropped data isn't a file"))
             signal_manager.update_next_button_status.emit(False)
             self.file_ico_label.clear()
             return

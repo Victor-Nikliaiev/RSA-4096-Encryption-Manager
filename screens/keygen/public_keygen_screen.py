@@ -33,7 +33,10 @@ class PublicKeygenScreen(qtw.QWidget, Ui_PublicKeygen):
 
     def private_key_sel_btn_handler(self):
         private_key_full_path, _ = qtw.QFileDialog.getOpenFileName(
-            self, "Select Private Key File", "", "PEM Files (*.pem);;All Files (*)"
+            self,
+            self.tr("Select Private Key File"),
+            "",
+            self.tr("PEM Files (*.pem);;All Files (*)"),
         )
 
         if not private_key_full_path:
@@ -51,9 +54,9 @@ class PublicKeygenScreen(qtw.QWidget, Ui_PublicKeygen):
     def pub_key_select_btn_handler(self):
         public_key_save_path, _ = qtw.QFileDialog.getSaveFileName(
             self,
-            "Save Your Public Key",
-            "public_key.pem",
-            "PEM Files (*.pem);;All Files (*)",
+            self.tr("Save Your Public Key"),
+            self.tr("public_key.pem"),
+            self.tr("PEM Files (*.pem);;All Files (*)"),
         )
         if not public_key_save_path:
             return
@@ -106,13 +109,15 @@ class PublicKeygenScreen(qtw.QWidget, Ui_PublicKeygen):
             )
 
             qtw.QMessageBox.information(
-                self, "Success", "Your public key was successfully generated and saved."
+                self,
+                self.tr("Success"),
+                self.tr("Your public key was successfully generated and saved."),
             )
 
             self.close()
 
         except Exception as e:
-            qtw.QMessageBox.critical(self, "Error", f"{e}")
+            qtw.QMessageBox.critical(self, self.tr("Error"), self.tr(f"{e}"))
             return
 
     def closeEvent(self, event):

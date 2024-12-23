@@ -19,23 +19,27 @@ class PairKeygenScreen(qtw.QWidget, Ui_PrivateKeyPairGenerator):
         self.password_le.textChanged.connect(self.text_changed_handler)
         self.password_repeat_le.textChanged.connect(self.text_changed_handler)
         self.generate_btn.clicked.connect(self.process_keygen)
-        self.key_match_lb_text = "Passwords do not much"
+        self.key_match_lb_text = self.tr("Passwords do not much")
         self.selected_file_path = None
 
     def update_ui(self):
-        self.setWindowTitle("Key Generation | Select location to generate your keys")
-        self.top_lb.setText("Select location to generate your private and public keys:")
-        self.location_info_btn.setText("  Select location to save your keys:")
+        self.setWindowTitle(
+            self.tr("Key Generation | Select location to generate your keys")
+        )
+        self.top_lb.setText(
+            self.tr("Select location to generate your private and public keys:")
+        )
+        self.location_info_btn.setText(self.tr("  Select location to save your keys:"))
         self.key_path_le.setPlaceholderText(
-            'Click "Select" to choose location to save your keys'
+            self.tr('Click "Select" to choose location to save your keys')
         )
 
     def browse_file(self):
         full_file_path, _ = qtw.QFileDialog.getSaveFileName(
             self,
-            "Save Your Keys",
-            "my_keys.zip",
-            "ZIP Files (*.zip);;All Files (*)",
+            self.tr("Save Your Keys"),
+            self.tr("my_keys.zip"),
+            self.tr("ZIP Files (*.zip);;All Files (*)"),
         )
 
         if not full_file_path:
@@ -107,7 +111,7 @@ class PairKeygenScreen(qtw.QWidget, Ui_PrivateKeyPairGenerator):
         )
 
         qtw.QMessageBox.information(
-            self, "Success", "Your keys were generated successfully."
+            self, self.tr("Success"), self.tr("Your keys were generated successfully.")
         )
         self.close()
 

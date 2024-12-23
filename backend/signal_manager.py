@@ -1,9 +1,6 @@
 from cryptography.hazmat.primitives.asymmetric.rsa import RSAPublicKey, RSAPrivateKey
-import sys
 from PySide6 import QtCore as qtc
 from PySide6 import QtWidgets as qtw
-from PySide6 import QtGui as qtg
-from PySide6 import QtUiTools as qtu
 
 
 class _SignalManager(qtc.QObject):
@@ -61,7 +58,6 @@ class _SignalManager(qtc.QObject):
         )
         window = self.saved_data["current_window"]
         window.cleanup_thread()
-        # print("window:", window)
         window.exit_without_dialog = True
         window.close()
 

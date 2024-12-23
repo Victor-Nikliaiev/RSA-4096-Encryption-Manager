@@ -56,7 +56,7 @@ class ProgressWindowScreen(qtw.QWidget, Ui_operation_progress_window):
             self.thread.start()
 
     def update_ui(self):
-        self.setWindowTitle("Encryption...")
+        self.setWindowTitle(self.tr("Encryption..."))
         self.setWindowFlags(qtc.Qt.Window | qtc.Qt.WindowTitleHint)
         t.qt.center_widget(self)
 
@@ -69,7 +69,9 @@ class ProgressWindowScreen(qtw.QWidget, Ui_operation_progress_window):
     def operation_completed_handler(self):
 
         qtw.QMessageBox.information(
-            self, "Success", "Operation has been completed successfully"
+            self,
+            self.tr("Success"),
+            self.tr("Operation has been completed successfully"),
         )
 
         self.exit_without_dialog = True
@@ -88,8 +90,10 @@ class ProgressWindowScreen(qtw.QWidget, Ui_operation_progress_window):
 
         exitConfirmed = qtw.QMessageBox.question(
             self,
-            "Exit",
-            "Are you sure you want to exit, it will interrupt current encryption?",
+            self.tr("Exit"),
+            self.tr(
+                "Are you sure you want to exit, it will interrupt current encryption?"
+            ),
             qtw.QMessageBox.Yes | qtw.QMessageBox.No,
         )
 

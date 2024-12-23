@@ -5,6 +5,7 @@ from components import DragDropWidget
 from backend import signal_manager
 from tools.toolkit import Tools as t
 
+
 # from screens import ChoosePublicKeyScreen
 from screens.encryption.choose_public_key_screen import ChoosePublicKeyScreen
 
@@ -22,7 +23,9 @@ class ChooseFileEncryptScreen(QWidget, Ui_choose_file_window_ui):
         parent_layout.insertWidget(index, self.drop_and_drag_widget)
         placeholder_widget.hide()
 
-        self.setWindowTitle("Encryption | Choose a file")
+        self.setWindowTitle(
+            qtc.QCoreApplication.translate(self.tr("Encryption | Choose a file"))
+        )
 
         signal_manager.update_next_button_status.connect(self.update_next_button_status)
         self.next_button.clicked.connect(self.handle_click_next)

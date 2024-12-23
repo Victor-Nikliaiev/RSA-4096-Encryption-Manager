@@ -18,15 +18,15 @@ class PrivateKeygenScreen(qtw.QWidget, Ui_PrivateKeyPairGenerator):
         self.password_le.textChanged.connect(self.text_changed_handler)
         self.password_repeat_le.textChanged.connect(self.text_changed_handler)
         self.generate_btn.clicked.connect(self.process_keygen)
-        self.key_match_lb_text = "Passwords do not much"
+        self.key_match_lb_text = self.tr("Passwords do not much")
         self.selected_file_path = None
 
     def browse_file(self):
         full_file_path, _ = qtw.QFileDialog.getSaveFileName(
             self,
-            "Save Private File",
-            "private_key.pem",
-            "PEM Files (*.pem);;All Files (*)",
+            self.tr("Save Private File"),
+            self.tr("private_key.pem"),
+            self.tr("PEM Files (*.pem);;All Files (*)"),
         )
 
         if not full_file_path:
@@ -95,12 +95,12 @@ class PrivateKeygenScreen(qtw.QWidget, Ui_PrivateKeyPairGenerator):
             )
 
             qtw.QMessageBox.information(
-                self, "Success", "Private key generated successfully."
+                self, self.tr("Success"), self.tr("Private key generated successfully.")
             )
             self.close()
 
         except Exception as e:
-            qtw.QMessageBox.critical(self, "Error", f"{e}")
+            qtw.QMessageBox.critical(self, self.tr("Error"), self.tr(f"{e}"))
 
     def closeEvent(self, event):
         main_window = t.qt.center_widget(signal_manager.saved_data["save_main_window"])

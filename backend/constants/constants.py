@@ -18,7 +18,3 @@ class Size:
 class Rsa:
     KEY_SIZE: int = 4096
     PUBLIC_EXPONENT: int = 65537
-
-
-class RadioButtonSelected:
-    pass

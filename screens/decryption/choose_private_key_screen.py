@@ -31,15 +31,17 @@ class ChoosePrivateKeyScreen(qtw.QWidget, Ui_KeyInputForm):
         )
 
     def update_ui(self):
-        self.setWindowTitle("Decryption | Choose a private key")
+        self.setWindowTitle(self.tr("Decryption | Choose a private key"))
         self.browse_button.setEnabled(True)
         self.key_text_area.setEnabled(False)
-        self.file_radio.setText("Load private key from file")
-        self.text_radio.setText("Enter private key manually")
+        self.file_radio.setText(self.tr("Load private key from file"))
+        self.text_radio.setText(self.tr("Enter private key manually"))
         self.file_path_input.setPlaceholderText(
-            "Browse for a private key file (the path will be generated automatically)..."
+            self.tr(
+                "Browse for a private key file (the path will be generated automatically)..."
+            )
         )
-        self.key_text_area.setPlaceholderText("Enter your private key here...")
+        self.key_text_area.setPlaceholderText(self.tr("Enter your private key here..."))
 
     def toggle_input_mode(self):
         if self.file_radio.isChecked():
@@ -54,7 +56,10 @@ class ChoosePrivateKeyScreen(qtw.QWidget, Ui_KeyInputForm):
 
     def browse_file(self):
         full_file_path, _ = qtw.QFileDialog.getOpenFileName(
-            self, "Select Private Key File", "", "PEM Files (*.pem);;All Files (*)"
+            self,
+            self.tr("Select Private Key File"),
+            "",
+            "PEM Files (*.pem);;All Files (*)",
         )
         if full_file_path:
             self.selected_file_path = full_file_path
@@ -79,14 +84,18 @@ class ChoosePrivateKeyScreen(qtw.QWidget, Ui_KeyInputForm):
         if self.file_radio.isChecked():
             file_path = self.selected_file_path.strip()
             if not file_path:
-                qtw.QMessageBox.warning(self, "Error", "Please select a valid file.")
+                qtw.QMessageBox.warning(
+                    self, self.tr("Error"), self.tr("Please select a valid file.")
+                )
                 return
             try:
                 self.private_key = self.key_manager.load_private_key_from_file(
                     file_path, password
                 )
             except Exception as e:
-                qtw.QMessageBox.critical(self, "Unsupported File Detected", f"{e}")
+                qtw.QMessageBox.critical(
+                    self, self.tr("Unsupported File Detected"), self.tr(f"{e}")
+                )
                 return
         else:
             input_private_key = self.key_text_area.toPlainText().strip()
@@ -96,13 +105,15 @@ class ChoosePrivateKeyScreen(qtw.QWidget, Ui_KeyInputForm):
                         input_private_key, password
                     )
                 except Exception as e:
-                    qtw.QMessageBox.critical(self, "Key Format Error", f"{e}")
+                    qtw.QMessageBox.critical(
+                        self, self.tr("Key Format Error"), self.tr(f"{e}")
+                    )
                     return
             else:
                 qtw.QMessageBox.warning(
                     self,
-                    "Private Key Format Error",
-                    "Please enter a valid private key to proceed",
+                    self.tr("Private Key Format Error"),
+                    self.tr("Please enter a valid private key to proceed"),
                 )
                 return
 

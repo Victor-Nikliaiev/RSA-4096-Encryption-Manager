@@ -1,0 +1,1848 @@
+execve("/home/arhis/Documents/Code/Python/encryption_app/.venv/bin/pyside6-lupdate", ["pyside6-lupdate", "-recursive", ".", "-ts", "./myapp_en.ts"], 0x7ffed3eff760 /* 72 vars */) = 0
+brk(NULL)                               = 0x300f0000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x79679195d000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=89099, ...}) = 0
+mmap(NULL, 89099, PROT_READ, MAP_PRIVATE, 3, 0) = 0x796791947000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=952616, ...}) = 0
+mmap(NULL, 950296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x79679185e000
+mmap(0x79679186e000, 520192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x79679186e000
+mmap(0x7967918ed000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8f000) = 0x7967918ed000
+mmap(0x796791945000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe7000) = 0x796791945000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=113000, ...}) = 0
+mmap(NULL, 110744, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x796791842000
+mmap(0x796791844000, 73728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x796791844000
+mmap(0x796791856000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x796791856000
+mmap(0x79679185c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x79679185c000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libexpat.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=170240, ...}) = 0
+mmap(NULL, 172160, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x796791817000
+mmap(0x79679181b000, 114688, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x79679181b000
+mmap(0x796791837000, 32768, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x796791837000
+mmap(0x79679183f000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x79679183f000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x796791600000
+mmap(0x796791628000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x796791628000
+mmap(0x7967917b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7967917b0000
+mmap(0x7967917ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7967917ff000
+mmap(0x796791805000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x796791805000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796791815000
+arch_prctl(ARCH_SET_FS, 0x796791816080) = 0
+set_tid_address(0x796791816350)         = 75657
+set_robust_list(0x796791816360, 24)     = 0
+rseq(0x7967918169a0, 0x20, 0, 0x53053053) = 0
+mprotect(0x7967917ff000, 16384, PROT_READ) = 0
+mprotect(0x79679183f000, 8192, PROT_READ) = 0
+mprotect(0x79679185c000, 4096, PROT_READ) = 0
+mprotect(0x796791945000, 4096, PROT_READ) = 0
+mprotect(0xa27000, 4096, PROT_READ)     = 0
+mprotect(0x796791995000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x796791947000, 89099)           = 0
+getrandom("\x0e\x17\x5c\x51\xbf\xc0\x4a\x32", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x300f0000
+brk(0x30111000)                         = 0x30111000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8628480, ...}) = 0
+mmap(NULL, 8628480, PROT_READ, MAP_PRIVATE, 3, 0) = 0x796790c00000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=27028, ...}) = 0
+mmap(NULL, 27028, PROT_READ, MAP_SHARED, 3, 0) = 0x796791956000
+close(3)                                = 0
+futex(0x79679180472c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getrandom("\xae\xf0\x8c\x0b\x33\xa4\x2b\x19\x85\x77\x4f\x6e\x68\x5b\xe7\x2b\xb2\x94\x71\x1c\xcc\xbd\xd0\xf2", 24, GRND_NONBLOCK) = 24
+gettid()                                = 75657
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796791500000
+mmap(NULL, 266240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7967914bf000
+mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x79679149e000
+brk(0x30132000)                         = 0x30132000
+brk(0x30153000)                         = 0x30153000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796791952000
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/pyvenv.cfg", O_RDONLY) = 3
+fcntl(3, F_GETFD)                       = 0
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=227, ...}) = 0
+read(3, "home = /usr/bin\ninclude-system-s"..., 32768) = 227
+read(3, "", 28672)                      = 0
+close(3)                                = 0
+readlink("/home/arhis/Documents/Code/Python/encryption_app/.venv/bin/python3.12", "/usr/bin/python3.12", 4096) = 19
+readlink("/usr/bin/python3.12", 0x7ffc76547b50, 4096) = -1 EINVAL (Invalid argument)
+readlink("/usr/bin/python3.12", 0x7ffc76547b50, 4096) = -1 EINVAL (Invalid argument)
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin/python3.12._pth", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/bin/python3.12._pth", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/bin/pybuilddir.txt", O_RDONLY) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/Modules/Setup.local", 0x7ffc7654cb30, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/lib/python312.zip", 0x7ffc7654c8f0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python312.zip", 0x7ffc7654c950, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/lib/python3.12/os.py", 0x7ffc7654c950, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/lib/python3.12/os.pyc", 0x7ffc7654c950, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/os.py", {st_mode=S_IFREG|0644, st_size=39786, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/bin/lib/python3.12/lib-dynload", 0x7ffc7654c950, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+brk(0x30174000)                         = 0x30174000
+openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2120, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2120, ...}) = 0
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\17\0\0\0\17\0\0\0\0"..., 4096) = 2120
+lseek(3, -1317, SEEK_CUR)               = 803
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\17\0\0\0\17\0\0\0\0"..., 4096) = 1317
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python312.zip", 0x7ffc7654c380, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python312.zip", 0x7ffc7654c700, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+getdents64(3, 0x30156940 /* 203 entries */, 32768) = 6784
+getdents64(3, 0x30156940 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffc7654c700, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.abi3.so", 0x7ffc7654c700, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.so", 0x7ffc7654c700, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5884, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5884, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/encodings/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+fstat(3, {st_mode=S_IFREG|0644, st_size=5790, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c340)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=5790, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\374\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 5791) = 5790
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/encodings", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+getdents64(3, 0x30160100 /* 125 entries */, 32768) = 4224
+getdents64(3, 0x30160100 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15677, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15677, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/encodings/__pycache__/aliases.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=12408, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b8c0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=12408, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g==\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 12409) = 12408
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x30196000)                         = 0x30196000
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/encodings/__pycache__/utf_8.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2147, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c3d0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2147, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\355\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 2148) = 2147
+read(3, "", 1)                          = 0
+close(3)                                = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796791645320}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXFSZ, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796791645320}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796790b00000
+rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796791645320}, 8) = 0
+rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796791645320}, 8) = 0
+rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x6e7280, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796791645320}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+fcntl(0, F_GETFD)                       = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+ioctl(0, TCGETS, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(0, TCGETS, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+fcntl(1, F_GETFD)                       = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+ioctl(1, TCGETS, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+lseek(1, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(1, TCGETS, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+fcntl(2, F_GETFD)                       = 0
+fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+ioctl(2, TCGETS, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+lseek(2, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(2, TCGETS, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin/pyvenv.cfg", 0x7ffc7654c340, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/pyvenv.cfg", {st_mode=S_IFREG|0664, st_size=227, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/pyvenv.cfg", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=227, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c3e0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "home = /usr/bin\ninclude-system-s"..., 8192) = 227
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents64(3, 0x30183f60 /* 18 entries */, 32768) = 720
+getdents64(3, 0x30183f60 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/local/lib/python3.12/dist-packages", 0x7ffc7654c5d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3/dist-packages", 0x7ffc7654c5d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/dist-packages", 0x7ffc7654c5d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents64(3, 0x30183f60 /* 18 entries */, 32768) = 720
+getdents64(3, 0x30183f60 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/local/lib/python3.12/dist-packages", 0x7ffc7654c5d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3/dist-packages", 0x7ffc7654c5d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/dist-packages", 0x7ffc7654c5d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/sitecustomize.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=300, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654beb0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=300, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0\273$\26f\233\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 301) = 300
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+getdents64(3, 0x30183f60 /* 49 entries */, 32768) = 3104
+getdents64(3, 0x30183f60 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents64(3, 0x30183f60 /* 18 entries */, 32768) = 720
+getdents64(3, 0x30183f60 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin/pyside6-lupdate", {st_mode=S_IFREG|0775, st_size=285, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin/pyside6-lupdate", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0775, st_size=285, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ca10)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, -22, SEEK_END)                 = 263
+lseek(3, 0, SEEK_CUR)                   = 263
+read(3, "  sys.exit(lupdate())\n", 4096) = 22
+lseek(3, 0, SEEK_END)                   = 285
+lseek(3, 0, SEEK_CUR)                   = 285
+lseek(3, 0, SEEK_SET)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0775, st_size=285, ...}) = 0
+read(3, "#!/home/arhis/Documents/Code/Pyt"..., 286) = 285
+read(3, "", 1)                          = 0
+lseek(3, 0, SEEK_SET)                   = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin/pyside6-lupdate", {st_mode=S_IFREG|0775, st_size=285, ...}, 0) = 0
+readlink("/home/arhis/Documents/Code/Python/encryption_app/.venv/bin/pyside6-lupdate", 0x7ffc7653c1b0, 4096) = -1 EINVAL (Invalid argument)
+readlink("/home", 0x7ffc7653bd50, 1023) = -1 EINVAL (Invalid argument)
+readlink("/home/arhis", 0x7ffc7653bd50, 1023) = -1 EINVAL (Invalid argument)
+readlink("/home/arhis/Documents", 0x7ffc7653bd50, 1023) = -1 EINVAL (Invalid argument)
+readlink("/home/arhis/Documents/Code", 0x7ffc7653bd50, 1023) = -1 EINVAL (Invalid argument)
+readlink("/home/arhis/Documents/Code/Python", 0x7ffc7653bd50, 1023) = -1 EINVAL (Invalid argument)
+readlink("/home/arhis/Documents/Code/Python/encryption_app", 0x7ffc7653bd50, 1023) = -1 EINVAL (Invalid argument)
+readlink("/home/arhis/Documents/Code/Python/encryption_app/.venv", 0x7ffc7653bd50, 1023) = -1 EINVAL (Invalid argument)
+readlink("/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", 0x7ffc7653bd50, 1023) = -1 EINVAL (Invalid argument)
+readlink("/home/arhis/Documents/Code/Python/encryption_app/.venv/bin/pyside6-lupdate", 0x7ffc7653bd50, 1023) = -1 EINVAL (Invalid argument)
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin/pyside6-lupdate", O_RDONLY) = 3
+ioctl(3, FIOCLEX)                       = 0
+fstat(3, {st_mode=S_IFREG|0775, st_size=285, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654d140)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0775, st_size=285, ...}) = 0
+read(3, "#!/home/arhis/Documents/Code/Pyt"..., 4096) = 285
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "#!/home/arhis/Documents/Code/Pyt"..., 4096) = 285
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+brk(0x301b8000)                         = 0x301b8000
+getdents64(3, 0x3018f370 /* 36 entries */, 32768) = 1320
+getdents64(3, 0x3018f370 /* 0 entries */, 32768) = 0
+brk(0x301b0000)                         = 0x301b0000
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffc7654ca70, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/__init__.abi3.so", 0x7ffc7654ca70, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/__init__.so", 0x7ffc7654ca70, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/__init__.py", {st_mode=S_IFREG|0644, st_size=16315, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/__init__.py", {st_mode=S_IFREG|0644, st_size=16315, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/re/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=17938, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=17938, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\273?\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 17939) = 17938
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/enum.py", {st_mode=S_IFREG|0644, st_size=81636, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/enum.py", {st_mode=S_IFREG|0644, st_size=81636, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/enum.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=80708, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c0a0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=80708, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\344>\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 80709) = 80708
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/types.py", {st_mode=S_IFREG|0644, st_size=10993, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/types.py", {st_mode=S_IFREG|0644, st_size=10993, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/types.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=14939, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ba30)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=14939, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\361*\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 14940) = 14939
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/operator.py", {st_mode=S_IFREG|0644, st_size=10965, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/operator.py", {st_mode=S_IFREG|0644, st_size=10965, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/operator.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=17364, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ba30)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=17364, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\325*\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 17365) = 17364
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/functools.py", {st_mode=S_IFREG|0644, st_size=38126, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/functools.py", {st_mode=S_IFREG|0644, st_size=38126, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/functools.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=40506, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ba30)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=40506, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\356\224\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\7\0\0"..., 40507) = 40506
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffc7654b720, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.abi3.so", 0x7ffc7654b720, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.so", 0x7ffc7654b720, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=52378, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=52378, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/collections/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=73089, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b3c0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=73089, ...}) = 0
+brk(0x301e1000)                         = 0x301e1000
+read(3, "\313\r\r\n\0\0\0\0003\266+g\232\314\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 73090) = 73089
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x301cf000)                         = 0x301cf000
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/keyword.py", {st_mode=S_IFREG|0644, st_size=1073, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/keyword.py", {st_mode=S_IFREG|0644, st_size=1073, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/keyword.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1041, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ad50)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1041, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g1\4\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0"..., 1042) = 1041
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/reprlib.py", {st_mode=S_IFREG|0644, st_size=6569, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/reprlib.py", {st_mode=S_IFREG|0644, st_size=6569, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/reprlib.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=9909, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ad50)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=9909, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\251\31\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 9910) = 9909
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/re", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, 0x301bf2d0 /* 8 entries */, 32768) = 248
+getdents64(3, 0x301bf2d0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_compiler.py", {st_mode=S_IFREG|0644, st_size=26089, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_compiler.py", {st_mode=S_IFREG|0644, st_size=26089, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/re/__pycache__/_compiler.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26516, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654bc30)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=26516, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\351e\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 26517) = 26516
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_parser.py", {st_mode=S_IFREG|0644, st_size=41201, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_parser.py", {st_mode=S_IFREG|0644, st_size=41201, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/re/__pycache__/_parser.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=42007, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b150)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=42007, ...}) = 0
+brk(0x301f7000)                         = 0x301f7000
+read(3, "\313\r\r\n\0\0\0\0003\266+g\361\240\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0"..., 42008) = 42007
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_constants.py", {st_mode=S_IFREG|0644, st_size=5930, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_constants.py", {st_mode=S_IFREG|0644, st_size=5930, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/re/__pycache__/_constants.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=5296, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654aae0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=5296, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g*\27\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\24\0\0"..., 5297) = 5296
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_casefix.py", {st_mode=S_IFREG|0644, st_size=5446, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_casefix.py", {st_mode=S_IFREG|0644, st_size=5446, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/re/__pycache__/_casefix.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1816, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b5c0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1816, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+gF\25\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 1817) = 1816
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/copyreg.py", {st_mode=S_IFREG|0644, st_size=7614, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/copyreg.py", {st_mode=S_IFREG|0644, st_size=7614, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/copyreg.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7414, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c0a0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7414, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\276\35\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 7415) = 7414
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffc7654c190, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/__init__.abi3.so", 0x7ffc7654c190, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/__init__.so", 0x7ffc7654c190, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/__init__.py", {st_mode=S_IFREG|0664, st_size=6218, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/__init__.py", {st_mode=S_IFREG|0664, st_size=6218, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=6748, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654be30)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=6748, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0\330\324XgJ\30\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 6749) = 6748
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/pathlib.py", {st_mode=S_IFREG|0644, st_size=51153, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/pathlib.py", {st_mode=S_IFREG|0644, st_size=51153, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/pathlib.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=62098, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b7c0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=62098, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\321\307\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 62099) = 62098
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x30223000)                         = 0x30223000
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/fnmatch.py", {st_mode=S_IFREG|0644, st_size=5999, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/fnmatch.py", {st_mode=S_IFREG|0644, st_size=5999, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/fnmatch.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6495, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b150)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=6495, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+go\27\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 6496) = 6495
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/warnings.py", {st_mode=S_IFREG|0644, st_size=21760, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/warnings.py", {st_mode=S_IFREG|0644, st_size=21760, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/warnings.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=23792, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b150)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=23792, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\0U\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 23793) = 23792
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffc7654b040, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/__init__.abi3.so", 0x7ffc7654b040, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/__init__.so", 0x7ffc7654b040, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/urllib/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=135, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ace0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=135, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\0\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 136) = 135
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/urllib", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, 0x301d9e10 /* 9 entries */, 32768) = 280
+getdents64(3, 0x301d9e10 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/parse.py", {st_mode=S_IFREG|0644, st_size=44923, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/parse.py", {st_mode=S_IFREG|0644, st_size=44923, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/urllib/__pycache__/parse.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=50094, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b150)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=50094, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g{\257\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 50095) = 50094
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/ipaddress.py", {st_mode=S_IFREG|0644, st_size=78294, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/ipaddress.py", {st_mode=S_IFREG|0644, st_size=78294, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/ipaddress.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=90762, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654aae0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=90762, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\3261\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 90763) = 90762
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796790a00000
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis", {st_mode=S_IFDIR|0750, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffc7654bb20, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/__init__.abi3.so", 0x7ffc7654bb20, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/__init__.so", 0x7ffc7654bb20, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/__init__.py", {st_mode=S_IFREG|0664, st_size=667, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/__init__.py", {st_mode=S_IFREG|0664, st_size=667, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=730, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b7c0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=730, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0\325\324Xg\233\2\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0"..., 731) = 730
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffc7654b4b0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/__init__.abi3.so", 0x7ffc7654b4b0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/__init__.so", 0x7ffc7654b4b0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/__init__.py", {st_mode=S_IFREG|0644, st_size=87706, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/__init__.py", {st_mode=S_IFREG|0644, st_size=87706, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/zipfile/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=99421, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b150)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=99421, ...}) = 0
+brk(0x30244000)                         = 0x30244000
+read(3, "\313\r\r\n\0\0\0\0003\266+g\232V\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 99422) = 99421
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffc7654a9d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.abi3.so", 0x7ffc7654a9d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.so", 0x7ffc7654a9d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.py", {st_mode=S_IFREG|0644, st_size=4774, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.py", {st_mode=S_IFREG|0644, st_size=4774, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/importlib/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4565, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654a670)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4565, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\246\22\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 4566) = 4565
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/importlib", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, 0x3020b010 /* 14 entries */, 32768) = 456
+getdents64(3, 0x3020b010 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/_abc.py", {st_mode=S_IFREG|0644, st_size=1354, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/_abc.py", {st_mode=S_IFREG|0644, st_size=1354, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/importlib/__pycache__/_abc.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1643, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654a4b0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1643, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+gJ\5\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 1644) = 1643
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/threading.py", {st_mode=S_IFREG|0644, st_size=60123, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/threading.py", {st_mode=S_IFREG|0644, st_size=60123, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/threading.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=65346, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654a4b0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=65346, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\333\352\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 65347) = 65346
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5893, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5893, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/_weakrefset.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=11751, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc76549e40)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=11751, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\5\27\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 11752) = 11751
+read(3, "", 1)                          = 0
+close(3)                                = 0
+gettid()                                = 75657
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/shutil.py", {st_mode=S_IFREG|0644, st_size=58120, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/shutil.py", {st_mode=S_IFREG|0644, st_size=58120, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/shutil.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=68113, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654aae0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=68113, ...}) = 0
+brk(0x30266000)                         = 0x30266000
+read(3, "\313\r\r\n\0\0\0\0003\266+g\10\343\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 68114) = 68113
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x30255000)                         = 0x30255000
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/bz2.py", {st_mode=S_IFREG|0644, st_size=11847, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/bz2.py", {st_mode=S_IFREG|0644, st_size=11847, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/bz2.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=15133, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654a470)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=15133, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+gG.\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 15134) = 15133
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/_compression.py", {st_mode=S_IFREG|0644, st_size=5681, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/_compression.py", {st_mode=S_IFREG|0644, st_size=5681, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/_compression.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7497, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc76549e00)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7497, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g1\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 7498) = 7497
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=32112, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=32112, ...}) = 0
+mmap(NULL, 34032, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x796791949000
+mmap(0x79679194b000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x79679194b000
+mmap(0x79679194e000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x79679194e000
+mmap(0x796791950000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x796791950000
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=89099, ...}) = 0
+mmap(NULL, 89099, PROT_READ, MAP_PRIVATE, 3, 0) = 0x796791488000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=78944, ...}) = 0
+mmap(NULL, 80936, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x796791474000
+mmap(0x796791476000, 57344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x796791476000
+mmap(0x796791484000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x796791484000
+mmap(0x796791486000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x796791486000
+close(3)                                = 0
+mprotect(0x796791486000, 4096, PROT_READ) = 0
+mprotect(0x796791950000, 4096, PROT_READ) = 0
+munmap(0x796791488000, 89099)           = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lzma.py", {st_mode=S_IFREG|0644, st_size=13277, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lzma.py", {st_mode=S_IFREG|0644, st_size=13277, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/lzma.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=15855, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654a470)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=15855, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\3353\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0"..., 15856) = 15855
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=49256, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=49256, ...}) = 0
+mmap(NULL, 51176, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x796791491000
+mmap(0x796791494000, 20480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x796791494000
+mmap(0x796791499000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x796791499000
+mmap(0x79679149c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x79679149c000
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=89099, ...}) = 0
+mmap(NULL, 89099, PROT_READ, MAP_PRIVATE, 3, 0) = 0x79679145e000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=202904, ...}) = 0
+mmap(NULL, 200728, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7967909ce000
+mmap(0x7967909d1000, 139264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7967909d1000
+mmap(0x7967909f3000, 45056, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7967909f3000
+mmap(0x7967909fe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30000) = 0x7967909fe000
+close(3)                                = 0
+mprotect(0x7967909fe000, 4096, PROT_READ) = 0
+mprotect(0x79679149c000, 4096, PROT_READ) = 0
+munmap(0x79679145e000, 89099)           = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/struct.py", {st_mode=S_IFREG|0644, st_size=257, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/struct.py", {st_mode=S_IFREG|0644, st_size=257, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/struct.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=325, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654aae0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=325, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\1\1\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0"..., 326) = 325
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/zipfile", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, 0x30242fb0 /* 6 entries */, 32768) = 176
+getdents64(3, 0x30242fb0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffc7654ae40, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__init__.abi3.so", 0x7ffc7654ae40, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__init__.so", 0x7ffc7654ae40, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__init__.py", {st_mode=S_IFREG|0644, st_size=10753, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__init__.py", {st_mode=S_IFREG|0644, st_size=10753, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=18838, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654aae0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=18838, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\1*\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 18839) = 18838
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/contextlib.py", {st_mode=S_IFREG|0644, st_size=27637, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/contextlib.py", {st_mode=S_IFREG|0644, st_size=27637, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/contextlib.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=30376, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654a470)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=30376, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\365k\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\7\0\0"..., 30377) = 30376
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, 0x3024c9a0 /* 5 entries */, 32768) = 144
+getdents64(3, 0x3024c9a0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/glob.py", {st_mode=S_IFREG|0644, st_size=893, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/glob.py", {st_mode=S_IFREG|0644, st_size=893, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__pycache__/glob.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1532, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654a470)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1532, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g}\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0"..., 1533) = 1532
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/base64.py", {st_mode=S_IFREG|0755, st_size=20602, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/base64.py", {st_mode=S_IFREG|0755, st_size=20602, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/base64.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=24408, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b150)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=24408, ...}) = 0
+brk(0x30278000)                         = 0x30278000
+read(3, "\313\r\r\n\0\0\0\0003\266+gzP\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 24409) = 24408
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/textwrap.py", {st_mode=S_IFREG|0644, st_size=19718, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/textwrap.py", {st_mode=S_IFREG|0644, st_size=19718, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/textwrap.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=18293, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b150)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=18293, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\6M\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 18294) = 18293
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/traceback.py", {st_mode=S_IFREG|0644, st_size=46325, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/traceback.py", {st_mode=S_IFREG|0644, st_size=46325, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/traceback.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=51523, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b150)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=51523, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\365\264\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 51524) = 51523
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/collections", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, 0x30257750 /* 5 entries */, 32768) = 144
+getdents64(3, 0x30257750 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/abc.py", {st_mode=S_IFREG|0644, st_size=119, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/abc.py", {st_mode=S_IFREG|0644, st_size=119, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/collections/__pycache__/abc.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=249, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654aae0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=249, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+gw\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0"..., 250) = 249
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/linecache.py", {st_mode=S_IFREG|0644, st_size=5649, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/linecache.py", {st_mode=S_IFREG|0644, st_size=5649, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/linecache.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6401, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654aae0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=6401, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\21\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0"..., 6402) = 6401
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/tokenize.py", {st_mode=S_IFREG|0644, st_size=21214, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/tokenize.py", {st_mode=S_IFREG|0644, st_size=21214, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/tokenize.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=24775, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654a470)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=24775, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\336R\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0"..., 24776) = 24775
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/token.py", {st_mode=S_IFREG|0644, st_size=2479, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/token.py", {st_mode=S_IFREG|0644, st_size=2479, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/token.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3557, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc76549e00)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3557, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\257\t\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0"..., 3558) = 3557
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7967908ce000
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/tempfile.py", {st_mode=S_IFREG|0644, st_size=37334, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/tempfile.py", {st_mode=S_IFREG|0644, st_size=37334, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/tempfile.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=47339, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b150)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=47339, ...}) = 0
+brk(0x3029a000)                         = 0x3029a000
+read(3, "\313\r\r\n\0\0\0\0003\266+g\326\221\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 47340) = 47339
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/random.py", {st_mode=S_IFREG|0644, st_size=34683, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/random.py", {st_mode=S_IFREG|0644, st_size=34683, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/random.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33153, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654aae0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=33153, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g{\207\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 33154) = 33153
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/bisect.py", {st_mode=S_IFREG|0644, st_size=3423, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/bisect.py", {st_mode=S_IFREG|0644, st_size=3423, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/bisect.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3641, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654a470)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3641, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g_\r\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 3642) = 3641
+read(3, "", 1)                          = 0
+close(3)                                = 0
+getrandom("\xcf\x3a\x0a\x78\x31\xbf\x8f\x91\xb0\x9d\xca\x3f\x6f\x4f\xed\x49\x24\xcd\x3e\x5c\xa2\x09\x52\xc3\x5a\x17\x61\x99\xb7\x4d\x42\x62"..., 2496, GRND_NONBLOCK) = 2496
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/weakref.py", {st_mode=S_IFREG|0644, st_size=21513, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/weakref.py", {st_mode=S_IFREG|0644, st_size=21513, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/weakref.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=31348, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654aae0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=31348, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\tT\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 31349) = 31348
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/typing.py", {st_mode=S_IFREG|0644, st_size=117428, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/typing.py", {st_mode=S_IFREG|0644, st_size=117428, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/typing.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=141860, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b150)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=141860, ...}) = 0
+mmap(NULL, 143360, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796791451000
+read(3, "\313\r\r\n\0\0\0\0003\266+g\264\312\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\17\0\0"..., 141861) = 141860
+read(3, "", 1)                          = 0
+close(3)                                = 0
+munmap(0x796791451000, 143360)          = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+brk(0x302c1000)                         = 0x302c1000
+getdents64(3, 0x302988d0 /* 10 entries */, 32768) = 352
+getdents64(3, 0x302988d0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/Shiboken.abi3.so", {st_mode=S_IFREG|0775, st_size=23728, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/Shiboken.abi3.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240#\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0775, st_size=23728, ...}) = 0
+mmap(NULL, 25728, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x79679148a000
+mmap(0x79679148c000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x79679148c000
+mmap(0x79679148e000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x79679148e000
+mmap(0x79679148f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x79679148f000
+close(3)                                = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/glibc-hwcaps/x86-64-v4/libshiboken6.abi3.so.6.8", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/glibc-hwcaps/x86-64-v4/", 0x7ffc76549fb0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/glibc-hwcaps/x86-64-v3/libshiboken6.abi3.so.6.8", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/glibc-hwcaps/x86-64-v3/", 0x7ffc76549fb0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/glibc-hwcaps/x86-64-v2/libshiboken6.abi3.so.6.8", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/glibc-hwcaps/x86-64-v2/", 0x7ffc76549fb0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/libshiboken6.abi3.so.6.8", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0+\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0775, st_size=425264, ...}) = 0
+mmap(NULL, 430696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x796790864000
+mmap(0x796790875000, 208896, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x796790875000
+mmap(0x7967908a8000, 139264, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x44000) = 0x7967908a8000
+mmap(0x7967908ca000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x65000) = 0x7967908ca000
+mmap(0x7967908cd000, 616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7967908cd000
+close(3)                                = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=89099, ...}) = 0
+mmap(NULL, 89099, PROT_READ, MAP_PRIVATE, 3, 0) = 0x79679145e000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=2592224, ...}) = 0
+mmap(NULL, 2609472, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x796790400000
+mmap(0x79679049d000, 1343488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9d000) = 0x79679049d000
+mmap(0x7967905e5000, 552960, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e5000) = 0x7967905e5000
+mmap(0x79679066c000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26b000) = 0x79679066c000
+mmap(0x79679067a000, 12608, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x79679067a000
+close(3)                                = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=183024, ...}) = 0
+mmap(NULL, 185256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x796790836000
+mmap(0x79679083a000, 147456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x79679083a000
+mmap(0x79679085e000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x79679085e000
+mmap(0x796790862000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2b000) = 0x796790862000
+close(3)                                = 0
+mprotect(0x796790862000, 4096, PROT_READ) = 0
+mprotect(0x79679066c000, 45056, PROT_READ) = 0
+mprotect(0x7967908ca000, 4096, PROT_READ) = 0
+mprotect(0x79679148f000, 4096, PROT_READ) = 0
+futex(0x79679067a7bc, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+munmap(0x79679145e000, 89099)           = 0
+brk(0x302e2000)                         = 0x302e2000
+brk(0x30303000)                         = 0x30303000
+brk(0x30325000)                         = 0x30325000
+brk(0x30347000)                         = 0x30347000
+getcwd("/home/arhis/Documents/Code/Python/encryption_app", 1024) = 49
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/__future__.py", {st_mode=S_IFREG|0644, st_size=5218, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/__future__.py", {st_mode=S_IFREG|0644, st_size=5218, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/__future__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4704, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654a800)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4704, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+gb\24\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 4705) = 4704
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis", {st_mode=S_IFDIR|0750, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/__init__.py", {st_mode=S_IFREG|0664, st_size=667, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/__init__.py", {st_mode=S_IFREG|0664, st_size=667, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/files.dir", 0x7ffc7654b020, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/cp437.py", {st_mode=S_IFREG|0644, st_size=34564, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/cp437.py", {st_mode=S_IFREG|0644, st_size=34564, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/encodings/__pycache__/cp437.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=13284, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654a0b0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=13284, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\4\207\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0"..., 13285) = 13284
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/inspect.py", {st_mode=S_IFREG|0644, st_size=125420, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/inspect.py", {st_mode=S_IFREG|0644, st_size=125420, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/inspect.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=133446, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc76549000)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=133446, ...}) = 0
+brk(0x30374000)                         = 0x30374000
+read(3, "\313\r\r\n\0\0\0\0003\266+g\354\351\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 133447) = 133446
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 208896, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796791441000
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/ast.py", {st_mode=S_IFREG|0644, st_size=64260, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/ast.py", {st_mode=S_IFREG|0644, st_size=64260, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/ast.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=100279, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc76548850)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=100279, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\4\373\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\21\0\0"..., 100280) = 100279
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796790736000
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/dis.py", {st_mode=S_IFREG|0644, st_size=30209, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/dis.py", {st_mode=S_IFREG|0644, st_size=30209, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/dis.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=34560, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc76548850)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=34560, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\1v\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0"..., 34561) = 34560
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/opcode.py", {st_mode=S_IFREG|0644, st_size=13174, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/opcode.py", {st_mode=S_IFREG|0644, st_size=13174, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/opcode.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=14716, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc765480a0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=14716, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+gv3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0"..., 14717) = 14716
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x30395000)                         = 0x30395000
+brk(0x303ba000)                         = 0x303ba000
+brk(0x303dc000)                         = 0x303dc000
+brk(0x303ff000)                         = 0x303ff000
+brk(0x30429000)                         = 0x30429000
+brk(0x30450000)                         = 0x30450000
+brk(0x30428000)                         = 0x30428000
+brk(0x30455000)                         = 0x30455000
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents64(3, 0x30408010 /* 147 entries */, 32768) = 5688
+getdents64(3, 0x30408010 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/support/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffc76549360, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/support/__init__.abi3.so", 0x7ffc76549360, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/support/__init__.so", 0x7ffc76549360, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/support/__init__.py", {st_mode=S_IFREG|0664, st_size=223, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/support/__init__.py", {st_mode=S_IFREG|0664, st_size=223, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/support/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=310, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc76549000)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=310, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0\326\324Xg\337\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0"..., 311) = 310
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/support", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/support", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/support", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/support", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents64(3, 0x30408010 /* 6 entries */, 32768) = 192
+getdents64(3, 0x30408010 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/support/deprecated.py", {st_mode=S_IFREG|0664, st_size=605, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/support/deprecated.py", {st_mode=S_IFREG|0664, st_size=605, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/support/__pycache__/deprecated.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=266, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc76548b90)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=266, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0\326\324Xg]\2\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0"..., 267) = 266
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/argparse.py", {st_mode=S_IFREG|0644, st_size=101750, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/argparse.py", {st_mode=S_IFREG|0644, st_size=101750, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/argparse.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=101682, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc76549000)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=101682, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+gv\215\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 101683) = 101682
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/gettext.py", {st_mode=S_IFREG|0644, st_size=21747, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/gettext.py", {st_mode=S_IFREG|0644, st_size=21747, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/gettext.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=22151, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc76548850)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=22151, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\363T\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 22152) = 22151
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/logging/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffc76549360, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/logging/__init__.abi3.so", 0x7ffc76549360, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/logging/__init__.so", 0x7ffc76549360, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/logging/__init__.py", {st_mode=S_IFREG|0644, st_size=83437, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/logging/__init__.py", {st_mode=S_IFREG|0644, st_size=83437, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/logging/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=95463, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc76549000)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=95463, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\355E\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0"..., 95464) = 95463
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796790300000
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/string.py", {st_mode=S_IFREG|0644, st_size=11786, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/string.py", {st_mode=S_IFREG|0644, st_size=11786, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/string.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=11482, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc76548850)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=11482, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\n.\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 11483) = 11482
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/__init__.py", {st_mode=S_IFREG|0664, st_size=667, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/__init__.py", {st_mode=S_IFREG|0664, st_size=667, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/shiboken6/__init__.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=667, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ac10)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "__version__ = \"6.8.1\"\n__version_"..., 4096) = 667
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/enum.py", {st_mode=S_IFREG|0644, st_size=81636, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/enum.py", {st_mode=S_IFREG|0644, st_size=81636, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/enum.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=81636, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ac60)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "import sys\nimport builtins as bl"..., 4096) = 4096
+read(3, "       s = bltns.bin(~num ^ (cei"..., 8192) = 8192
+read(3, "_class, member_name, enum_member"..., 8192) = 8192
+read(3, "nv\n        #\n        # data type"..., 8192) = 8192
+read(3, "ound\n        at in its module; b"..., 8192) = 8192
+read(3, "    if isinstance(base, EnumType"..., 8192) = 8192
+read(3, "\n    @staticmethod\n    def _gene"..., 8192) = 8192
+read(3, "l_bits ^ flag_mask)\n            "..., 8192) = 8192
+read(3, "it():\n                name.appen"..., 8192) = 8192
+read(3, ", name)\n                    seta"..., 8192) = 8192
+read(3, ":\n                    if key in "..., 8192) = 3812
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/scripts/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffc7654c600, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/scripts/__init__.abi3.so", 0x7ffc7654c600, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/scripts/__init__.so", 0x7ffc7654c600, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/scripts/__init__.py", {st_mode=S_IFREG|0664, st_size=0, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/scripts/__init__.py", {st_mode=S_IFREG|0664, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/scripts/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=208, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c2a0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=208, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0\326\324Xg\0\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 209) = 208
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/scripts", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/scripts", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/scripts", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/scripts", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents64(3, 0x30408010 /* 15 entries */, 32768) = 504
+getdents64(3, 0x30408010 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/scripts/pyside_tool.py", {st_mode=S_IFREG|0775, st_size=7473, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/scripts/pyside_tool.py", {st_mode=S_IFREG|0775, st_size=7473, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/scripts/__pycache__/pyside_tool.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=12885, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=12885, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0\326\324Xg1\35\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0"..., 12886) = 12885
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/__future__.py", {st_mode=S_IFREG|0644, st_size=5218, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/__future__.py", {st_mode=S_IFREG|0644, st_size=5218, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__future__.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=5218, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c290)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\"Record of phased-in incompati"..., 4096) = 4096
+read(3, ",\n                    (3, 0, 0, "..., 8192) = 1122
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.py", {st_mode=S_IFREG|0644, st_size=4774, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.py", {st_mode=S_IFREG|0644, st_size=4774, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4774, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c290)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\"A pure Python implementation "..., 4096) = 4096
+read(3, "se ImportError(f\"parent {parent_"..., 8192) = 678
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/os.py", {st_mode=S_IFREG|0644, st_size=39786, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/os.py", {st_mode=S_IFREG|0644, st_size=39786, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/os.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=39786, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c290)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "r\"\"\"OS routines for NT or Posix "..., 4096) = 4096
+read(3, "add(\"HAVE_FUTIMES\",    \"utime\")\n"..., 8192) = 8192
+read(3, "]\n    islink, join = path.islink"..., 8192) = 8192
+read(3, "ng the current process. \"\"\"\n    "..., 8192) = 8192
+read(3, "ilename (an os.PathLike, bytes, "..., 8192) = 8192
+read(3, "f str or bytes is passed in, it "..., 8192) = 2922
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/subprocess.py", {st_mode=S_IFREG|0644, st_size=88725, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/subprocess.py", {st_mode=S_IFREG|0644, st_size=88725, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/subprocess.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=79187, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654bec0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=79187, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\225Z\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 79188) = 79187
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/io.py", {st_mode=S_IFREG|0644, st_size=3582, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/io.py", {st_mode=S_IFREG|0644, st_size=3582, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/io.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3582, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ba40)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\"The io module provides the Py"..., 4096) = 3582
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/locale.py", {st_mode=S_IFREG|0644, st_size=78562, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/locale.py", {st_mode=S_IFREG|0644, st_size=78562, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/locale.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=59536, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b670)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=59536, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\3422\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0"..., 59537) = 59536
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5884, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5884, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=5884, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b1f0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\" Standard \"encodings\" Package"..., 4096) = 4096
+read(3, " not None and not callable(entry"..., 8192) = 1788
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/__init__.py", {st_mode=S_IFREG|0644, st_size=16315, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/__init__.py", {st_mode=S_IFREG|0644, st_size=16315, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/re/__init__.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=16315, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b1f0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "#\n# Secret Labs' Regular Express"..., 4096) = 4096
+read(3, "nt to [a-zA-Z0-9_]\n             "..., 8192) = 8192
+read(3, "n1')\n\nPattern = type(_compiler.c"..., 8192) = 4027
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=32082, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=32082, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/_collections_abc.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=32082, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b1f0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "# Copyright 2007 Google, Inc. Al"..., 4096) = 4096
+read(3, "\n\n    @classmethod\n    def __sub"..., 8192) = 8192
+read(3, "ple: ``Callable[[int, str], floa"..., 8192) = 8192
+read(3, "\n        \"\"\"Remove an element.  "..., 8192) = 8192
+read(3, ":\n            start = max(len(se"..., 8192) = 3410
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/functools.py", {st_mode=S_IFREG|0644, st_size=38126, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/functools.py", {st_mode=S_IFREG|0644, st_size=38126, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/functools.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=38126, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b1f0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\"functools.py - Tools for work"..., 4096) = 4096
+read(3, ").'\n    op_result = type(self)._"..., 8192) = 8192
+read(3, "if namespace is None:\n          "..., 8192) = 8192
+read(3, " maxsize is None:\n\n        def w"..., 8192) = 8192
+read(3, " strict bases of other entries ("..., 8192) = 8192
+read(3, "erty to two different names \"\n  "..., 8192) = 1262
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/locale.py", {st_mode=S_IFREG|0644, st_size=78562, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/locale.py", {st_mode=S_IFREG|0644, st_size=78562, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/locale.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=78562, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ba40)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\"Locale support module.\n\nThe m"..., 4096) = 4096
+read(3, "ouping = conv[monetary and 'mon_"..., 8192) = 8192
+read(3, "      setlocale().\n\n        If n"..., 8192) = 8192
+read(3, "       The default setting is de"..., 8192) = 8192
+read(3, "859-5'\n#    updated 'sr_sp' -> '"..., 8192) = 8192
+read(3, "            'ca_ES.UTF-8@valenci"..., 8192) = 8192
+read(3, "o88591':                      'f"..., 8192) = 8192
+read(3, "i_NZ.ISO8859-1',\n    'miq_ni':  "..., 8192) = 8192
+read(3, "    'sr_cs@latn':               "..., 8192) = 8192
+read(3, "France\n    0x0402: \"bg_BG\", # Bu"..., 8192) = 8192
+read(3, "cale(LC_ALL, \"\") does not suppor"..., 8192) = 738
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/signal.py", {st_mode=S_IFREG|0644, st_size=2495, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/signal.py", {st_mode=S_IFREG|0644, st_size=2495, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/signal.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4448, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b670)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4448, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\277\t\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 4449) = 4448
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/signal.py", {st_mode=S_IFREG|0644, st_size=2495, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/signal.py", {st_mode=S_IFREG|0644, st_size=2495, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/signal.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2495, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ba40)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "import _signal\nfrom _signal impo"..., 4096) = 2495
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/threading.py", {st_mode=S_IFREG|0644, st_size=60123, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/threading.py", {st_mode=S_IFREG|0644, st_size=60123, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/threading.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=60123, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ba40)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\"Thread module emulating a sub"..., 4096) = 4096
+read(3, "trace().\"\"\"\n    return _trace_ho"..., 8192) = 8192
+read(3, "  saved_state = self._release_sa"..., 8192) = 8192
+read(3, " with the set() method and reset"..., 8192) = 8192
+read(3, "elf):\n        \"\"\"Return the numb"..., 8192) = 8192
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796790200000
+read(3, "if _HAVE_THREAD_NATIVE_ID:\n     "..., 8192) = 8192
+read(3, "e entire Python program exits wh"..., 8192) = 8192
+read(3, "              DeprecationWarning"..., 8192) = 6875
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/warnings.py", {st_mode=S_IFREG|0644, st_size=21760, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/warnings.py", {st_mode=S_IFREG|0644, st_size=21760, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/warnings.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=21760, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ba40)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\"Python part of the warnings s"..., 4096) = 4096
+read(3, "rning\n    except NameError:\n    "..., 8192) = 8192
+read(3, "                  source=None):\n"..., 8192) = 8192
+read(3, "regex that must match the module"..., 8192) = 1280
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/contextlib.py", {st_mode=S_IFREG|0644, st_size=27637, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/contextlib.py", {st_mode=S_IFREG|0644, st_size=27637, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/contextlib.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=27637, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ba40)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\"Utilities for with-statement "..., 4096) = 4096
+read(3, "tContextManager,\n    ContextDeco"..., 8192) = 8192
+read(3, "       async with aclosing(<modu"..., 8192) = 8192
+read(3, "          exc_details = new_exc_"..., 8192) = 7157
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/types.py", {st_mode=S_IFREG|0644, st_size=10993, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/types.py", {st_mode=S_IFREG|0644, st_size=10993, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/types.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10993, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ba40)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\"\nDefine names for built-in ty"..., 4096) = 4096
+read(3, "eta\n            continue\n       "..., 8192) = 6897
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/selectors.py", {st_mode=S_IFREG|0644, st_size=19671, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/selectors.py", {st_mode=S_IFREG|0644, st_size=19671, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/selectors.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26128, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b670)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=26128, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\327L\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 26129) = 26128
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/abc.py", {st_mode=S_IFREG|0644, st_size=6538, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/abc.py", {st_mode=S_IFREG|0644, st_size=6538, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/abc.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6538, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b1f0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "# Copyright 2007 Google, Inc. Al"..., 4096) = 4096
+read(3, "(_abc_registry, _abc_cache, _abc"..., 8192) = 2442
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=52378, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=52378, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=52378, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654b1f0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "'''This module implements specia"..., 4096) = 4096
+read(3, "onary is updated with the new ke"..., 8192) = 8192
+read(3, " a dictionary\n    >>> d['x']\n   "..., 8192) = 8192
+read(3, "Cpp/0380__set-multiset/Catalog03"..., 8192) = 8192
+read(3, "NotImplemented\n        return no"..., 8192) = 8192
+read(3, "gs):      # like Django's Contex"..., 8192) = 8192
+read(3, "):\n        self.data.sort(*args,"..., 8192) = 7322
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+epoll_create1(EPOLL_CLOEXEC)            = 3
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/selectors.py", {st_mode=S_IFREG|0644, st_size=19671, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/selectors.py", {st_mode=S_IFREG|0644, st_size=19671, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/selectors.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=19671, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ba40)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\"Selectors module.\n\nThis modul"..., 4096) = 4096
+read(3, "ata.\n\n        Parameters:\n      "..., 8192) = 8192
+read(3, "re and handling of timeout param"..., 8192) = 7383
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/subprocess.py", {st_mode=S_IFREG|0644, st_size=88725, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/subprocess.py", {st_mode=S_IFREG|0644, st_size=88725, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/subprocess.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=88725, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c290)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "# subprocess - Subprocesses with"..., 4096) = 4096
+read(3, "        _WSTOPSIG = None\n       "..., 8192) = 8192
+read(3, "ecified.\",\n                     "..., 8192) = 8192
+read(3, "ence of arguments into a command"..., 8192) = 8192
+read(3, "leanup()\n        # Held while an"..., 8192) = 8192
+read(3, "self.stderr = io.open(errread, '"..., 8192) = 8192
+read(3, "                   pass\n        "..., 8192) = 8192
+read(3, "ndle(h)\n\n\n        def _filter_ha"..., 8192) = 8192
+read(3, "dtime, orig_timeout):\n          "..., 8192) = 8192
+read(3, "ssion, process_group):\n         "..., 8192) = 8192
+read(3, "lls).\n\n            \"\"\"\n         "..., 8192) = 8192
+read(3, " not None:\n                    s"..., 8192) = 2709
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/sysconfig.py", {st_mode=S_IFREG|0644, st_size=32768, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/sysconfig.py", {st_mode=S_IFREG|0644, st_size=32768, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/sysconfig.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=30001, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654bec0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=30001, ...}) = 0
+read(3, "\313\r\r\n\0\0\0\0003\266+g\0\200\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\17\0\0"..., 30002) = 30001
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/posixpath.py", {st_mode=S_IFREG|0644, st_size=17564, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/posixpath.py", {st_mode=S_IFREG|0644, st_size=17564, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/posixpath.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=17564, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654ba40)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\"Common operations on Posix pa"..., 4096) = 4096
+read(3, "pathname into a drive specificat"..., 8192) = 8192
+read(3, "  path = initial_slashes + sep.j"..., 8192) = 5276
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis", {st_mode=S_IFDIR|0750, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/bin/python3.12", {st_mode=S_IFLNK|0777, st_size=19, ...}, AT_SYMLINK_NOFOLLOW) = 0
+readlink("/home/arhis/Documents/Code/Python/encryption_app/.venv/bin/python3.12", "/usr/bin/python3.12", 4096) = 19
+newfstatat(AT_FDCWD, "/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/usr/bin", {st_mode=S_IFDIR|0755, st_size=69632, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/usr/bin/python3.12", {st_mode=S_IFREG|0755, st_size=8019136, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/usr/bin/Modules/Setup", 0x7ffc7654bf70, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/Modules/Setup.local", 0x7ffc7654bf70, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/sysconfig.py", {st_mode=S_IFREG|0644, st_size=32768, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/sysconfig.py", {st_mode=S_IFREG|0644, st_size=32768, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/sysconfig.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=32768, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c290)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\"Access to Python's configurat"..., 4096) = 4096
+read(3, "d to\n    # leave the following s"..., 8192) = 8192
+read(3, "        prefix_scheme = 'posix_p"..., 8192) = 8192
+read(3, "ation generated and used by'\n   "..., 8192) = 8192
+read(3, "urrently just returns 'sys.platf"..., 8192) = 4096
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/pathlib.py", {st_mode=S_IFREG|0644, st_size=51153, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/pathlib.py", {st_mode=S_IFREG|0644, st_size=51153, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/pathlib.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=51153, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c290)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "\"\"\"Object-oriented filesystem pa"..., 4096) = 4096
+read(3, "om the right. The\n    argument s"..., 8192) = 8192
+read(3, "ath from one or several strings "..., 8192) = 8192
+read(3, "ail_cached\n\n    @property\n    de"..., 8192) = 8192
+read(3, ":\n            return pattern.sea"..., 8192) = 8192
+read(3, "rrors=errors, newline=newline) a"..., 8192) = 8192
+read(3, "e:\n                check_eloop(e"..., 8192) = 6097
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/__init__.py", {st_mode=S_IFREG|0664, st_size=6218, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/__init__.py", {st_mode=S_IFREG|0664, st_size=6218, ...}, 0) = 0
+openat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/__init__.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=6218, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c290)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "import os\nimport sys\nfrom pathli"..., 4096) = 4096
+read(3, "es to dynamically load them. Tel"..., 8192) = 2122
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/ntpath.py", {st_mode=S_IFREG|0644, st_size=31483, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.12/ntpath.py", {st_mode=S_IFREG|0644, st_size=31483, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.12/ntpath.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=31483, ...}) = 0
+ioctl(3, TCGETS, 0x7ffc7654c3c0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "# Module 'ntpath' -- common oper"..., 4096) = 4096
+read(3, "             result_root = p_roo"..., 8192) = 8192
+read(3, "TH' in os.environ:\n        retur"..., 8192) = 8192
+read(3, "\n        # 2: ERROR_FILE_NOT_FOU"..., 8192) = 8192
+read(3, "us '/' as separator,\n# they are "..., 8192) = 2811
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis", {st_mode=S_IFDIR|0750, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/__init__.py", {st_mode=S_IFREG|0664, st_size=6218, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/home/arhis/Documents/Code/Python/encryption_app/.venv/lib/python3.12/site-packages/PySide6/__init__.py", {st_mode=S_IFREG|0664, st_size=6218, ...}, 0) = 0
+pipe2([3, 4], O_CLOEXEC)                = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1], [], 8) = 0
+vfork()                                 = 75658
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+close(4)                                = 0
+read(3, "", 50000)                      = 0
+close(3)                                = 0
+wait4(75658, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 75658
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=75658, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796791645320}, {sa_handler=0x6e7280, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796791645320}, 8) = 0
+munmap(0x796791441000, 208896)          = 0
+munmap(0x796791952000, 16384)           = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

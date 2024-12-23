@@ -1,10 +1,6 @@
 import sys
 from PySide6 import QtCore as qtc
 from PySide6 import QtWidgets as qtw
-from PySide6 import QtGui as qtg
-from PySide6 import QtUiTools as qtu
-from PySide6.QtQuickWidgets import QQuickWidget
-
 from assets.ui import Ui_main_window, global_stylesheet
 from assets.ui import GlowingLogo
 from screens.about import AboutScreen
@@ -31,9 +27,6 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
         self.actionAbout.triggered.connect(self.handle_about)
 
     def setupWebLogoAnimation(self):
-        # qml_widget = QQuickWidget(self)
-        # qml_widget.setSource(qtc.QUrl.fromLocalFile("assets/ui/animation.qml"))
-        # qml_widget.setResizeMode(QQuickWidget.SizeRootObjectToView)
 
         glowing_log = GlowingLogo()
 
@@ -43,7 +36,6 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
 
     @qtc.Slot()
     def handle_encrypt(self):
-        print("Encrypt button or menu clicked")
         self.encrypt_window = t.qt.center_widget(ChooseFileEncryptScreen())
         signal_manager.save_main_window.emit(self)
         self.close()
@@ -51,7 +43,6 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
 
     @qtc.Slot()
     def handle_decrypt(self):
-        print("Decrypt button or menu clicked")
         self.decrypt_window = t.qt.center_widget(ChooseFileDecryptScreen())
         signal_manager.save_main_window.emit(self)
         self.close()
@@ -59,7 +50,6 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
 
     @qtc.Slot()
     def handle_generate_keys(self):
-        print("Generate keys button or menu clicked")
         self.gen_keys_window = t.qt.center_widget(SelectKeygenScreen())
         signal_manager.save_main_window.emit(self)
         self.close()

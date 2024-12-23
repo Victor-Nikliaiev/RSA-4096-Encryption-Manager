@@ -21,7 +21,7 @@ class SaveFileEncryptScreen(qtw.QWidget, Ui_SaveFileForm):
         self.start_button.clicked.connect(self.start_button_handler)
 
     def update_ui(self):
-        self.setWindowTitle("Encryption | Save a file")
+        self.setWindowTitle(self.tr("Encryption | Save a file"))
 
         if signal_manager.saved_data.get("file_dropped"):
             self.dropped_file_path = signal_manager.saved_data["file_dropped"]
@@ -35,7 +35,10 @@ class SaveFileEncryptScreen(qtw.QWidget, Ui_SaveFileForm):
         default_filename = f"{specified_file_name}_encrypted.bin"
 
         file_path, _ = qtw.QFileDialog.getSaveFileName(
-            self, "Save File", default_filename, "Binary Files (*.bin);;All Files (*)"
+            self,
+            self.tr("Save File"),
+            default_filename,
+            self.tr("Binary Files (*.bin);;All Files (*)"),
         )
 
         if file_path:

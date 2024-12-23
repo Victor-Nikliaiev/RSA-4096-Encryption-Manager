@@ -21,7 +21,7 @@ class ChooseFileDecryptScreen(QWidget, Ui_choose_file_window_ui):
         parent_layout.insertWidget(index, self.drop_and_drag_widget)
         placeholder_widget.hide()
 
-        self.setWindowTitle("Decryption | Choose a file")
+        self.setWindowTitle(self.tr("Decryption | Choose a file"))
 
         signal_manager.update_next_button_status.connect(self.update_next_button_status)
         self.next_button.clicked.connect(self.handle_click_next)
