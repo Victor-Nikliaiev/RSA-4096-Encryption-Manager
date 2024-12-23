@@ -746,7 +746,7 @@
         <location filename="../assets/ui/main_window.ui" line="82"/>
         <location filename="../assets/ui/main_window_ui.py" line="313"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt; color:#b6f1b7;&quot;&gt;Choose process:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt; html &gt; &lt; head/&gt; &lt; body &gt; &lt; p &gt; &lt; span style = &quot;размер шрифта: 26pt;Цвет:#b6f1b7; &quot; &gt; Выберите операцию: &lt;/span &gt; &lt;/p &gt; &lt;/body &gt; &lt;/html &gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt; color:#b6f1b7;&quot;&gt;Выберите процесс:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../assets/ui/main_window.ui" line="135"/>

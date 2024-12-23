@@ -92,16 +92,3 @@ if __name__ == "__main__":
     window = t.qt.center_widget(MainWindow())
     window.show()
     sys.exit(app.exec())
-
-
-# pyside6-lupdate -extensions py,ui -recursive . -ts ./translations/encryption_es.ts
-# pyside6-lupdate -extensions py,ui -recursive . -ts ./translations/encryption_en.ts
-# pyside6-lupdate -extensions py,ui -recursive . -ts ./translations/encryption_ru.ts
-
-# pyside6-linguist ./translations/encryption_en.ts
-# pyside6-linguist ./translations/encryption_ru.ts
-# pyside6-linguist ./translations/encryption_es.ts
-
-# pyside6-lrelease  ./translations/encryption_en.ts -qm ./translations/encryption_en.qm
-# pyside6-lrelease  ./translations/encryption_ru.ts -qm ./translations/encryption_ru.qm
-# pyside6-lrelease  ./translations/encryption_es.ts -qm ./translations/encryption_es.qm

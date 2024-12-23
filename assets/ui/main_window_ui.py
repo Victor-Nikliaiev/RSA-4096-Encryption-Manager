@@ -166,6 +166,12 @@ class Ui_main_window(object):
 
         self.verticalLayout.addWidget(self.label)
 
+        self.verticalSpacer_2 = QSpacerItem(
+            20, 30, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed
+        )
+
+        self.verticalLayout.addItem(self.verticalSpacer_2)
+
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setSpacing(7)
         self.horizontalLayout.setObjectName("horizontalLayout")
