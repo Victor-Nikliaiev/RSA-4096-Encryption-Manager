@@ -33,7 +33,7 @@ class SaveFileDecryptScreen(qtw.QWidget, Ui_SaveFileForm):
         self.output_file_info_btn.setText(
             self.tr("Choose file name for decrypted file:")
         )
-        self.start_button.setText(self.tr("Start Decryption"()))
+        self.start_button.setText(self.tr("Start Decryption"))
 
     def save_file_dialog(self):
         specified_file_name = os.path.split(self.dropped_file_path)[1]

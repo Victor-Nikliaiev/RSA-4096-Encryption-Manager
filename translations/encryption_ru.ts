@@ -49,7 +49,7 @@
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="34"/>
         <source>Decryption | Choose a private key</source>
-        <translation>Дешифрование | Выберите открытый ключ</translation>
+        <translation>Дешифрование | Выберите закрытый ключ</translation>
     </message>
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="37"/>
@@ -180,7 +180,7 @@
     <message>
         <location filename="../screens/encryption/choose_public_key_screen.py" line="148"/>
         <source>Please enter a valid public key to proceed</source>
-        <translation>Пожалуйста, введите открытый ключ правильно формата, чтобы продолжить</translation>
+        <translation>Пожалуйста, введите открытый ключ правильного формата, чтобы продолжить</translation>
     </message>
 </context>
 <context>
@@ -290,7 +290,7 @@
     <message>
         <location filename="../screens/keygen/pair_keygen_screen.py" line="31"/>
         <source>Select location to generate your private and public keys:</source>
-        <translation>Выберите место, куда сгенерировать свой закрытый и открытый ключи:</translation>
+        <translation>Выберите место, куда сгенерировать ваши закрытый и открытый ключи:</translation>
     </message>
     <message>
         <location filename="../screens/keygen/pair_keygen_screen.py" line="32"/>
@@ -334,7 +334,7 @@
         <location filename="../assets/ui/keygen/private_key_pair_generator.ui" line="17"/>
         <location filename="../assets/ui/keygen/private_key_pair_generator_ui.py" line="304"/>
         <source>Key Generation | Select location to generate your private key</source>
-        <translation>Создание Ключей |Выберите местопо, чтобы сгенерировать закрытый ключ</translation>
+        <translation>Создание Ключей |Выберите место, чтобы сгенерировать закрытый ключ</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/private_key_pair_generator.ui" line="67"/>
@@ -364,12 +364,12 @@
         <location filename="../assets/ui/keygen/private_key_pair_generator.ui" line="250"/>
         <location filename="../assets/ui/keygen/private_key_pair_generator_ui.py" line="334"/>
         <source>Encrypt by password?</source>
-        <translation>Зашифровано с паролем?</translation>
+        <translation>Зашифровать с паролем?</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/private_key_pair_generator.ui" line="272"/>
         <source>↑ Checkbox and enter your password for private key here...</source>
-        <translation>↑ Поставте галочку и введите свой пароль для закрытого ключа здесь ...</translation>
+        <translation>↑ Поставьте галочку и введите свой пароль для закрытого ключа здесь ...</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/private_key_pair_generator.ui" line="304"/>
@@ -503,7 +503,7 @@
         <location filename="../assets/ui/keygen/public_keygen.ui" line="187"/>
         <location filename="../assets/ui/keygen/public_keygen_ui.py" line="342"/>
         <source>Password-encrypted?</source>
-        <translation>Зашифрованно с паролем?</translation>
+        <translation>Зашифровано с паролем?</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/public_keygen.ui" line="209"/>
@@ -647,7 +647,7 @@
         <location filename="../assets/ui/save_file.ui" line="98"/>
         <location filename="../assets/ui/save_file_ui.py" line="261"/>
         <source>File to be encrypted:</source>
-        <translation>Файл для зашифрованного:</translation>
+        <translation>Файл для шифрования:</translation>
     </message>
     <message>
         <location filename="../assets/ui/save_file.ui" line="130"/>
@@ -665,13 +665,13 @@
         <location filename="../assets/ui/save_file.ui" line="204"/>
         <location filename="../assets/ui/save_file_ui.py" line="276"/>
         <source>Click &quot;Save&quot; button to choose file name...</source>
-        <translation>Нажмите &quot; Сохранить &quot;кнопка, чтобы выбрать имя файла ...</translation>
+        <translation>Нажмите кнопку &quot; Сохранить &quot;, чтобы выбрать имя файла ...</translation>
     </message>
     <message>
         <location filename="../assets/ui/save_file.ui" line="230"/>
         <location filename="../assets/ui/save_file_ui.py" line="279"/>
         <source>Save</source>
-        <translation>Сохранять</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <location filename="../assets/ui/save_file.ui" line="288"/>
