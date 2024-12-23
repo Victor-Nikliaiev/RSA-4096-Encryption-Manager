@@ -25,7 +25,7 @@
         <location filename="../assets/ui/about/about.ui" line="161"/>
         <location filename="../assets/ui/about/about_ui.py" line="164"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:700; text-decoration: underline;&quot;&gt;Welcome to RSA-4096 Encryption Manager!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Your privacy and security matter. This application is designed to help you encrypt and decrypt sensitive data with ease and confidence.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;In addition, you can generate highly secure RSA-4096 public and private keys, including encrypted private keys, ensuring robust protection for your information in future use. &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;This is a non-commercial project, and  I am proud to offer it completely free of charge.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Thank you for trusting with your security needs.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt; font-style:italic;&quot;&gt;December 22, 2024&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Arhis Alight&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:700; text-decoration: underline;&quot;&gt;Добро пожаловать в менеджер шифрования RSA-4096!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Ваша конфиденциальность и безопасность имеют значение. Это приложение разработано, чтобы помочь вам шифровать и расшифровывать конфиденциальные данные с легкостью и уверенностью.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Кроме того, вы можете генерировать высоконадежные открытые и закрытые ключи RSA-4096, включая зашифрованные закрытые ключи, что гарантирует надежную защиту вашей информации при будущем использовании.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Это некоммерческий проект, и я с гордостью предлагаю его совершенно бесплатно.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Спасибо за доверие в вопросах безопасности.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt; font-style:italic;&quot;&gt;22 декабря 2024 г.&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Arhis Alight&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:700; text-decoration: underline;&quot;&gt;Добро пожаловать в менеджер шифрования RSA-4096!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Ваша конфиденциальность и безопасность  важны. Это приложение разработано, чтобы помочь вам шифровать и расшифровывать конфиденциальные данные с легкостью и уверенностью.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Кроме того, вы можете генерировать высоконадежные открытые и закрытые ключи RSA-4096, включая зашифрованные закрытые ключи, что гарантирует надежную защиту вашей информации при будущем использовании.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Это некоммерческий проект, и я с гордостью предлагаю его совершенно бесплатно.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Спасибо за доверие в вопросах безопасности.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt; font-style:italic;&quot;&gt;22 декабря 2024 г.&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Arhis Alight&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -33,7 +33,7 @@
     <message>
         <location filename="../screens/decryption/choose_file_decrypt_screen.py" line="24"/>
         <source>Decryption | Choose a file</source>
-        <translation>Дешифрование |Выберите файл</translation>
+        <translation>Дешифрование | Выберите файл</translation>
     </message>
 </context>
 <context>
@@ -41,7 +41,7 @@
     <message>
         <location filename="../screens/encryption/choose_file_encrypt_screen.py" line="26"/>
         <source>Encryption | Choose a file</source>
-        <translation>Шифрование |Выберите файл</translation>
+        <translation>Шифрование | Выберите файл</translation>
     </message>
 </context>
 <context>
@@ -49,27 +49,27 @@
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="34"/>
         <source>Decryption | Choose a private key</source>
-        <translation>Дешифрование |Выберите личный ключ</translation>
+        <translation>Дешифрование | Выберите открытый ключ</translation>
     </message>
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="37"/>
         <source>Load private key from file</source>
-        <translation>Загрузите закрытый ключ из файла</translation>
+        <translation>Загрузить закрытый ключ из файла</translation>
     </message>
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="38"/>
         <source>Enter private key manually</source>
-        <translation>Введите закрытый ключ вручную</translation>
+        <translation>Самостоятельно ввести закрытый ключ</translation>
     </message>
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="43"/>
         <source>Browse for a private key file (the path will be generated automatically)...</source>
-        <translation>Просмотрите файл закрытого ключа (путь будет сгенерирован автоматически) ...</translation>
+        <translation>Выберите файл закрытого ключа (путь будет сгенерирован автоматически) ...</translation>
     </message>
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="44"/>
         <source>Enter your private key here...</source>
-        <translation>Введите здесь свой личный ключ ...</translation>
+        <translation>Введите здесь свой закрытый ключ ...</translation>
     </message>
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="60"/>
@@ -84,12 +84,12 @@
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="89"/>
         <source>Please select a valid file.</source>
-        <translation>Пожалуйста, выберите действительный файл.</translation>
+        <translation>Пожалуйста, выберите файл правильного формата.</translation>
     </message>
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="97"/>
         <source>Unsupported File Detected</source>
-        <translation>Неподдерживаемый файл обнаружен</translation>
+        <translation>Обнаружен Неподдерживаемый Файл</translation>
     </message>
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="98"/>
@@ -100,17 +100,17 @@
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="109"/>
         <source>Key Format Error</source>
-        <translation>Ошибка формата ключей</translation>
+        <translation>Ошибка Формата Ключей</translation>
     </message>
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="115"/>
         <source>Private Key Format Error</source>
-        <translation>Ошибка формата закрытого ключа</translation>
+        <translation>Ошибка Формата Закрытого Ключа</translation>
     </message>
     <message>
         <location filename="../screens/decryption/choose_private_key_screen.py" line="116"/>
         <source>Please enter a valid private key to proceed</source>
-        <translation>Пожалуйста, введите действительный личный ключ для продолжения</translation>
+        <translation>Пожалуйста, введите правильный закрытый ключ для продолжения</translation>
     </message>
 </context>
 <context>
@@ -118,22 +118,22 @@
     <message>
         <location filename="../screens/encryption/choose_public_key_screen.py" line="21"/>
         <source>Encryption | Choose a public key</source>
-        <translation>Шифрование |Выберите открытый ключ</translation>
+        <translation>Шифрование | Выберите открытый ключ</translation>
     </message>
     <message>
         <location filename="../screens/encryption/choose_public_key_screen.py" line="37"/>
         <source>Load public key from file</source>
-        <translation>Загрузите открытый ключ из файла</translation>
+        <translation>Загрузить открытый ключ из файла</translation>
     </message>
     <message>
         <location filename="../screens/encryption/choose_public_key_screen.py" line="38"/>
         <source>Enter public key manually</source>
-        <translation>Введите открытый ключ вручную</translation>
+        <translation>Ввести открытый ключ вручную</translation>
     </message>
     <message>
         <location filename="../screens/encryption/choose_public_key_screen.py" line="43"/>
         <source>Browse for a public key file (the path will be generated automatically)...</source>
-        <translation>Просмотрите файл открытого ключа (путь будет создан автоматически) ...</translation>
+        <translation>Найти файл открытого ключа (путь будет сгенерирован автоматически)...</translation>
     </message>
     <message>
         <location filename="../screens/encryption/choose_public_key_screen.py" line="44"/>
@@ -148,7 +148,7 @@
     <message>
         <location filename="../screens/encryption/choose_public_key_screen.py" line="105"/>
         <source>PEM Files (*.pem);;All Files (*)</source>
-        <translation>Pem files (*.pem) ;; Все файлы (*)</translation>
+        <translation>PEM файлы (*.pem) ;; Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../screens/encryption/choose_public_key_screen.py" line="122"/>
@@ -158,7 +158,7 @@
     <message>
         <location filename="../screens/encryption/choose_public_key_screen.py" line="123"/>
         <source>Please select a valid file.</source>
-        <translation>Пожалуйста, выберите действительный файл.</translation>
+        <translation>Пожалуйста, выберите  файл правильного формата.</translation>
     </message>
     <message>
         <location filename="../screens/encryption/choose_public_key_screen.py" line="129"/>
@@ -175,12 +175,12 @@
         <location filename="../screens/encryption/choose_public_key_screen.py" line="141"/>
         <location filename="../screens/encryption/choose_public_key_screen.py" line="147"/>
         <source>Key Format Error</source>
-        <translation>Ошибка формата ключей</translation>
+        <translation>Ошибка Формата Ключей</translation>
     </message>
     <message>
         <location filename="../screens/encryption/choose_public_key_screen.py" line="148"/>
         <source>Please enter a valid public key to proceed</source>
-        <translation>Пожалуйста, введите действительный открытый ключ, чтобы продолжить</translation>
+        <translation>Пожалуйста, введите открытый ключ правильно формата, чтобы продолжить</translation>
     </message>
 </context>
 <context>
@@ -188,12 +188,12 @@
     <message>
         <location filename="../components/drag_and_drop_component.py" line="57"/>
         <source>Click Or Drag &amp; Drop A File Here</source>
-        <translation>Нажмите или перетащите файл сюда</translation>
+        <translation>Нажмите Или Перетащите Сюда Файл</translation>
     </message>
     <message>
         <location filename="../components/drag_and_drop_component.py" line="74"/>
         <source>Select a File</source>
-        <translation>Выберите файл</translation>
+        <translation>Выберите Файл</translation>
     </message>
     <message>
         <location filename="../components/drag_and_drop_component.py" line="97"/>
@@ -218,19 +218,19 @@
         <location filename="../assets/ui/select_key_window.ui" line="49"/>
         <location filename="../assets/ui/select_key_window_ui.py" line="235"/>
         <source>Key Access Control</source>
-        <translation>Контроль доступа к ключе</translation>
+        <translation>Управление доступом к ключу</translation>
     </message>
     <message>
         <location filename="../assets/ui/select_key_window.ui" line="55"/>
         <location filename="../assets/ui/select_key_window_ui.py" line="240"/>
         <source>Private key is password protected</source>
-        <translation>Частный ключ защищен паролем</translation>
+        <translation>Закрытый ключ защищен паролем</translation>
     </message>
     <message>
         <location filename="../assets/ui/select_key_window.ui" line="70"/>
         <location filename="../assets/ui/select_key_window_ui.py" line="245"/>
         <source>Enter key password here...</source>
-        <translation>Введите ключевой пароль здесь ...</translation>
+        <translation>Введите пароль к ключу здесь...</translation>
     </message>
     <message>
         <location filename="../assets/ui/select_key_window.ui" line="80"/>
@@ -242,31 +242,31 @@
         <location filename="../assets/ui/select_key_window.ui" line="95"/>
         <location filename="../assets/ui/select_key_window_ui.py" line="253"/>
         <source>Load Your Key from File [PLACEHOLDER]</source>
-        <translation>Загрузите свой ключ из файла [Placeholder]</translation>
+        <translation>Загрузить ключ из файла [Placeholder]</translation>
     </message>
     <message>
         <location filename="../assets/ui/select_key_window.ui" line="123"/>
         <location filename="../assets/ui/select_key_window_ui.py" line="258"/>
         <source>Path to your key file...[PLACEHOLDER]</source>
-        <translation>Путь к вашему ключевому файлу ... [заполнителя]</translation>
+        <translation>Путь к вашему файлу ключа ... [PLACEHOLDER]</translation>
     </message>
     <message>
         <location filename="../assets/ui/select_key_window.ui" line="144"/>
         <location filename="../assets/ui/select_key_window_ui.py" line="261"/>
         <source>Browse...</source>
-        <translation>Просматривать...</translation>
+        <translation>Просмотреть...</translation>
     </message>
     <message>
         <location filename="../assets/ui/select_key_window.ui" line="157"/>
         <location filename="../assets/ui/select_key_window_ui.py" line="266"/>
         <source>Enter Your Key Manually [PLACEHOLDER]</source>
-        <translation>Введите свой ключ вручную [Placeholder]</translation>
+        <translation>Ввести ключ вручную [Placeholder]</translation>
     </message>
     <message>
         <location filename="../assets/ui/select_key_window.ui" line="183"/>
         <location filename="../assets/ui/select_key_window_ui.py" line="271"/>
         <source>Enter your key here...[PLACEHOLDER]</source>
-        <translation>Введите свой ключ здесь ... [Заполнитель]</translation>
+        <translation>Введите ваш ключ здесь ... [Заполнитель]</translation>
     </message>
     <message>
         <location filename="../assets/ui/select_key_window.ui" line="213"/>
@@ -280,17 +280,17 @@
     <message>
         <location filename="../screens/keygen/pair_keygen_screen.py" line="23"/>
         <source>Passwords do not much</source>
-        <translation>Пароли не так уж и много</translation>
+        <translation>Пароли не совпадают</translation>
     </message>
     <message>
         <location filename="../screens/keygen/pair_keygen_screen.py" line="28"/>
         <source>Key Generation | Select location to generate your keys</source>
-        <translation>Ключевое поколение |Выберите местоположение, чтобы сгенерировать ключи</translation>
+        <translation>Создание Ключей |Выберите место для генерации ключей</translation>
     </message>
     <message>
         <location filename="../screens/keygen/pair_keygen_screen.py" line="31"/>
         <source>Select location to generate your private and public keys:</source>
-        <translation>Выберите местоположение, чтобы сгенерировать свои личные и общественные ключи:</translation>
+        <translation>Выберите место, куда сгенерировать свой закрытый и открытый ключи:</translation>
     </message>
     <message>
         <location filename="../screens/keygen/pair_keygen_screen.py" line="32"/>
@@ -300,32 +300,32 @@
     <message>
         <location filename="../screens/keygen/pair_keygen_screen.py" line="35"/>
         <source>Click &quot;Select&quot; to choose location to save your keys</source>
-        <translation>Нажмите &quot; выберите &quot;Чтобы выбрать местоположение, чтобы сохранить ключи</translation>
+        <translation>Нажмите &apos;Выбрать&apos;, чтобы выбрать место, куда сохранить ключи</translation>
     </message>
     <message>
         <location filename="../screens/keygen/pair_keygen_screen.py" line="40"/>
         <source>Save Your Keys</source>
-        <translation>Сохраните свои ключи</translation>
+        <translation>Сохранение ключей</translation>
     </message>
     <message>
         <location filename="../screens/keygen/pair_keygen_screen.py" line="41"/>
         <source>my_keys.zip</source>
-        <translation>None</translation>
+        <translation>мои_ключи.zip</translation>
     </message>
     <message>
         <location filename="../screens/keygen/pair_keygen_screen.py" line="42"/>
         <source>ZIP Files (*.zip);;All Files (*)</source>
-        <translation>Zip -файлы (*.zip) ;; Все файлы (*)</translation>
+        <translation>Zip Файлы (*.zip) ;; Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../screens/keygen/pair_keygen_screen.py" line="114"/>
         <source>Success</source>
-        <translation>Успех</translation>
+        <translation>Завершено</translation>
     </message>
     <message>
         <location filename="../screens/keygen/pair_keygen_screen.py" line="115"/>
         <source>Your keys were generated successfully.</source>
-        <translation>Ваши ключи были получены успешно.</translation>
+        <translation>Ваши ключи были успешно сгенерированы.</translation>
     </message>
 </context>
 <context>
@@ -334,13 +334,13 @@
         <location filename="../assets/ui/keygen/private_key_pair_generator.ui" line="17"/>
         <location filename="../assets/ui/keygen/private_key_pair_generator_ui.py" line="304"/>
         <source>Key Generation | Select location to generate your private key</source>
-        <translation>Ключевое поколение |Выберите местоположение, чтобы сгенерировать личный ключ</translation>
+        <translation>Создание Ключей |Выберите местопо, чтобы сгенерировать закрытый ключ</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/private_key_pair_generator.ui" line="67"/>
         <location filename="../assets/ui/keygen/private_key_pair_generator_ui.py" line="311"/>
         <source>Select location to generate your private key:</source>
-        <translation>Выберите местоположение, чтобы сгенерировать личный ключ:</translation>
+        <translation>Выберите место, чтобы сгенерировать закрытый ключ:</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/private_key_pair_generator.ui" line="133"/>
@@ -352,7 +352,7 @@
         <location filename="../assets/ui/keygen/private_key_pair_generator.ui" line="182"/>
         <location filename="../assets/ui/keygen/private_key_pair_generator_ui.py" line="326"/>
         <source>Click &quot;Select&quot; to choose location to save your private key</source>
-        <translation>Нажмите &quot; выберите &quot;Чтобы выбрать местоположение, чтобы сохранить личный ключ</translation>
+        <translation>Нажмите &quot;Выбрать&quot; Чтобы выбрать место для сохранения закрытого ключа</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/private_key_pair_generator.ui" line="208"/>
@@ -364,12 +364,12 @@
         <location filename="../assets/ui/keygen/private_key_pair_generator.ui" line="250"/>
         <location filename="../assets/ui/keygen/private_key_pair_generator_ui.py" line="334"/>
         <source>Encrypt by password?</source>
-        <translation>Шифровать паролем?</translation>
+        <translation>Зашифровано с паролем?</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/private_key_pair_generator.ui" line="272"/>
         <source>↑ Checkbox and enter your password for private key here...</source>
-        <translation>F -флажок и введите свой пароль для закрытого ключа здесь ...</translation>
+        <translation>↑ Поставте галочку и введите свой пароль для закрытого ключа здесь ...</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/private_key_pair_generator.ui" line="304"/>
@@ -386,7 +386,7 @@
     <message>
         <location filename="../assets/ui/keygen/private_key_pair_generator_ui.py" line="341"/>
         <source>u2191 Checkbox and enter your password for private key here...</source>
-        <translation>флажок U2191 и введите свой пароль для закрытого ключа здесь ...</translation>
+        <translation>U2191 поставьте галочке и введите свой пароль для закрытого ключа здесь ...</translation>
     </message>
 </context>
 <context>
@@ -394,22 +394,22 @@
     <message>
         <location filename="../screens/keygen/private_keygen_screen.py" line="22"/>
         <source>Passwords do not much</source>
-        <translation>Пароли не так уж и много</translation>
+        <translation>Пароли не совпадают</translation>
     </message>
     <message>
         <location filename="../screens/keygen/private_keygen_screen.py" line="27"/>
         <source>Save Private File</source>
-        <translation>Сохранить частный файл</translation>
+        <translation>Сохранение закрытого файла</translation>
     </message>
     <message>
         <location filename="../screens/keygen/private_keygen_screen.py" line="28"/>
         <source>private_key.pem</source>
-        <translation>private_key.pem</translation>
+        <translation>закрытый_ключ.pem</translation>
     </message>
     <message>
         <location filename="../screens/keygen/private_keygen_screen.py" line="29"/>
         <source>PEM Files (*.pem);;All Files (*)</source>
-        <translation>Pem files (*.pem) ;; Все файлы (*)</translation>
+        <translation>PEM Файлы (*.pem) ;; Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../screens/keygen/private_keygen_screen.py" line="98"/>
@@ -419,7 +419,7 @@
     <message>
         <location filename="../screens/keygen/private_keygen_screen.py" line="99"/>
         <source>Private key generated successfully.</source>
-        <translation>Частный ключ сгенерировал успешно.</translation>
+        <translation>Закрытый ключ успешно сгенирирован.</translation>
     </message>
     <message>
         <location filename="../screens/keygen/private_keygen_screen.py" line="103"/>
@@ -449,7 +449,7 @@
         <location filename="../screens/decryption/decryption_progress_window_screen.py" line="74"/>
         <location filename="../screens/encryption/encryption_progress_window_screen.py" line="74"/>
         <source>Operation has been completed successfully</source>
-        <translation>Операция была успешно завершена</translation>
+        <translation>Операция была завершена успешно</translation>
     </message>
     <message>
         <location filename="../screens/decryption/decryption_progress_window_screen.py" line="93"/>
@@ -460,7 +460,7 @@
     <message>
         <location filename="../screens/decryption/decryption_progress_window_screen.py" line="96"/>
         <source>Are you sure you want to exit, it will interrupt current decryption?</source>
-        <translation>Вы уверены, что хотите выйти, он прервел текущую дешифрование?</translation>
+        <translation>Вы уверены, что хотите выйти? Это прервёт текущее дешифрование.</translation>
     </message>
     <message>
         <location filename="../screens/encryption/encryption_progress_window_screen.py" line="59"/>
@@ -470,7 +470,7 @@
     <message>
         <location filename="../screens/encryption/encryption_progress_window_screen.py" line="96"/>
         <source>Are you sure you want to exit, it will interrupt current encryption?</source>
-        <translation>Вы уверены, что хотите выйти, он прервел текущее шифрование?</translation>
+        <translation>Вы уверены, что хотите выйти? Это прервёт текущее дешифрование.</translation>
     </message>
 </context>
 <context>
@@ -479,48 +479,48 @@
         <location filename="../assets/ui/keygen/public_keygen.ui" line="17"/>
         <location filename="../assets/ui/keygen/public_keygen_ui.py" line="323"/>
         <source>Key Manager | Select location to generate your public key</source>
-        <translation>Ключевой менеджер |Выберите местоположение, чтобы сгенерировать свой открытый ключ</translation>
+        <translation>Менеджер Ключей |Выберите место, чтобы сгенерировать открытый ключ</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/public_keygen.ui" line="67"/>
         <location filename="../assets/ui/keygen/public_keygen_ui.py" line="330"/>
         <source>Select your private key to generate the public key:</source>
-        <translation>Выберите свой закрытый ключ, чтобы создать открытый ключ:</translation>
+        <translation>Выберите закрытый ключ для создания открытого ключа:</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/public_keygen.ui" line="128"/>
         <location filename="../assets/ui/keygen/public_keygen_ui.py" line="336"/>
         <source>Click &quot;Select Private Key&quot;</source>
-        <translation>Нажмите &quot; Выберите Crivate Key &quot;</translation>
+        <translation>Нажмите &quot;Выбрать закрытый ключ&quot;</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/public_keygen.ui" line="153"/>
         <location filename="../assets/ui/keygen/public_keygen_ui.py" line="339"/>
         <source>  Select Private Key</source>
-        <translation>  Выберите закрытый ключ</translation>
+        <translation>  Выбрать закрытый ключ</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/public_keygen.ui" line="187"/>
         <location filename="../assets/ui/keygen/public_keygen_ui.py" line="342"/>
         <source>Password-encrypted?</source>
-        <translation>Заполнено паролем?</translation>
+        <translation>Зашифрованно с паролем?</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/public_keygen.ui" line="209"/>
         <source>← Checkbox and enter your password for private key here...</source>
-        <translation>← Флажок и введите свой пароль для закрытого ключа здесь ...</translation>
+        <translation>← Поставьте галочку и введите свой пароль для закрытого ключа здесь ...</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/public_keygen.ui" line="262"/>
         <location filename="../assets/ui/keygen/public_keygen_ui.py" line="355"/>
         <source>  Select location to save your public key:</source>
-        <translation>  Выберите местоположение, чтобы сохранить свой публичный ключ:</translation>
+        <translation>  Выберите место для сохранения открытого ключа:</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/public_keygen.ui" line="311"/>
         <location filename="../assets/ui/keygen/public_keygen_ui.py" line="362"/>
         <source>Click &quot;Select&quot; to choose location to save your public key</source>
-        <translation>Нажмите &quot; выберите &quot;Чтобы выбрать местоположение, чтобы сохранить свой общедоступный ключ</translation>
+        <translation>Нажмите &quot;Выбрать&quot;Чтобы выбрать место, для сохранения открытого ключа</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/public_keygen.ui" line="337"/>
@@ -537,7 +537,7 @@
     <message>
         <location filename="../assets/ui/keygen/public_keygen_ui.py" line="349"/>
         <source>u2190 Checkbox and enter your password for private key here...</source>
-        <translation>Флактора U2190 и введите свой пароль для закрытого ключа здесь ...</translation>
+        <translation>u2190 Поставьте галочку и введите пароль для закрытого ключа здесь ...</translation>
     </message>
 </context>
 <context>
@@ -545,23 +545,23 @@
     <message>
         <location filename="../screens/keygen/public_keygen_screen.py" line="37"/>
         <source>Select Private Key File</source>
-        <translation>Выберите файл закрытого ключа</translation>
+        <translation>Выбор Файла Закрытого Ключа</translation>
     </message>
     <message>
         <location filename="../screens/keygen/public_keygen_screen.py" line="39"/>
         <location filename="../screens/keygen/public_keygen_screen.py" line="59"/>
         <source>PEM Files (*.pem);;All Files (*)</source>
-        <translation>Pem files (*.pem) ;; Все файлы (*)</translation>
+        <translation>PEM Файлы (*.pem) ;;Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../screens/keygen/public_keygen_screen.py" line="57"/>
         <source>Save Your Public Key</source>
-        <translation>Сохраните свой открытый ключ</translation>
+        <translation>Сохраниние Открытого Ключа</translation>
     </message>
     <message>
         <location filename="../screens/keygen/public_keygen_screen.py" line="58"/>
         <source>public_key.pem</source>
-        <translation>public_key.pem</translation>
+        <translation>открытый_ключ.pem</translation>
     </message>
     <message>
         <location filename="../screens/keygen/public_keygen_screen.py" line="113"/>
@@ -571,7 +571,7 @@
     <message>
         <location filename="../screens/keygen/public_keygen_screen.py" line="114"/>
         <source>Your public key was successfully generated and saved.</source>
-        <translation>Ваш открытый ключ был успешно сгенерирован и спасен.</translation>
+        <translation>Ваш открытый ключ был успешно сгенерирован и сохранён.</translation>
     </message>
     <message>
         <location filename="../screens/keygen/public_keygen_screen.py" line="120"/>
@@ -589,12 +589,12 @@
     <message>
         <location filename="../screens/decryption/save_file_decrypt_screen.py" line="24"/>
         <source>Decryption | Save a file</source>
-        <translation>Дешифрование |Сохранить файл</translation>
+        <translation>Дешифрование |Сохранение файла</translation>
     </message>
     <message>
         <location filename="../screens/decryption/save_file_decrypt_screen.py" line="32"/>
         <source>File to be decrypted:</source>
-        <translation>Файл для расшифровки:</translation>
+        <translation>Файл для дешифрования:</translation>
     </message>
     <message>
         <location filename="../screens/decryption/save_file_decrypt_screen.py" line="35"/>
@@ -604,7 +604,7 @@
     <message>
         <location filename="../screens/decryption/save_file_decrypt_screen.py" line="36"/>
         <source>Start Decryption</source>
-        <translation>Начало дешифрования</translation>
+        <translation>Начать Дешифрование</translation>
     </message>
     <message>
         <location filename="../screens/decryption/save_file_decrypt_screen.py" line="48"/>
@@ -622,12 +622,12 @@
     <message>
         <location filename="../screens/encryption/save_file_encrypt_screen.py" line="24"/>
         <source>Encryption | Save a file</source>
-        <translation>Шифрование |Сохранить файл</translation>
+        <translation>Шифрование |Сохранение файла</translation>
     </message>
     <message>
         <location filename="../screens/encryption/save_file_encrypt_screen.py" line="39"/>
         <source>Save File</source>
-        <translation>Сохранить файл</translation>
+        <translation>Сохранение файла</translation>
     </message>
     <message>
         <location filename="../screens/encryption/save_file_encrypt_screen.py" line="41"/>
@@ -686,7 +686,7 @@
         <location filename="../assets/ui/keygen/select_keygen.ui" line="32"/>
         <location filename="../assets/ui/keygen/select_keygen_ui.py" line="247"/>
         <source>Select Keygen Option</source>
-        <translation>Выберите опцию Keygen</translation>
+        <translation>Выберите Опцию Ддя Генерации Ключа</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/select_keygen.ui" line="76"/>
@@ -698,25 +698,25 @@
         <location filename="../assets/ui/keygen/select_keygen.ui" line="132"/>
         <location filename="../assets/ui/keygen/select_keygen_ui.py" line="254"/>
         <source>Generate private key</source>
-        <translation>Генерировать личный ключ</translation>
+        <translation>Сгенерировать закрытый ключ</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/select_keygen.ui" line="145"/>
         <location filename="../assets/ui/keygen/select_keygen_ui.py" line="257"/>
         <source>Generate public key</source>
-        <translation>Генерировать открытый ключ</translation>
+        <translation>Сгенерировать открытый ключ</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/select_keygen.ui" line="158"/>
         <location filename="../assets/ui/keygen/select_keygen_ui.py" line="262"/>
         <source>Generate public and private key</source>
-        <translation>Генерировать публичный и частный ключ</translation>
+        <translation>Сгенерировать открытый и закрытый ключи</translation>
     </message>
     <message>
         <location filename="../assets/ui/keygen/select_keygen.ui" line="201"/>
         <location filename="../assets/ui/keygen/select_keygen_ui.py" line="265"/>
         <source>Next</source>
-        <translation>Следующий</translation>
+        <translation>Далее</translation>
     </message>
 </context>
 <context>
@@ -725,13 +725,13 @@
         <location filename="../assets/ui/choose_file_window.ui" line="49"/>
         <location filename="../assets/ui/choose_file_window_ui.py" line="132"/>
         <source>Please choose a file and click &quot;Next&quot; button</source>
-        <translation>Пожалуйста, выберите файл и нажмите «Далее»кнопка</translation>
+        <translation>Пожалуйста, выберите файл и нажмите кнопку«Далее»</translation>
     </message>
     <message>
         <location filename="../assets/ui/choose_file_window.ui" line="89"/>
         <location filename="../assets/ui/choose_file_window_ui.py" line="135"/>
         <source>Next</source>
-        <translation>Следующий</translation>
+        <translation>Далее</translation>
     </message>
 </context>
 <context>
@@ -746,25 +746,25 @@
         <location filename="../assets/ui/main_window.ui" line="82"/>
         <location filename="../assets/ui/main_window_ui.py" line="313"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt; color:#b6f1b7;&quot;&gt;Choose process:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt; html &gt; &lt; head/&gt; &lt; body &gt; &lt; p &gt; &lt; span style = &quot;размер шрифта: 26pt;Цвет:#b6f1b7; &quot; &gt; выберите процесс: &lt;/span &gt; &lt;/p &gt; &lt;/body &gt; &lt;/html &gt;</translation>
+        <translation>&lt; html &gt; &lt; head/&gt; &lt; body &gt; &lt; p &gt; &lt; span style = &quot;размер шрифта: 26pt;Цвет:#b6f1b7; &quot; &gt; Выберите операцию: &lt;/span &gt; &lt;/p &gt; &lt;/body &gt; &lt;/html &gt;</translation>
     </message>
     <message>
         <location filename="../assets/ui/main_window.ui" line="135"/>
         <location filename="../assets/ui/main_window_ui.py" line="316"/>
         <source>Encrypt File</source>
-        <translation>Файл шифрования</translation>
+        <translation>Зашифровать файл</translation>
     </message>
     <message>
         <location filename="../assets/ui/main_window.ui" line="166"/>
         <location filename="../assets/ui/main_window_ui.py" line="319"/>
         <source>Decrypt File</source>
-        <translation>Дешифрованный файл</translation>
+        <translation>Дешифровать файл</translation>
     </message>
     <message>
         <location filename="../assets/ui/main_window.ui" line="200"/>
         <location filename="../assets/ui/main_window_ui.py" line="322"/>
         <source>Generate Keys</source>
-        <translation>Генерировать ключи</translation>
+        <translation>Сгенерировать ключи</translation>
     </message>
     <message>
         <location filename="../assets/ui/main_window.ui" line="263"/>
@@ -776,7 +776,7 @@
         <location filename="../assets/ui/main_window.ui" line="275"/>
         <location filename="../assets/ui/main_window_ui.py" line="326"/>
         <source>RSA Keys</source>
-        <translation>Ключи RSA</translation>
+        <translation>RSA Ключи</translation>
     </message>
     <message>
         <location filename="../assets/ui/main_window.ui" line="288"/>
@@ -818,7 +818,7 @@
         <location filename="../assets/ui/main_window.ui" line="351"/>
         <location filename="../assets/ui/main_window_ui.py" line="295"/>
         <source>About</source>
-        <translation>О</translation>
+        <translation>О программе</translation>
     </message>
     <message>
         <location filename="../assets/ui/main_window.ui" line="356"/>
@@ -829,22 +829,22 @@
     <message>
         <location filename="../assets/ui/main_window.ui" line="361"/>
         <source>Русский</source>
-        <translation>Ррусский</translation>
+        <translation>Русский</translation>
     </message>
     <message>
         <location filename="../assets/ui/main_window.ui" line="366"/>
         <source>Español</source>
-        <translation>Эспаньол</translation>
+        <translation>Español</translation>
     </message>
     <message>
         <location filename="../assets/ui/main_window_ui.py" line="303"/>
         <source>u0420u0443u0441u0441u043au0438u0439</source>
-        <translation>U0420U0443U0441U0441U043AU0438U0439</translation>
+        <translation>u0420u0443u0441u0441u043au0438u0439</translation>
     </message>
     <message>
         <location filename="../assets/ui/main_window_ui.py" line="306"/>
         <source>Espau00f1ol</source>
-        <translation>ESPAU00F1OL</translation>
+        <translation>Espau00f1ol</translation>
     </message>
 </context>
 <context>
@@ -853,7 +853,7 @@
         <location filename="../assets/ui/progress_window.ui" line="35"/>
         <location filename="../assets/ui/progress_window_ui.py" line="93"/>
         <source>Process  status...[PLACEHOLDER]</source>
-        <translation>Статус процесса ... [Заполнитель]</translation>
+        <translation>Состояние процесса ... [Заполнитель]</translation>
     </message>
 </context>
 </TS>
