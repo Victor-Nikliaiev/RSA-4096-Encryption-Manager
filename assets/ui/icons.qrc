@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="menu_icons">
+    <file>icons/russia.png</file>
+    <file>icons/spain.png</file>
+    <file>icons/united-kingdom.png</file>
     <file>icons/decryption.png</file>
     <file>icons/encryption.png</file>
     <file>icons/question.png</file>

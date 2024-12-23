@@ -134,10 +134,28 @@ class Ui_main_window(object):
         self.actionAbout.setIcon(icon5)
         self.actionEnglish = QAction(main_window)
         self.actionEnglish.setObjectName("actionEnglish")
+        icon6 = QIcon()
+        icon6.addFile(
+            ":/menu_icons/icons/united-kingdom.png",
+            QSize(),
+            QIcon.Mode.Normal,
+            QIcon.State.Off,
+        )
+        self.actionEnglish.setIcon(icon6)
         self.action = QAction(main_window)
         self.action.setObjectName("action")
+        icon7 = QIcon()
+        icon7.addFile(
+            ":/menu_icons/icons/russia.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off
+        )
+        self.action.setIcon(icon7)
         self.actionEspa_ol = QAction(main_window)
         self.actionEspa_ol.setObjectName("actionEspa_ol")
+        icon8 = QIcon()
+        icon8.addFile(
+            ":/menu_icons/icons/spain.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off
+        )
+        self.actionEspa_ol.setIcon(icon8)
         self.centralwidget = QWidget(main_window)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QGridLayout(self.centralwidget)

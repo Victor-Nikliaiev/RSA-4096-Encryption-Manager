@@ -368,16 +368,28 @@ color: rgb(119, 186, 198)</string>
    </property>
   </action>
   <action name="actionEnglish">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/menu_icons/icons/united-kingdom.png</normaloff>:/menu_icons/icons/united-kingdom.png</iconset>
+   </property>
    <property name="text">
     <string>English</string>
    </property>
   </action>
   <action name="action">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/menu_icons/icons/russia.png</normaloff>:/menu_icons/icons/russia.png</iconset>
+   </property>
    <property name="text">
     <string>Русский</string>
    </property>
   </action>
   <action name="actionEspa_ol">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/menu_icons/icons/spain.png</normaloff>:/menu_icons/icons/spain.png</iconset>
+   </property>
    <property name="text">
     <string>Español</string>
    </property>
