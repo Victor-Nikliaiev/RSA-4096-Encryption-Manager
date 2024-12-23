@@ -2,7 +2,6 @@
 [![PySide6](https://img.shields.io/badge/Framework-PySide6-green.svg)](https://doc.qt.io/qtforpython/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/your-repo-link)
 
-RSA-4096 Encryption Manager v1.0
 
 # RSA-4096 Encryption Manager v1.0
 
