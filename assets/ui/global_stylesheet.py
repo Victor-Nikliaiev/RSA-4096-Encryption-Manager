@@ -60,7 +60,7 @@ QScrollBar::sub-page:vertical {
             QMenuBar::item {
                 background-color: #263238;
                 color: rgb(119, 186, 198);
-                cursor: pointing-hand; /* Add pointer cursor */
+               
             }
             QMenuBar::item:selected { /* Hover effect */
                 background-color: rgb(119, 186, 198);
@@ -73,7 +73,6 @@ QScrollBar::sub-page:vertical {
             QMenu::item {
                 background-color: #263238;
                 color: rgb(119, 186, 198);
-                cursor: pointing-hand; /* Add pointer cursor */
             }
             QMenu::item:selected { /* Hover effect for menu items */
                 background-color: rgb(119, 186, 198);

@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="translations">
+    <file>encryption_en.qm</file>
+    <file>encryption_ru.qm</file>
+    <file>encryption_es.qm</file>
+</qresource>
+</RCC>
