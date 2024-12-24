@@ -102,8 +102,8 @@ The application follows a modular structure, ensuring clarity, scalability, and 
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Victor-Nikliaiev/encryption_app
-   cd encryption_app
+   git clone https://github.com/Victor-Nikliaiev/RSA-4096-Encryption-Manager
+   cd RSA-4096-Encryption-Manager-master
    ```
 
 2. Install required dependencies:
@@ -174,5 +174,5 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use, mod
 - **Open Source Libraries**: The `cryptography` library and others enhance functionality.
 - **Contributors**: Thanks to everyone who contributed to this project.
 
-For more details, visit the [GitHub Repository](https://github.com/Victor-Nikliaiev/encryption_app).
+For more details, visit the [GitHub Repository](https://github.com/Victor-Nikliaiev/RSA-4096-Encryption-Manager).
 
