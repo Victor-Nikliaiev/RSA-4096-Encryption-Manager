@@ -141,7 +141,7 @@ To add or update translations:
 
 ## Contributing
 
-We welcome contributions to enhance the RSA-4096 Encryption Manager v1.0:
+You are most welcome for contributions to enhance the RSA-4096 Encryption Manager v1.0:
 
 1. Fork the repository and create a feature branch:
    ```bash
