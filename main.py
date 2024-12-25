@@ -10,8 +10,6 @@ from screens.keygen.select_keygen_screen import SelectKeygenScreen
 from tools.toolkit import Tools as t
 from backend import signal_manager
 
-# import translations.linguist_rc
-
 
 class MainWindow(qtw.QMainWindow, Ui_main_window):
     def __init__(self):
