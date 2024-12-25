@@ -18,10 +18,13 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
         super().__init__()
         self.translator = qtc.QTranslator()
         self.current_language = "en"
+
         self.setupUi(self)
         self.setupWebLogoAnimation()
 
         self.actionEnglish.triggered.connect(lambda: self.change_language("en"))
+        self.actionEnglish.triggered.emit()
+
         self.action.triggered.connect(lambda: self.change_language("ru"))
         self.actionEspa_ol.triggered.connect(lambda: self.change_language("es"))
 

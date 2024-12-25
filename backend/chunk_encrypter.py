@@ -3,9 +3,10 @@ from cryptography.hazmat.primitives import hashes
 from backend.rsa_key_manager import RsaKeyManager
 from cryptography.hazmat.primitives.asymmetric.rsa import RSAPublicKey, RSAPrivateKey
 from backend.constants.constants import Path
-import logging
+from tools.toolkit import Tools as t
 
-logging.basicConfig(level=logging.INFO)
+logging = t.all.logging_config_screen()
+logging = logging.getLogger(__name__)
 
 
 class ChunkEncrypter:

@@ -1,22 +1,32 @@
+from PySide6 import QtUiTools as qtu
+from PySide6 import QtWidgets as qtw
+from PySide6 import QtCore as qtc
+from PySide6 import QtGui as qtg
+import logging
 import sys
 import os
-from PySide6 import QtCore as qtc
-from PySide6 import QtWidgets as qtw
-from PySide6 import QtGui as qtg
-from PySide6 import QtUiTools as qtu
 
 
 class Tools:
     class all:
         @staticmethod
-        def configure_logging():
-            import logging
+        def logging_config_file():
 
             logging.basicConfig(
                 filename="my_app.log",
                 level=logging.INFO,
                 format="%(asctime)s.%(msecs)03d %(levelname)s: [ %(name)s ] :%(message)s",
                 datefmt="%d.%m.%Y %H:%M:%S",
+            )
+
+            return logging
+
+        @staticmethod
+        def logging_config_screen():
+            logging.basicConfig(
+                level=logging.INFO,
+                format="%(levelname)s: %(name)s: %(message)s ",
+                style="%",
             )
 
             return logging

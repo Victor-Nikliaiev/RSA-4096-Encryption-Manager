@@ -4,21 +4,14 @@ from backend.chunk_encrypter import ChunkEncrypter
 from backend.constants import Size
 from cryptography.hazmat.primitives.asymmetric.rsa import RSAPublicKey, RSAPrivateKey
 import logging
-
-
 from PySide6 import QtCore as qtc
-
-from PySide6 import QtWidgets as qtw
-
-
 from tools.toolkit import Tools as t
 
-
-logging.basicConfig(level=logging.INFO)
+logging = t.all.logging_config_screen()
+logging = logging.getLogger(__name__)
 
 
 class FileManager(qtc.QObject):
-
     def __init__(self):
         """
         Initializes FileManager with a ChunkEncrypter instance for encryption and decryption operations.
@@ -34,8 +27,15 @@ class FileManager(qtc.QObject):
             self.stop_process_request, qtc.Qt.DirectConnection
         )
 
+        self.chunk_counter_flag = 1
+
     @qtc.Slot()
     def stop_process_request(self):
+        """
+        Sets the internal flag to stop the file processing (encryption or decryption)
+        as soon as possible. This is a slot that can be connected to a signal, typically
+        the stop_process signal from the SignalManager instance.
+        """
         self._stop_flag = True
 
     @qtc.Slot(str, str, RSAPublicKey)
@@ -82,12 +82,23 @@ class FileManager(qtc.QObject):
         chunk_size: int,
     ):
         """
-        Reads a given file chunk by chunk, processes each chunk using a given callable, and writes the processed chunks to another file.
+        Processes a given file by reading it in chunks, processing each chunk
+        using the provided chunk_handler, and writing the processed chunk to
+        the specified output file. The size of the chunks is determined by the
+        chunk_size argument.
 
-        :param input_file_path: The path to the file to be read
-        :param output_file_path: The path to the file where the processed chunks will be written
-        :param chunk_handler: The callable to be used to process the chunks
-        :param chunk_size: The size of the chunks to be read and processed
+        If the stop flag is set, the process is terminated by returning from
+        the function.
+
+        Any exceptions that occur are caught and logged, and the critical_error
+        signal is emitted with the input file path and the error message.
+
+        :param input_file_path: The path to the file to be processed
+        :param output_file_path: The path to the file where the processed bytes
+            will be written
+        :param chunk_handler: A callable that takes the bytes of a chunk as
+            argument and returns the processed bytes
+        :param chunk_size: The size of each chunk
         """
         try:
             with open(input_file_path, "rb") as infile, open(
@@ -95,22 +106,20 @@ class FileManager(qtc.QObject):
             ) as outfile:
                 while True:
                     if self._stop_flag:
-                        print("Process stopped by user.")
+                        logging.warning("Process stopped by user.")
                         return
                     chunk = infile.read(chunk_size)
 
                     if not chunk:  # If end of file
                         break
-
+                    logging.info(f"Chunk # {self.chunk_counter_flag}")
                     processed_chunk = chunk_handler(chunk)
                     outfile.write(processed_chunk)
                     signal_manager.update_processed_bytes.emit(len(chunk))
+                    self.chunk_counter_flag += 1
 
                 signal_manager.operation_completed.emit()
 
         except Exception as e:
             logging.error(f"Error processing file {input_file_path}: {e}")
-            # qtw.QMessageBox.critical(
-            #     None, "Error", f"Error processing file: {input_file_path}, {e}"
-            # )
             signal_manager.critical_error.emit(input_file_path, str(e))

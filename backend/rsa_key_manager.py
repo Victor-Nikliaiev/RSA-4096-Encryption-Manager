@@ -5,15 +5,14 @@
 from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import serialization
-from backend.constants import Rsa
 from tools.toolkit import Tools as t
+from backend.constants import Rsa
 import zipfile
 import io
 import os
 
-import logging
-
-logging.basicConfig(level=logging.INFO)
+logging = t.all.logging_config_screen()
+logging = logging.getLogger(__name__)
 
 
 class RsaKeyManager:
@@ -48,7 +47,13 @@ class RsaKeyManager:
         return private_key.public_key()
 
     def encrypt_private_key(self, private_key, password=None):
+        """
+        Encrypts a given private key using the given password.
 
+        :param private_key: An instance of RSAPrivateKey to be encrypted.
+        :param password: An optional password to encrypt the private key. If None, the key is encrypted without encryption.
+        :return: The encrypted private key as a PEM-encoded bytes object.
+        """
         encryption = (
             serialization.BestAvailableEncryption(password.encode("utf-8"))
             if password
@@ -64,6 +69,13 @@ class RsaKeyManager:
         return private_pem
 
     def encrypt_public_key(self, public_key):
+        """
+        Encrypts the given public RSA key into PEM format.
+
+        :param public_key: An instance of RSAPublicKey to be encrypted.
+        :return: The PEM-encoded public key as bytes.
+        """
+
         public_pem = public_key.public_bytes(
             encoding=serialization.Encoding.PEM,
             format=serialization.PublicFormat.SubjectPublicKeyInfo,
@@ -125,6 +137,8 @@ class RsaKeyManager:
         :param pem_file_path: The file path where the PEM-formatted private key is saved.
         :param password: An optional password to decrypt the private key. If None, the key is loaded without decryption.
         :return: The loaded private RSA key.
+        :raises FileNotFoundError: If the private key file is not found.
+        :raises Exception: If the private key file is not in the correct format or has an invalid password.
         """
 
         if password is not None:
@@ -140,7 +154,7 @@ class RsaKeyManager:
         except FileNotFoundError:
             raise FileNotFoundError(f"Private key file not found: {pem_file_path}")
         except Exception as e:
-            print(e)
+            logging.error(e)
             raise Exception(
                 f"Failed to process private key. Please check file format and try again.\n\nAdditional Info:\n {e}"
             )
@@ -168,6 +182,12 @@ class RsaKeyManager:
             )
 
     def serialize_public_key(self, public_key: str):
+        """
+        Deserializes a given public key string into a cryptography.hazmat.primitives.asymmetric.rsa.RSAPublicKey object.
+
+        :param public_key: The public key string to be deserialized.
+        :return: The deserialized RSAPublicKey object.
+        """
         try:
             serialized_public_key = serialization.load_pem_public_key(
                 public_key.encode("utf-8"), backend=default_backend()
@@ -179,6 +199,13 @@ class RsaKeyManager:
             )
 
     def serialize_private_key(self, private_key: str, password: str):
+        """
+        Deserializes a given private key string into a cryptography.hazmat.primitives.asymmetric.rsa.RSAPrivateKey object.
+
+        :param private_key: The private key string to be deserialized.
+        :param password: An optional password to decrypt the private key. If None, the key is loaded without decryption.
+        :return: The deserialized RSAPrivateKey object.
+        """
         if password is not None:
             password = password.encode("utf-8")
 
@@ -188,8 +215,18 @@ class RsaKeyManager:
         return serialized_private_key
 
     def export_keys_to_zip(self, private_key_data, public_key_data, zip_filename):
+        """
+        Exports the given private and public key data to a ZIP file.
 
-        # Ensure the directory exists where the ZIP file will be saved
+        This function creates a ZIP archive containing the provided private and
+        public key data as separate files named 'private_key.pem' and 'public_key.pem',
+        respectively. If the directory for the ZIP file does not exist, it will be created.
+
+        :param private_key_data: The private key data to be added to the ZIP file.
+        :param public_key_data: The public key data to be added to the ZIP file.
+        :param zip_filename: The path where the ZIP file will be saved.
+        """
+
         zip_dir = os.path.dirname(zip_filename)
         if zip_dir and not os.path.exists(zip_dir):
             os.makedirs(zip_dir)
