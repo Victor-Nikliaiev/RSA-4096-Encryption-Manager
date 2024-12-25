@@ -11,6 +11,15 @@ class Tools:
     class all:
         @staticmethod
         def logging_config_file():
+            """
+            Configure the logging module to write log messages to a file
+            named "my_app.log". The log level is set to INFO and the format
+            is set to include the time, milliseconds, log level, logger name,
+            and the log message itself.
+
+            :return: The configured logging module
+            :rtype: logging
+            """
 
             logging.basicConfig(
                 filename="my_app.log",
@@ -23,6 +32,15 @@ class Tools:
 
         @staticmethod
         def logging_config_screen():
+            """
+            Configure the logging module to print log messages to the console.
+            The log level is set to INFO and the format is set to include the log
+            level, logger name, and the log message itself.
+
+            :return: The configured logging module
+            :rtype: logging
+            """
+
             logging.basicConfig(
                 level=logging.INFO,
                 format="%(levelname)s: %(name)s: %(message)s ",
@@ -33,12 +51,30 @@ class Tools:
 
         @staticmethod
         def get_lorem():
+            """
+            Reads and returns the contents of the file "lorem.txt" located in
+            the same directory as the module.
+
+            :return: The contents of the file
+            :rtype: str
+            """
+
             file_path = os.path.join(os.path.dirname(__file__), "lorem.txt")
             with open(file_path, "r") as f:
                 return f.read()
 
         @staticmethod
         def format_input_path(path):
+            """
+            Shortens the file path and file name if they exceed 30 characters each,
+            by truncating and appending ellipses. Returns the formatted file path.
+
+            :param path: The complete file path to be formatted
+            :type path: str
+            :return: The formatted file path with shortened file path and file name if necessary
+            :rtype: str
+            """
+
             file_path, file_name = os.path.split(path)
 
             if len(file_path) > 30:
@@ -180,6 +216,26 @@ class Tools:
 
         @staticmethod
         def get_qss_sheet(file_path):
+            """
+            Reads a QSS stylesheet from the given file path and returns it as a string.
+
+            This method reads the contents of the file specified by the given path and
+            returns the contents as a string. The method assumes that the file contains
+            a valid QSS (Qt Style Sheet) stylesheet.
+
+            Parameters:
+            file_path (str): The path to the file containing the QSS stylesheet.
+
+            Returns:
+            str: The QSS stylesheet as a string.
+
+            Example:
+            >>> get_qss_sheet("path/to/style.qss")
+
+            Note:
+            - This method does not validate the QSS stylesheet. If the file contains
+              invalid QSS, the method will still return the contents of the file.
+            """
             with open(file_path, "r") as f:
                 qss = f.read()
             return qss

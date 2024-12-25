@@ -10,11 +10,20 @@ from screens.keygen.select_keygen_screen import SelectKeygenScreen
 from tools.toolkit import Tools as t
 from backend import signal_manager
 
-import translations.linguist_rc
+# import translations.linguist_rc
 
 
 class MainWindow(qtw.QMainWindow, Ui_main_window):
     def __init__(self):
+        """
+        Initializes the main window of the application.
+
+        This constructor sets up the user interface, sets up the language
+        translation system, and connects various UI elements to their
+        respective event handlers.
+
+        :return: None
+        """
         super().__init__()
         self.translator = qtc.QTranslator()
         self.current_language = "en"
@@ -38,6 +47,12 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
         self.actionAbout.triggered.connect(self.handle_about)
 
     def setupWebLogoAnimation(self):
+        """
+        Setup the logo animation.
+
+        This method creates an instance of GlowingLogo() and
+        adds it to the layout of the q_logo widget.
+        """
 
         glowing_log = GlowingLogo()
 
@@ -47,6 +62,16 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
 
     @qtc.Slot()
     def handle_encrypt(self):
+        """
+        Slot connected to the encrypt button's clicked signal and
+        the "Encrypt" menu item's triggered signal.
+
+        This slot creates a ChooseFileEncryptScreen instance,
+        saves the current main window, closes the current window,
+        and shows the new window.
+
+        :return: None
+        """
         self.encrypt_window = t.qt.center_widget(ChooseFileEncryptScreen())
         signal_manager.save_main_window.emit(self)
         self.close()
@@ -54,6 +79,16 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
 
     @qtc.Slot()
     def handle_decrypt(self):
+        """
+        Slot connected to the decrypt button's clicked signal and
+        the "Decrypt" menu item's triggered signal.
+
+        This slot creates a ChooseFileDecryptScreen instance,
+        saves the current main window, closes the current window,
+        and shows the new window.
+
+        :return: None
+        """
         self.decrypt_window = t.qt.center_widget(ChooseFileDecryptScreen())
         signal_manager.save_main_window.emit(self)
         self.close()
@@ -61,6 +96,15 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
 
     @qtc.Slot()
     def handle_generate_keys(self):
+        """
+        Slot connected to the "Generate Keys" button's clicked signal and
+        the "Generate Keys" menu item's triggered signal.
+
+        This slot creates a SelectKeygenScreen instance, saves the current
+        main window, closes the current window, and shows the new window.
+
+        :return: None
+        """
         self.gen_keys_window = t.qt.center_widget(SelectKeygenScreen())
         signal_manager.save_main_window.emit(self)
         self.close()
@@ -68,6 +112,15 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
 
     @qtc.Slot()
     def handle_about(self):
+        """
+        Slot connected to the "About" menu item's triggered signal.
+
+        This slot creates an AboutScreen instance, saves the current main window,
+        closes the current window, and shows the new window.
+
+        :return: None
+        """
+
         signal_manager.save_main_window.emit(self)
         self.window = t.qt.center_widget(AboutScreen())
         self.window.show()
@@ -75,9 +128,15 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
 
     @qtc.Slot()
     def change_language(self, language_code):
-        """Change the application's language."""
-        # if self.current_language == language_code:
-        #     return  # No change needed
+        """
+        Slot connected to the language change menu items' triggered signal.
+
+        Loads the translation file for the given language code and updates the
+        UI text with the new translation.
+
+        :param language_code: A string representing the language code (e.g., "en", "ru", etc.)
+        :return: None
+        """
 
         translation_file = f"translations/encryption_{language_code}.qm"
         if self.translator.load(translation_file):
