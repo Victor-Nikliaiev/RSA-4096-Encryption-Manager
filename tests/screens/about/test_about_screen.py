@@ -73,7 +73,7 @@ class TestAboutScreen:
         This test verifies that the closeEvent method calls the center_widget method
         to center the main window and then shows the main window.
         """
-        main_window_mock = MagicMock(spec=qtw.QWidget)
+        main_window_mock = signal_manager.saved_data["save_main_window"]
         mock_center_widget.return_value = main_window_mock
         about_screen = AboutScreen()
         qtbot.addWidget(about_screen)
