@@ -211,7 +211,12 @@ class ChoosePrivateKeyScreen(qtw.QWidget, Ui_KeyInputForm):
         :param key: The private key string to be validated.
         :return: True if the private key string is valid, False otherwise.
         """
-        return "BEGIN PRIVATE KEY" in key and "END PRIVATE KEY" in key
+        return (
+            "BEGIN PRIVATE KEY" in key
+            and "END PRIVATE KEY" in key
+            or "BEGIN ENCRYPTED PRIVATE KEY" in key
+            and "END ENCRYPTED PRIVATE KEY" in key
+        )
 
     def process_private_key(self):
         """
