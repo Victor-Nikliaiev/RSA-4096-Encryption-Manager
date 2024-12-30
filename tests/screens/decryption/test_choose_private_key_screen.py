@@ -33,7 +33,6 @@ class TestChoosePrivateKeyScreen:
         qtbot.addWidget(self.ts)
         signal_manager.saved_data["save_main_window"] = MagicMock(spec=qtw.QWidget)
         self.ts.show()
-        self.ts.show()
 
         yield
         self.ts.deleteLater()
