@@ -317,14 +317,17 @@ class TestChoosePublicKeyScreen:
 
     def test_closeEvent(self):
         """
-        Tests that the closeEvent method of ChoosePublicKeyScreen is correctly implemented to hide
-        the screen and show the main window.
+        Tests the closeEvent method is correctly implemented to hide
+        the ChoosePublicKeyScreen and show the main window.
 
-        This test verifies that when the ChoosePublicKeyScreen is closed, the main window
-        becomes visible, ensuring the user can return to the main application window.
+        This test verifies that when the ChoosePublicKeyScreen is closed,
+        the main window is made visible again, ensuring the user can return
+        to the main application window.
         """
 
         main_window = signal_manager.saved_data.get("save_main_window")
         self.ts.close()
+
+        assert not self.ts.isVisible()
 
         main_window.show.assert_called_once()
