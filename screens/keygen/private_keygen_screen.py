@@ -99,7 +99,7 @@ class PrivateKeygenScreen(
             self.key_match_lb.clear()
 
     @qtc.Slot()
-    def text_changed_handler(self, event):
+    def text_changed_handler(self, event=None):
         """
         Slot connected to the text changed signal of the password and password repeat input fields.
         This slot checks if the password match and if the password is not empty. If the password match
