@@ -1,16 +1,8 @@
-import re
-from unittest.mock import MagicMock, Mock, call, mock_open, patch
-import pytest
-import sys
-from PySide6 import QtCore as qtc
-from PySide6 import QtWidgets as qtw
-from PySide6 import QtGui as qtg
-from PySide6 import QtUiTools as qtu
-from backend import signal_manager
+from unittest.mock import MagicMock, mock_open, patch
 from backend.chunk_encrypter import ChunkEncrypter
-from backend.constants.constants import Size
 from backend.file_manager import FileManager
-from tools.toolkit import Tools as t
+from backend.constants.constants import Size
+import pytest
 
 
 class TestFileManager:
