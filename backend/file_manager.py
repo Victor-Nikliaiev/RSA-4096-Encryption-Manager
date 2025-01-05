@@ -27,7 +27,7 @@ class FileManager(qtc.QObject):
             self.stop_process_request, qtc.Qt.DirectConnection
         )
 
-        self.chunk_counter_flag = 1
+        self.chunk_counter_flag = 0
 
     @qtc.Slot()
     def stop_process_request(self):
@@ -112,11 +112,11 @@ class FileManager(qtc.QObject):
 
                     if not chunk:  # If end of file
                         break
-                    logging.info(f"Chunk # {self.chunk_counter_flag}")
                     processed_chunk = chunk_handler(chunk)
                     outfile.write(processed_chunk)
                     signal_manager.update_processed_bytes.emit(len(chunk))
                     self.chunk_counter_flag += 1
+                    logging.info(f"Chunk # {self.chunk_counter_flag}")
 
                 signal_manager.operation_completed.emit()
 
