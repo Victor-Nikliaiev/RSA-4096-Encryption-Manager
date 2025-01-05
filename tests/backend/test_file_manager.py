@@ -17,14 +17,36 @@ class TestFileManager:
 
     @pytest.fixture(scope="function", autouse=True)
     def autorun(self):
+        """
+        Fixture to set up and tear down the FileManager test environment.
+
+        This fixture is automatically used for each test function in the
+        TestFileManager class. It initializes the FileManager instance.
+
+        After the test, it ensures the FileManager instance is properly closed and cleaned up.
+
+        :param self: The test class instance.
+        :yield: The FileManager instance.
+        """
         self.fm = FileManager()
         yield
 
     def test_stop_process_request(self):
+        """
+        Tests that the stop_process_request method sets the internal flag.
+
+        :return: None
+        """
         self.fm.stop_process_request()
         assert self.fm._stop_flag
 
     def test_encrypt_file(self):
+        """
+        Tests that the encrypt_file method correctly initializes a ChunkEncrypter
+        instance and calls the _process_file method with the correct arguments.
+
+        :return: None
+        """
         with patch(
             "backend.file_manager.ChunkEncrypter",
             autospec=True,
@@ -42,6 +64,13 @@ class TestFileManager:
             )
 
     def test_decrypt_file(self):
+        """
+        Tests that the decrypt_file method correctly initializes a ChunkEncrypter
+        instance and calls the _process_file method with the correct arguments.
+
+        :return: None
+        """
+
         with patch(
             "backend.file_manager.ChunkEncrypter",
             autospec=True,
@@ -60,7 +89,22 @@ class TestFileManager:
             )
 
     def test__process_file(self):
+        """
+        Tests the _process_file method to ensure that it correctly reads a file in
+        chunks, processes each chunk using the provided chunk_handler, and writes the
+        processed chunk to the specified output file. The size of the chunks is determined
+        by the chunk_size argument.
 
+        The test verifies that the method correctly calls the chunk_handler for each
+        chunk, writes the processed chunks to the output file, and updates the
+        processed_bytes signal and the chunk_counter_flag attribute.
+
+        The test also verifies that the method correctly handles exceptions, logging
+        the error and emitting the critical_error signal with the input file path and
+        the error message.
+
+        :return: None
+        """
         mock_input_data = b"Chunk1Chunk2Chunk3"
 
         mock_open_func = mock_open(read_data=mock_input_data)
