@@ -77,6 +77,14 @@ Built using **PySide6**, the app showcases a modular architecture, dynamic user 
      - **Threading in PySide6**: Runs time-consuming tasks in the background.
      - **Buffered File Handling**: Processes large files in chunks for optimized memory usage.
 
+10. **Comprehensive Test Suite**
+      - **Description**: Ensures the application's stability, reliability, and robustness across various scenarios.
+      - **Tools Used**: 
+
+         - **Pytest Framework**: Executes unit and integration tests for backend components.
+
+         - **Mocking Libraries**: Simulates various user interactions and edge cases.
+
 ---
 
 ## Project Structure
@@ -90,6 +98,7 @@ The application follows a modular structure, ensuring clarity, scalability, and 
 - **`tools`**: Utility scripts supporting drag-and-drop, error handling, and other reusable functionality.
 - **`assets`**: Houses static resources like icons, stylesheets, and images.
 - **`translations`**: Manages localization files for multi-language support.
+- **`tests`**: Includes unit and integration tests for backend logic and UI components.
 
 ---
 
@@ -161,7 +170,22 @@ You are most welcome for contributions to enhance the RSA-4096 Encryption Manage
 4. Submit a pull request.
 
 ---
+## Running Tests
 
+Ensure all components work as expected by running the test suite:
+
+```bash
+pytest tests/
+```
+
+Tests cover critical functionalities such as:
+
+- Encryption and decryption workflows.
+
+- Key generation and management.
+
+- User interface interactions.
+---
 ## License
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute as per the terms.
