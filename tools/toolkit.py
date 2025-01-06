@@ -1,3 +1,5 @@
+# This is custom code written for make it easier to use some features
+
 from PySide6 import QtUiTools as qtu
 from PySide6 import QtWidgets as qtw
 from PySide6 import QtCore as qtc
