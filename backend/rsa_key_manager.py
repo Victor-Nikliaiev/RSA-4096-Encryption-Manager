@@ -94,23 +94,10 @@ class RsaKeyManager:
         :param password: An optional password to encrypt the private key. If None, the key is saved without encryption.
         """
         if not private_key:
-            private_key = rsa.generate_private_key(
-                public_exponent=Rsa.PUBLIC_EXPONENT,
-                key_size=Rsa.KEY_SIZE,
-                backend=default_backend(),
-            )
+            private_key = self.generate_private_key()
 
-        encryption = (
-            serialization.BestAvailableEncryption(password.encode("utf-8"))
-            if password
-            else serialization.NoEncryption()
-        )
         with open(output_pem_file_path, "wb") as private_file:
-            private_pem = private_key.private_bytes(
-                encoding=serialization.Encoding.PEM,
-                format=serialization.PrivateFormat.PKCS8,
-                encryption_algorithm=encryption,
-            )
+            private_pem = self.encrypt_private_key(private_key, password)
             private_file.write(private_pem)
         logging.info(f"Private key saved to {output_pem_file_path}")
 
@@ -123,10 +110,7 @@ class RsaKeyManager:
         """
 
         with open(pem_file_path, "wb") as public_file:
-            public_pem = public_key.public_bytes(
-                encoding=serialization.Encoding.PEM,
-                format=serialization.PublicFormat.SubjectPublicKeyInfo,
-            )
+            public_pem = self.encrypt_public_key(public_key)
             public_file.write(public_pem)
         logging.info(f"Public key saved to {pem_file_path}")
 
@@ -141,14 +125,9 @@ class RsaKeyManager:
         :raises Exception: If the private key file is not in the correct format or has an invalid password.
         """
 
-        if password is not None:
-            password = password.encode("utf-8")
-
         try:
             with open(pem_file_path, "rb") as private_file:
-                private_key = serialization.load_pem_private_key(
-                    private_file.read(), password=password, backend=default_backend()
-                )
+                private_key = self.serialize_private_key(private_file.read(), password)
                 logging.info(f"Private key loaded from {pem_file_path}")
                 return private_key
         except FileNotFoundError:
@@ -169,9 +148,8 @@ class RsaKeyManager:
 
         try:
             with open(pem_file_path, "rb") as public_file:
-                public_key = serialization.load_pem_public_key(
-                    public_file.read(), backend=default_backend()
-                )
+
+                public_key = self.serialize_public_key(public_file.read())
                 logging.info(f"Public key loaded from {pem_file_path}")
                 return public_key
         except FileNotFoundError:
@@ -181,16 +159,19 @@ class RsaKeyManager:
                 f"Failed to process public key. Please check file format and try again.\n\nAdditional Info:\n {e}"
             )
 
-    def serialize_public_key(self, public_key: str):
+    def serialize_public_key(self, public_key):
         """
         Deserializes a given public key string into a cryptography.hazmat.primitives.asymmetric.rsa.RSAPublicKey object.
 
         :param public_key: The public key string to be deserialized.
         :return: The deserialized RSAPublicKey object.
         """
+
+        data = public_key.encode("utf-8") if type(public_key) is str else public_key
+
         try:
             serialized_public_key = serialization.load_pem_public_key(
-                public_key.encode("utf-8"), backend=default_backend()
+                data, backend=default_backend()
             )
             return serialized_public_key
         except Exception as e:
@@ -198,7 +179,7 @@ class RsaKeyManager:
                 f"Failed to serialize public key, most likely key was corrupted, or you made a mistake, when provided the key.\nPlease check your input, and try again.\n\nAdditional Info:\n {e}"
             )
 
-    def serialize_private_key(self, private_key: str, password: str):
+    def serialize_private_key(self, private_key, password: str):
         """
         Deserializes a given private key string into a cryptography.hazmat.primitives.asymmetric.rsa.RSAPrivateKey object.
 
@@ -206,11 +187,13 @@ class RsaKeyManager:
         :param password: An optional password to decrypt the private key. If None, the key is loaded without decryption.
         :return: The deserialized RSAPrivateKey object.
         """
+        data = private_key.encode("utf-8") if type(private_key) is str else private_key
+
         if password is not None:
             password = password.encode("utf-8")
 
         serialized_private_key = serialization.load_pem_private_key(
-            private_key.encode("utf-8"), password=password, backend=default_backend()
+            data, password=password, backend=default_backend()
         )
         return serialized_private_key
 
