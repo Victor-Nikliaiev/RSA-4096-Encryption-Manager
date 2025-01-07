@@ -25,6 +25,9 @@ Download the latest version of the application from the [Releases page](https://
 > ./encryption_manager_linux
 > ```
 
+## Demo
+
+![Demo of My Program](assets/demo.gif)
 
 ## Features
 
