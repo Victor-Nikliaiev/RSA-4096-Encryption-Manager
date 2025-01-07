@@ -1,3 +1,4 @@
+import os
 import sys
 from PySide6 import QtCore as qtc
 from PySide6 import QtWidgets as qtw
@@ -136,7 +137,15 @@ class MainWindow(qtw.QMainWindow, Ui_main_window):
         :return: None
         """
 
-        translation_file = f"translations/encryption_{language_code}.qm"
+        if hasattr(sys, "_MEIPASS"):
+            # If it's bundled, use the temporary folder
+            translation_file = os.path.join(
+                sys._MEIPASS, "translations", f"encryption_{language_code}.qm"
+            )
+        else:
+            # If running in development mode, use relative path
+            translation_file = f"translations/encryption_{language_code}.qm"
+
         if self.translator.load(translation_file):
             qtw.QApplication.instance().installTranslator(self.translator)
             self.retranslateUi(self)  # Update UI text with new translation

@@ -1,0 +1,30 @@
+for windows:
+pyinstaller --windowed --onefile --noconfirm --add-data "translations/encryption_en.qm;translations" --add-data "translations/encryption_es.qm;translations" --add-data "translations/encryption_ru.qm;translations" --add-data "assets;assets" --add-data "screens;screens" --add-data "tools;tools" --add-data "backend;backend" --add-data "components;components" --add-data "translations;translations"  --hidden-import "cryptography" --hidden-import "translations" --hidden-import "cryptography.hazmat.primitives.serialization" --hidden-import assets.ui.icons_rc --hidden-import "PySide6.QtUiTools" --hidden-import "PySide6.QtWebEngineWidgets" --hidden-import "screens" --hidden-import "tools" --hidden-import "backend" --icon "assets/ui/icons/maze.ico" main.py
+
+for linux:
+
+pyinstaller \
+  --windowed \
+  --onefile \
+  --noconfirm \
+  --add-data "translations/encryption_en.qm:translations" \
+  --add-data "translations/encryption_es.qm:translations" \
+  --add-data "translations/encryption_ru.qm:translations" \
+  --add-data "assets:assets" \
+  --add-data "screens:screens" \
+  --add-data "tools:tools" \
+  --add-data "backend:backend" \
+  --add-data "components:components" \
+  --add-data "translations:translations" \
+  --hidden-import "cryptography" \
+  --hidden-import "translations" \
+  --hidden-import "cryptography.hazmat.primitives.serialization" \
+  --hidden-import "assets.ui.icons_rc" \
+  --hidden-import "PySide6.QtUiTools" \
+  --hidden-import "PySide6.QtWebEngineWidgets" \
+  --hidden-import "screens" \
+  --hidden-import "tools" \
+  --hidden-import "backend" \
+  --icon "assets/ui/icons/maze.ico" \
+  main.py
+

@@ -11,6 +11,20 @@ The **RSA-4096 Encryption Manager v1.0** is a medium-sized, moderately complex d
 Built using **PySide6**, the app showcases a modular architecture, dynamic user experience features, and localization support, making it a versatile tool for global audiences.
 
 ---
+## Releases
+
+Download the latest version of the application from the [Releases page](https://github.com/Victor-Nikliaiev/RSA-4096-Encryption-Manager/releases/tag/v1.0).
+
+### Available Versions
+- **Windows**: [encryption_manager_windows.exe](https://github.com/Victor-Nikliaiev/RSA-4096-Encryption-Manager/releases/download/v1.0/encryption_manager_windows.exe)
+- **Linux**: [encryption_manager_linux](https://github.com/Victor-Nikliaiev/RSA-4096-Encryption-Manager/releases/download/v1.0/encryption_manager_linux)
+
+> **Note:** For Linux, make the program executable, and then run it:
+> ```bash
+> chmod +x encryption_manager_linux
+> ./encryption_manager_linux
+> ```
+
 
 ## Features
 
